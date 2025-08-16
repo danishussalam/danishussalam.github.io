@@ -29,6 +29,5 @@ permalink: /wip
   <div class="pub-meta">
     <em>Joint with Selim Gulesci, Jared Gars, and Diego Ubfal </em><br>
   </div>
-  </details>
 </div>
 
