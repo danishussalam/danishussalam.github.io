@@ -51,7 +51,7 @@ past investment outcomes than by ex-ante warnings.
     </a>
   </h3>
   <div class="pub-meta">
-    <em>Joint with Sarah Baird, Berk Ozler, Chiara Dell'Aira, Luca Parisotto </em></a><br>
+    <em>Joint with Sarah Baird, Berk Ozler, Chiara Dell'Aira, Luca Parisotto </em><br>
     Journal of Development Economics, Volume 176, September 2025, 103473
   </div>
   <details class="abstract">
@@ -70,7 +70,7 @@ past investment outcomes than by ex-ante warnings.
     </a>
   </h3>
   <div class="pub-meta">
-    <em>Joint with Benjamin Avuwadah, Chiara Dell'Aira, Christine Nabulumba, Sarah Baird </em></a><br>
+    <em>Joint with Benjamin Avuwadah, Chiara Dell'Aira, Christine Nabulumba, Sarah Baird </em><br>
     Advances in Global Health, Volume 2, Issue 1, July 2023
   </div>
   <details class="abstract">
@@ -81,35 +81,3 @@ past investment outcomes than by ex-ante warnings.
   </details>
 </div>
 
-
-
-
-
-
-
-
-
-
-## Publications
-
-<div class="pub-list">
-
-<div class="pub-item">
-  <h3 class="pub-title">
-    <a href="https://example.com/real-estate-econ-2024.pdf" target="_blank" rel="noopener">
-      Housing Prices, Costs, and Policy: The Housing Supply Equation in Ireland since 1970
-    </a>
-  </h3>
-  <div class="pub-meta">
-    Joint with <a href="https://www.ronanlyons.com" target="_blank" rel="noopener">Ronan Lyons</a>.<br>
-    <em>Real Estate Economics</em>, 2024
-  </div>
-  <details class="abstract">
-    <summary>Abstract</summary>
-    <p>
-      One–two paragraph abstract goes here.
-    </p>
-  </details>
-</div>
-
-</div>
