@@ -180,11 +180,10 @@ details.abstract > summary:hover {
 .contact-block p { margin: .35rem 0; }
 .contact-block a { text-decoration: underline; }
 
-/* Mobile: stack columns */
-@media (max-width: 900px) {
-  .about-hero { grid-template-columns: 1fr; }
-  .profile-pic img { width: 100%; }
-}
+/* Make the left column narrower and the photo scale to it */
+.about-hero { grid-template-columns: 260px 1fr; }  /* good */
+.profile-pic img { width: 100%; height: auto; }   /* <-- use auto, not 50% */
+
 
 /* Make the left column narrower and the photo scale to it */
 .about-hero { grid-template-columns: 260px 1fr; }  /* try 220–300px */
@@ -276,4 +275,39 @@ details.abstract > summary:hover {
   .container{ padding-left: 1.25rem; padding-right: 1.25rem; }
 }
 
+/* Desktop: photo left, text right; narrow photo column */
+.about-hero{
+  display: grid;
+  grid-template-columns: 260px 1fr;  /* try 220–300px */
+  gap: 2rem;
+  align-items: start;
+}
+.profile-pic img{
+  width: 100%;
+  height: auto;       /* important: no fixed height */
+  display: block;
+}
+
+/* Mobile: stack with a smaller photo like the reference */
+@media (max-width: 900px){
+  .about-hero{
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  .profile-pic img{
+    width: 68vw;       /* adjust 60–72vw to taste */
+    max-width: 360px;  /* hard cap */
+    height: auto;
+    margin: 0 auto;    /* center image */
+  }
+  .bio{
+    margin: 0 auto;
+    max-width: 680px;
+  }
+}
+
+/* Keep your mobile edge padding */
+@media (max-width: 768px){
+  .container { padding-left: 1.25rem; padding-right: 1.25rem; }
+}
 
