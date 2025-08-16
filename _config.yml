@@ -1,0 +1,11 @@
+title: "Danish Us-Salam"
+description: "Economist · Behavioural Consumer Finance · Central Bank of Ireland"
+timezone: "Europe/Dublin"
+markdown: kramdown
+
+# Optional: set your site URL once live (replace USERNAME)
+# url: "https://USERNAME.github.io"
+# baseurl: ""
+
+# If you later add posts, Jekyll will build them automatically.
+# No theme needed—we use a custom layout and CSS here.
