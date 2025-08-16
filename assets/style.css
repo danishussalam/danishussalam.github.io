@@ -235,3 +235,45 @@ details.abstract > summary:hover {
 /* Nudge content closer to header if you want it higher overall */
 .content{ padding-top:1.25rem; }   /* was likely 2rem in your sheet */
 
+/* Desktop (unchanged): photo left, text right */
+.about-hero{
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  grid-template-areas: "pic bio";
+  gap: 2.5rem;
+  align-items: start;
+}
+.profile-pic { grid-area: pic; }
+.bio        { grid-area: bio; }
+
+/* Mobile: stack, image first */
+@media (max-width: 900px){
+  .about-hero{
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "pic"
+      "bio";
+  }
+  .profile-pic img{
+    display: block;
+    width: 88vw;          /* scale nicely on phones */
+    max-width: 560px;
+    height: auto;
+    margin: 0 auto;       /* center the image */
+  }
+  .bio{
+    margin: 0 auto;       /* keep text centered within page width */
+    max-width: 680px;
+  }
+  .page-name{             /* shrink the big name heading on phones */
+    font-size: 2.2rem;
+    margin: .5rem 0 1rem;
+  }
+}
+
+/* Optional: make mobile edges comfier */
+@media (max-width: 768px){
+  .container{ padding-left: 1.25rem; padding-right: 1.25rem; }
+}
+
+
