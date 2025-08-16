@@ -1,10 +1,10 @@
 ---
 layout: default
 title: "Work in Progress"
-permalink: /wip
+permalink: /workinprogress
 ---
 
-# Work in Prgress
+# Work in Progress
 
 ## Trinity College Dublin
 - **Behavioural Economics (Guest Lecture)** — Spring 2025  
