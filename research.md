@@ -4,9 +4,7 @@ title: "Research"
 permalink: /research
 ---
 
-# Research
-
-## Publications
+# Publications
 
 <div class="pub-list">
 
