@@ -42,6 +42,8 @@ past investment outcomes than by ex-ante warnings.
 </div>
 
 
+
+
 <div class="pub-item">
   <h3 class="pub-title">
     <a href="https://www.sciencedirect.com/science/article/abs/pii/S0304387825000240" rel="noopener">
@@ -61,33 +63,32 @@ past investment outcomes than by ex-ante warnings.
 </div>
 
 
-
-
-
-
-
-
-
-
 <div class="pub-item">
   <h3 class="pub-title">
-    <a href="https://online.ucpress.edu/agh/article/2/1/1798880/196895" target="_blank" rel="noopener">
+    <a href="https://online.ucpress.edu/agh/article/2/1/1798880/196895" rel="noopener">
       COVID-19 and adolescent girls’ mental health in Uganda: A panel data analysis
     </a>
   </h3>
   <div class="pub-meta">
-    Joint with <a href="https://www.ronanlyons.com" target="_blank" rel="noopener">Ronan Lyons</a>.<br>
-    TEP Working Paper No. 924. (Revise & Resubmit, Journal of Urban Economics)
+    <em>Joint with Benjamin Avuwadah, Chiara Dell'Aira, Christine Nabulumba, Sarah Baird </em></a><br>
+    Advances in Global Health, Volume 2, Issue 1, July 2023
   </div>
   <details class="abstract">
     <summary>Abstract</summary>
     <p>
-      Short abstract text here.
+      Using a cluster-randomized controlled trial, this study evaluates the impact of group-based interpersonal therapy (IPT-G) on mental health and human capital accumulation among adolescent girls in Uganda who were at risk of moderate to severe depression at baseline. The study was designed to test whether lay provider-led IPT-G for adolescents could be effectively implemented using modest resources in a low-income country. It also tested whether a lump-sum cash transfer offered at the end of therapy provided any additional benefit. The therapy intervention alone increased the share of individuals with no depression by 5.4 percentage points (from 18.4% in the control group) 12 months after therapy, but these effects dissipated by the 30-month follow-up. Similarly, small positive effects on human capital accumulation at 12 months were not sustained at 30 months. Surprisingly, the marginal effect of offering cash transfers to IPT-G beneficiaries was large and negative on their mental health, persisting two years after baseline. The paper provides suggestive evidence that the adolescents were frustrated by their inability to use the cash towards their own goals because of the need to divert funds towards the essential needs of their families during the COVID-19 pandemic.
     </p>
   </details>
 </div>
 
-</div>
+
+
+
+
+
+
+
+
 
 ## Publications
 
