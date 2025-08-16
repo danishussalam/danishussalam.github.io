@@ -10,8 +10,9 @@ title: "Home"
   <div class="bio">
     <h1>Danish Us-Salam</h1>
     <p>
-      Economist, Behavioural Consumer Finance Unit (BCFU), Central Bank of Ireland.  
-      PhD in Economics, Trinity College Dublin. I specialise in causal inference and behavioural consumer finance.
+      I work as an Economist in the Climate Change Unit (CCU) at the Central Bank of Ireland. 
+
+      I received my PhD from Trinity College Dublin in 2023. My CV can be found here.
     </p>
 
     <ul class="contact-icons">
