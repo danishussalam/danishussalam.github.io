@@ -198,4 +198,8 @@ details.abstract > summary:hover {
   }
 }
 
+/* Make journal / series names bold (and keep other meta normal) */
+.pub-meta .journal { font-weight: 700; }
+/* If you also want them italic, uncomment the next line */
+/* .pub-meta .journal { font-weight:700; font-style:italic; } */
 
