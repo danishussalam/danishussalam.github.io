@@ -44,7 +44,16 @@ permalink: /wip
       Beyond the Outbreak: Asset Transfers and Economic Resilience in Post-Ebola Sierra Leone
   </h3>
   <div class="pub-meta">
-    <em>Job Market Paper </em><br>
+    <em>Job Market Paper, Draft ready </em><br>
+  </div>
+</div>
+
+<div class="pub-item">
+  <h3 class="pub-title">
+      Religion at Play: The Impact of Ramadan in Bangladesh
+  </h3>
+  <div class="pub-meta">
+    <em>PhD Essay, Draft ready </em><br>
   </div>
 </div>
 
