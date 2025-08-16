@@ -185,3 +185,8 @@ details.abstract > summary:hover {
   .about-hero { grid-template-columns: 1fr; }
   .profile-pic img { width: 100%; }
 }
+
+/* Make the left column narrower and the photo scale to it */
+.about-hero { grid-template-columns: 260px 1fr; }  /* try 220–300px */
+.profile-pic img { width: 100%; height: auto; }
+
