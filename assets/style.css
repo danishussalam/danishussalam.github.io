@@ -216,6 +216,22 @@ details.abstract > summary:hover {
   margin:0.75rem 0 1.75rem;  /* "a bit up" = small top margin */
 }
 
+/* Research fields line in the right column */
+.research-fields { margin-top: .75rem; }
+
+/* Centered CV + left-aligned contact block, like the reference */
+.bottom-contact {
+  max-width: 560px;          /* narrow column centered */
+  margin: 1.25rem auto 0;
+}
+.bottom-contact .cv-center {
+  text-align: center;
+  margin: 1rem 0 1.25rem;
+}
+.bottom-contact p { margin: .4rem 0; }
+.bottom-contact a { text-decoration: underline; }
+
+
 /* Nudge content closer to header if you want it higher overall */
 .content{ padding-top:1.25rem; }   /* was likely 2rem in your sheet */
 
