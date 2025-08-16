@@ -10,15 +10,26 @@ permalink: /wip
 
 <div class="pub-list">
 
-
 <div class="pub-item">
   <h3 class="pub-title">
-      Therapy, mental health, and human capital accumulation among adolescent girls in Uganda
+      Beyond the Outbreak: Asset Transfers and Economic Resilience in Post-Ebola Sierra Leone
     </a>
   </h3>
   <div class="pub-meta">
-    <em>Joint with Sarah Baird, Berk Ozler, Chiara Dell'Aira, Luca Parisotto </em><br>
-    Journal of Development Economics, Volume 176, September 2025, 103473
+    <em>Job Market Paper </em><br>
+  </div>
+  </details>
+</div>
+
+
+
+<div class="pub-item">
+  <h3 class="pub-title">
+      Market Access and Rural Development: Experimental Evidence from Malawi
+    </a>
+  </h3>
+  <div class="pub-meta">
+    <em>Joint with Selim Gulesci, Jared Gars, and Diego Ubfal </em><br>
   </div>
   </details>
 </div>
