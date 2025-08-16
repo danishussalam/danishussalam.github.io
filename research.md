@@ -49,7 +49,7 @@ past investment outcomes than by ex-ante warnings.
     </a>
   </h3>
   <div class="pub-meta">
-    Joint with Sarah Baird, Berk Ozler, Chiara Dell'Aira, Luca Parisotto </a>.<br>
+    <em>Joint with Sarah Baird, Berk Ozler, Chiara Dell'Aira, Luca Parisotto </em></a><br>
     Journal of Development Economics, Volume 176, September 2025, 103473
   </div>
   <details class="abstract">
