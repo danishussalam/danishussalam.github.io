@@ -8,10 +8,6 @@ permalink: /research
 
 ## Publications
 
-<div class="pub-meta">
-  <span class="journal">Research Technical Paper Series, Central Bank of Ireland</span>. Volume July 2025, No. 9
-</div>
-
 <div class="pub-list">
 
 
