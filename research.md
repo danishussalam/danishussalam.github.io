@@ -126,9 +126,5 @@ past investment outcomes than by ex-ante warnings.
   </div>
 </div>
 
-</div>
 
-## Work in Progress
-
-<div class="pub-list">
 
