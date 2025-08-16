@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Publications"
-permalink: /pub
+permalink: /research
 ---
 
 # Publications
