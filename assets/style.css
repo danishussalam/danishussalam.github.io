@@ -125,3 +125,14 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 2rem 0; }
 .contact-icons li a:hover {
   color: var(--link);
 }
+
+/* Make the "Abstract" label use the same color as the title link */
+details.abstract > summary {
+  color: var(--link);      /* same var used by .pub-title a */
+  font-weight: 600;
+  cursor: pointer;
+}
+
+details.abstract > summary:hover {
+  text-decoration: underline;
+}
