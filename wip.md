@@ -4,9 +4,7 @@ title: "Work in Progress"
 permalink: /wip
 ---
 
-# Research
-
-## Work in Progress
+# Work in Progress
 
 <div class="pub-list">
 
