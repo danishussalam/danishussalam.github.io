@@ -3,10 +3,13 @@ layout: default
 title: "Home"
 ---
 
-<div class="about-section">
+<h1 class="page-name">Danish Us-Salam</h1>
+
+<div class="about-hero">
   <div class="profile-pic">
-<img src="{{ '/assets/profile3.jpg' | relative_url }}" alt="Danish Us-Salam">
+    <img src="{{ '/assets/profile.jpg' | relative_url }}" alt="Danish Us-Salam">
   </div>
+
   <div class="bio">
     <h1>Danish Us-Salam</h1>
     <p>
