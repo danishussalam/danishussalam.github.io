@@ -203,3 +203,5 @@ details.abstract > summary:hover {
 /* If you also want them italic, uncomment the next line */
 /* .pub-meta .journal { font-weight:700; font-style:italic; } */
 
+/* ensure non-linked titles match too */
+.pub-title { color: var(--link); }
