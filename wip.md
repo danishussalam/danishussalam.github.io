@@ -41,15 +41,6 @@ permalink: /wip
 
 <div class="pub-item">
   <h3 class="pub-title">
-      Beyond P-Values & Confidence Intervals: An Alternative Approach to Analyzing Treatment Effects
-  </h3>
-  <div class="pub-meta">
-    <em> Draft in progress </em><br>
-  </div>
-</div>
-
-<div class="pub-item">
-  <h3 class="pub-title">
       Beyond the Outbreak: Asset Transfers and Economic Resilience in Post-Ebola Sierra Leone
   </h3>
   <div class="pub-meta">
