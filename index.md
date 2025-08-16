@@ -15,7 +15,7 @@ I work as an Economist in the Climate Change Unit (CCU) at the Central Bank of I
     
     </p>   
 More recently, at the Central Bank of Ireland, I designed experimental interventions to enhance consumer protection, including tests to improve risk comprehension around crypto assets and strategies to mitigate online financial fraud. I am currently interested in testing behavioural nudges to enhance financial decision-making, particularly in contexts involving high uncertainty and digital financial products.
-    </p>
+    
 
     <p class="research-fields">
   <strong>Research Fields:</strong> Consumer Protection, Supervisory Risk, Applied Microeconomics, Development Economics, Causal Inference, Machine Learning
