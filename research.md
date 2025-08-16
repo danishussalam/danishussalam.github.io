@@ -44,7 +44,7 @@ past investment outcomes than by ex-ante warnings.
 <div class="pub-item">
   <h3 class="pub-title">
     <a href="https://www.sciencedirect.com/science/article/abs/pii/S0304387825000240" rel="noopener">
-      Therapy, Mental Health, and Human Capital Accumulation among adolescent girls in Uganda
+      Therapy, Mental Health, and Human Capital Accumulation among Adolescent Girls in Uganda
     </a>
   </h3>
   <div class="pub-meta">
@@ -62,7 +62,7 @@ past investment outcomes than by ex-ante warnings.
 <div class="pub-item">
   <h3 class="pub-title">
     <a href="https://online.ucpress.edu/agh/article/2/1/1798880/196895" rel="noopener">
-      COVID-19 and adolescent girls’ Mental Health in Uganda: A Panel Data Analysis
+      COVID-19 and Adolescent Girls’ Mental Health in Uganda: A Panel Data Analysis
     </a>
   </h3>
   <div class="pub-meta">
