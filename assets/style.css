@@ -6,7 +6,6 @@
 --border: #e5e7eb;
 }
 
-
 * { box-sizing: border-box; }
 
 html, body {
@@ -198,9 +197,5 @@ details.abstract > summary:hover {
     padding-right: 1.25rem;
   }
 }
-
-.pub-title a { color: #1e3a8a; }      /* dark blue for paper titles */
-.pub-title a:hover { text-decoration: underline; }
-
 
 
