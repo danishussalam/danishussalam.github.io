@@ -99,7 +99,7 @@ past investment outcomes than by ex-ante warnings.
 
 </div>
 
-## Newspaper & Blog Mentions
+# Newspaper & Blog Mentions
 <div class="pub-list">
 
 <div class="pub-item">
