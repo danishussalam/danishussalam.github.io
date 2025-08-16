@@ -41,9 +41,6 @@ past investment outcomes than by ex-ante warnings.
   </details>
 </div>
 
-
-
-
 <div class="pub-item">
   <h3 class="pub-title">
     <a href="https://www.sciencedirect.com/science/article/abs/pii/S0304387825000240" rel="noopener">
@@ -61,7 +58,6 @@ past investment outcomes than by ex-ante warnings.
     </p>
   </details>
 </div>
-
 
 <div class="pub-item">
   <h3 class="pub-title">
@@ -81,7 +77,11 @@ past investment outcomes than by ex-ante warnings.
   </details>
 </div>
 
+</div>
+
 ## Newspaper & Blog Mentions
+
+<div class="pub-list">
 
 <div class="pub-item">
   <h3 class="pub-title">
