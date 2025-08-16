@@ -77,6 +77,28 @@ past investment outcomes than by ex-ante warnings.
   </details>
 </div>
 
+<div class="pub-item">
+  <h3 class="pub-title">
+    <a href="https://policycommons.net/artifacts/4305881/multisectoral-nutrition-programming-in-action/5116052/" rel="noopener">
+      Impact Evaluation of the Uganda Multisectoral Food Security and Nutrition Project
+    </a>
+  </h3>
+  <div class="pub-meta">
+    <em>Joint with Munshi Sulaiman, John Ilukor, Nushrat Shamin, Samrat Singh, Rogers Ayiko, Ziauddin Hyder, Joseph Oryokot </em><br>
+    World Bank Discussion Paper Series, June 2023
+  </div>
+  <details class="abstract">
+    <summary>Abstract</summary>
+    <p>
+      This discussion paper evaluates the impact of the Uganda Multisectoral Food Security and Nutrition Project (UMFSNP), a multisectoral initiative supported by the World Bank and GAFSP. The project aimed to improve child and maternal nutrition through coordinated efforts across agriculture, education, health, and local government. The quasi-experimental evaluation found positive impacts on micronutrient-rich crop adoption, dietary diversity, food security, and nutrition knowledge. These improvements led to better child-feeding practices and reduced childhood stunting, wasting, and anemia in participating households, suggesting the effectiveness of the multisectoral approach.
+    </p>
+  </details>
+</div>
+
+
+
+
+
 </div>
 
 ## Newspaper & Blog Mentions
@@ -104,6 +126,9 @@ past investment outcomes than by ex-ante warnings.
   </div>
 </div>
 
+</div>
+
 ## Work in Progress
+
 <div class="pub-list">
 
