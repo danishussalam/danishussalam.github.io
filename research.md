@@ -80,7 +80,6 @@ past investment outcomes than by ex-ante warnings.
 </div>
 
 ## Newspaper & Blog Mentions
-
 <div class="pub-list">
 
 <div class="pub-item">
@@ -104,3 +103,7 @@ past investment outcomes than by ex-ante warnings.
     VoxDev, May 27th, 2025
   </div>
 </div>
+
+## Work in Progress
+<div class="pub-list">
+
