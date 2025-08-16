@@ -6,18 +6,18 @@ permalink: /research
 
 # Research
 
-## Working Papers
+## Publications
 
 <div class="pub-list">
 
 <div class="pub-item">
   <h3 class="pub-title">
-    <a href="https://example.com/paper.pdf" target="_blank" rel="noopener">
-      Public Housing Preferences: Evidence from New York City 1930–2010
+    <a href="https://www.centralbank.ie/docs/default-source/publications/research-technical-papers/mitigating-vulnerability-role-of-risk-warnings-information-order-salience-in-crypto-assets.pdf?sfvrsn=f70e691a_9" target="_blank" rel="noopener">
+      Mitigating Vulnerability: The Role of Risk Warnings, Information Order & Salience in Crypto Assets
     </a>
   </h3>
   <div class="pub-meta">
-    UoC Working Paper No. 107. (submitted)
+    Central Bank of Ireland, Research Technical Paper Vol 2025, No. 9
   </div>
   <details class="abstract">
     <summary>Abstract</summary>
