@@ -15,7 +15,7 @@ permalink: /wip
       Beyond P-Values & Confidence Intervals: An Alternative Approach to Analyzing Treatment Effects
   </h3>
   <div class="pub-meta">
-    <em>Job Market Paper </em><br>
+    <em> Draft in progress </em><br>
   </div>
   </details>
 </div>
