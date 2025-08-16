@@ -83,4 +83,13 @@ past investment outcomes than by ex-ante warnings.
 
 ## Newspaper & Blog Mentions
 
-
+<div class="pub-item">
+  <h3 class="pub-title">
+    <a href="https://www.irishtimes.com/business/2025/07/29/crypto-investors-need-more-detailed-warnings-about-risks-involved-central-bank/" rel="noopener">
+      Crypto investors need more detailed warnings about risks involved - Central Bank
+    </a>
+  </h3>
+  <div class="pub-meta">
+    The Irish Times, July 29th, 2025
+  </div>
+</div>
