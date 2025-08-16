@@ -22,7 +22,20 @@ permalink: /research
   <details class="abstract">
     <summary>Abstract</summary>
     <p>
-      One–two paragraph abstract goes here. Keep it compact; readers can expand to see it.
+      The growing popularity of crypto assets has driven increased engagement, often
+fuelled by promotional content that highlights past returns while downplaying risks.
+This paper evaluates the effectiveness of behaviourally informed risk warnings in
+such a setting. Using an online randomized controlled trial, participants viewed simulated investment promotions for two financial products: stocks and crypto assets.
+Treatments combined behaviorally informed risk warnings with past return information, the same information but with returns shown before warnings, or risk warnings
+paired with price volatility cues. The first treatment significantly improved risk comprehension and perception by 5% and 4%. These effects are further magnified by
+the order in which information is presented and by increasing the salience of risk
+information. Showing risk warnings after potential returns increases risk comprehension by 12% and risk perception by 6%, suggesting evidence in favor of recency
+bias. Similarly, showing risk warnings and price volatility cues improves risk comprehension by 10% and risk perception by 7%, reflecting the effect of heightened risk
+salience. These effects are driven by at-risk investors, defined as individuals who
+follow crypto market updates on social media but have not yet invested in crypto
+assets. In line with prior evidence, we find no effect among those who have previously invested in crypto assets, likely because their decisions are shaped more by
+past investment outcomes than by ex-ante warnings.
+
     </p>
   </details>
 </div>
