@@ -18,7 +18,7 @@ permalink: /research
     </a>
   </h3>
   <div class="pub-meta">
-    Central Bank of Ireland, Research Technical Paper Vol July 2025, No. 9
+    Research Technical Paper Series, Central Bank of Ireland. Volume July 2025, No. 9
   </div>
   <details class="abstract">
     <summary>Abstract</summary>
