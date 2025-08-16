@@ -19,10 +19,10 @@ I work as an Economist in the Climate Change Unit (CCU) at the Central Bank of I
 </p>
 
 <div class="bottom-contact">
-  <p class="cv-center">You can find my CV <a href="{{ '/assets/cv.pdf' | relative_url }}">here</a></p>
+  <p class="cv-center">You can find my CV <a href="{{ '/assets/Danish_CV.pdf' | relative_url }}">here</a></p>
 
-  <p><strong>Email:</strong> <a href="mailto:firstname.lastname@centralbank.ie">firstname.lastname@centralbank.ie</a></p>
-  <p><strong>Twitter:</strong> <a href="https://x.com/yourhandle">@yourhandle</a></p>
+  <p><strong>Email:</strong> <a href="mailto:ussalamd@tcd.ie">ussalamd@tcd.ie</a></p>
+  <p><strong>Twitter:</strong> <a href="https://x.com/DanishUsSalam2">@DanishUsSalam2</a></p>
 
   <p><strong>Contact:</strong> Central Bank of Ireland<br>
      North Wall Quay, Dublin 1<br>
