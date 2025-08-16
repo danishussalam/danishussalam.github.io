@@ -15,7 +15,7 @@ I work as an Economist in the Climate Change Unit (CCU) at the Central Bank of I
     </p>
 
     <p class="research-fields">
-  <strong>Research Fields:</strong> Development Economics, Political Economics, Health Economics, Applied Microeconomics.
+  <strong>Research Fields:</strong> Consumer Protection, Supervisory Risk, Applied Microeconomics, Development Economics, Causal Inference, Machine Learning
 </p>
 
 <div class="bottom-contact">
