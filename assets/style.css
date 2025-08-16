@@ -205,3 +205,17 @@ details.abstract > summary:hover {
 
 /* ensure non-linked titles match too */
 .pub-title { color: var(--link); }
+
+/* Centered name like Andrea's: lighter, blue, slightly higher */
+.page-name{
+  text-align:center;
+  font-weight:300;           /* not bold */
+  font-size:2.6rem;          /* adjust 2.3–2.8rem to taste */
+  line-height:1.15;
+  color:#4a7cab;             /* dark-ish blue; or use var(--link) */
+  margin:0.75rem 0 1.75rem;  /* "a bit up" = small top margin */
+}
+
+/* Nudge content closer to header if you want it higher overall */
+.content{ padding-top:1.25rem; }   /* was likely 2rem in your sheet */
+
