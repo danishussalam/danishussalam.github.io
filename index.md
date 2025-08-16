@@ -5,7 +5,7 @@ title: "Home"
 
 <div class="about-section">
   <div class="profile-pic">
-    <img src="{{ '/assets/profile.jpg' | relative_url }}" alt="Danish Us-Salam">
+    <img src="{{ '/assets/profile2.jpg' | relative_url }}" alt="Danish Us-Salam">
   </div>
   <div class="bio">
     <h1>Danish Us-Salam</h1>
