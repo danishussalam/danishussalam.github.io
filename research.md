@@ -93,3 +93,14 @@ past investment outcomes than by ex-ante warnings.
     The Irish Times, July 29th, 2025
   </div>
 </div>
+
+<div class="pub-item">
+  <h3 class="pub-title">
+    <a href="https://voxdev.org/topic/health/can-group-therapy-improve-mental-health-among-adolescent-girls-uganda" rel="noopener">
+      Can group therapy improve mental health among adolescent girls in Uganda?
+    </a>
+  </h3>
+  <div class="pub-meta">
+    VoxDev, May 27th, 2025
+  </div>
+</div>
