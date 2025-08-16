@@ -4,7 +4,7 @@ title: "Teaching"
 permalink: /teaching
 ---
 
-# Teaching
+# Work in Prgress
 
 ## Trinity College Dublin
 - **Behavioural Economics (Guest Lecture)** — Spring 2025  
