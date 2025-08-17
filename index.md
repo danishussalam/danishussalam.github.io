@@ -40,10 +40,6 @@ Before joining the Central Bank, I completed a PhD in Economics at <a href="http
     <a href="https://www.linkedin.com/in/danishussalam/" target="_blank" rel="noopener noreferrer" style="margin:0 10px;" aria-label="LinkedIn">
       <i class="fa-brands fa-linkedin fa-lg"></i>
     </a>
-    <a href="https://bsky.app/profile/danishussalam.bsky.social" target="_blank" rel="noopener noreferrer" style="margin:0 10px;" aria-label="Bluesky">
-      <img src="{{ '/assets/bluesky.svg' | relative_url }}" alt="Bluesky" style="height:20px; vertical-align:middle;">
-    </a>
-  </p>
 </div>
 
 
