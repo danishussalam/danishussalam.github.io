@@ -11,12 +11,16 @@ title: "Home"
   </div>
   <div class="bio">
     <p>
-I work as an Economist in the Climate Change Unit (CCU) at the Central Bank of Ireland. I received my PhD in Economics from Trinity College Dublin (2023). I began my career working on anti-poverty and education programs across East and West Africa, including asset transfer initiatives in post-conflict regions, school monitoring schemes to boost educational outcomes, and high-school entrepreneurship programs to foster entrepreneurial skills among youth. During this time, I worked with reputable organisations such as the World Bank, BRAC International, and Rising Academies, among others.
-    
-    </p>   
-More recently, at the Central Bank of Ireland, I designed experimental interventions to enhance consumer protection, including tests to improve risk comprehension around crypto assets and strategies to mitigate online financial fraud. I am currently interested in testing behavioural nudges to enhance financial decision-making, particularly in contexts involving high uncertainty and digital financial products.
-    
+I work as an Economist in the Climate Change Unit (CCU) at the Central Bank of Ireland, where I use experimental and quasi-experimental tools to identify which interventions most effectively address consumer protection challenges. My work includes designing tests to improve risk comprehension around crypto assets, as well as strategies to mitigate online financial fraud. I am particularly interested in how behavioural nudges can strengthen financial decision-making in contexts of high uncertainty and digital finance.
 
+    </p>   
+Before joining the Central Bank, I completed a PhD in Economics at Trinity College Dublin (2023) and a research fellowship at the University of California, Berkeley. Earlier in my career, I worked in Sierra Leone, Uganda, and Malawi on anti-poverty and education programmes, including asset transfer initiatives in post-conflict regions, school monitoring schemes to improve learning outcomes, and entrepreneurship programmes for high-school students. During this time, I was employed with organisations such as the 
+<a href="https://www.worldbank.org">World Bank</a>, 
+<a href="https://www.bracinternational.nl">BRAC International</a>, 
+<a href="https://www.3ieimpact.org">3ie</a>, and 
+<a href="https://www.risingacademies.com">Rising Academies</a>.
+
+  
     <p class="research-fields">
   <strong>Research Fields:</strong> Consumer Protection, Supervisory Risk, Applied Microeconomics, Development Economics, Causal Inference, Machine Learning
 </p>
