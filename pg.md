@@ -5,8 +5,7 @@ permalink: /pg
 ---
 
 <h2>Photography</h2>
-<p>Outside of Economics, one of my greatest passions is photography. 
-You can find a selection of pictures from my fieldwork (here) and travels (below).</p>
+<p>Photography is one of my main passions beyond economics. A selection of my fieldwork pictures is available.</p>
 
 <div class="photo-grid">
   <img src="/assets/photos/photo1.jpg" alt="photo1">
