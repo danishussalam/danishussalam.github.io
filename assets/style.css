@@ -325,4 +325,11 @@ details.abstract > summary:hover {
   box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* optional */
 }
 
+.cv-and-icons a {
+  text-decoration: none;   /* remove underline */
+}
+
+.cv-and-icons a:hover {
+  text-decoration: none;   /* also remove underline on hover */
+}
 
