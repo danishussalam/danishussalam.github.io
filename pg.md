@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Photography
-permalink: /photography/
+permalink: pg
 ---
 
 <h2>Photography</h2>
