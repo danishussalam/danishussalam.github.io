@@ -342,3 +342,10 @@ details.abstract > summary:hover {
   color: #555;              /* dark gray on hover */
 }
 
+.profile-pic img {
+  width: 70%;   /* 30% smaller */
+  height: auto; /* keeps proportions */
+  display: block;
+  margin: 0 auto; /* keeps it centered */
+}
+
