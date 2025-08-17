@@ -11,7 +11,7 @@ title: "Home"
   </div>
   <div class="bio">
     <p>
-I work as an Economist in the Climate Change Unit (CCU) at the Central Bank of Ireland, where I use experimental and quasi-experimental tools to identify which interventions most effectively address consumer protection challenges. My work includes designing tests to improve risk comprehension around crypto assets, as well as strategies to mitigate online financial fraud. I am particularly interested in how behavioural nudges can strengthen financial decision-making in contexts of high uncertainty and digital finance.
+I work as an Economist in the Climate Change Unit (CCU) at the <a href="https://www.centralbank.ie/" target="_blank" rel="noopener noreferrer">Central Bank of Ireland</a>,, where I use experimental and quasi-experimental tools to identify which interventions most effectively address consumer protection challenges. My work includes designing tests to improve risk comprehension around crypto assets, as well as strategies to mitigate online financial fraud. I am particularly interested in how behavioural nudges can strengthen financial decision-making in contexts of high uncertainty and digital finance.
 
     </p>   
 Before joining the Central Bank, I completed a PhD in Economics at Trinity College Dublin (2023) and a research fellowship at the University of California, Berkeley. Earlier in my career, I worked in Sierra Leone, Uganda, and Malawi on anti-poverty and education programmes, including asset transfer initiatives in post-conflict regions, school monitoring schemes to improve learning outcomes, and entrepreneurship programmes for high-school students. During this time, I was employed with organisations such as the 
