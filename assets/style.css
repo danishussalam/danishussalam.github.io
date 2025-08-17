@@ -333,3 +333,12 @@ details.abstract > summary:hover {
   text-decoration: none;   /* also remove underline on hover */
 }
 
+.cv-and-icons a {
+  color: black;             /* make all icons black */
+  text-decoration: none;    /* remove underline */
+}
+
+.cv-and-icons a:hover {
+  color: #555;              /* dark gray on hover */
+}
+
