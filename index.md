@@ -25,14 +25,23 @@ Before joining the Central Bank, I completed a PhD in Economics at <a href="http
   <strong>Research Fields:</strong> Consumer Protection, Supervisory Risk, Applied Microeconomics, Development Economics, Causal Inference, Machine Learning
 </p>
 
-<div class="bottom-contact">
-  <p class="cv-center">You can find my CV 
+<div class="cv-and-icons" style="text-align: center; margin-top: 15px;">
+  <p>You can find my CV 
     <a href="{{ '/assets/Danish_CV.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">here</a>
   </p>
+  
+  <p>
+    <a href="mailto:ussalamd@tcd.ie" target="_blank" rel="noopener noreferrer" style="margin: 0 10px;">
+      <i class="fas fa-envelope fa-lg"></i>
+    </a>
+    <a href="https://x.com/DanishUsSalam2" target="_blank" rel="noopener noreferrer" style="margin: 0 10px;">
+      <i class="fab fa-twitter fa-lg"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/danishussalam/" target="_blank" rel="noopener noreferrer" style="margin: 0 10px;">
+      <i class="fab fa-linkedin fa-lg"></i>
+    </a>
+  </p>
 </div>
-
-  <p><strong>Email:</strong> <a href="mailto:ussalamd@tcd.ie">ussalamd@tcd.ie</a></p>
-  <p><strong>Twitter:</strong> <a href="https://x.com/DanishUsSalam2">@DanishUsSalam2</a></p>
 
   <p><strong>Contact:</strong> Central Bank of Ireland<br>
      North Wall Quay, Dublin 1<br>
