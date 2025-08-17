@@ -40,8 +40,6 @@ Before joining the Central Bank, I completed a PhD in Economics at <a href="http
     <a href="https://www.linkedin.com/in/danishussalam/" target="_blank" rel="noopener noreferrer" style="margin:0 10px;" aria-label="LinkedIn">
       <i class="fa-brands fa-linkedin fa-lg"></i>
     </a>
-</div>
-
 
 
   <p><strong>Contact:</strong> Central Bank of Ireland<br>
