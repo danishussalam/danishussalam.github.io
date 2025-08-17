@@ -51,12 +51,5 @@ Before joining the Central Bank, I completed a PhD in Economics at <a href="http
 </div>
 
 
-  <p><strong>Contact:</strong> Central Bank of Ireland<br>
-     North Wall Quay, Dublin 1<br>
-     Ireland
-  </p>
-</div>
-
-
 
 
