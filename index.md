@@ -25,10 +25,8 @@ Before joining the Central Bank, I completed a PhD in Economics at <a href="http
   <strong>Research Fields:</strong> Consumer Protection, Supervisory Risk, Applied Microeconomics, Development Economics, Causal Inference, Machine Learning
 </p>
 
-<div class="cv-and-icons" style="text-align:center; margin-top:15px;">
-  <p>You can find my CV 
-    <a href="{{ '/assets/Danish_CV.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">here</a>
-  </p>
+<div class="cv-and-icons" style="text-align:center; margin-top:15px;"> <p>You can find my CV <a href="{{ '/assets/Danish_CV.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">here</a> </p>
+
 
   <p>
     <!-- Email -->
