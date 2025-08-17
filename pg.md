@@ -16,4 +16,5 @@ You can find a selection of pictures from my fieldwork (here) and travels (below
   <img src="/assets/photos/photo5.jpg" alt="photo5">
   <img src="/assets/photos/photo6.jpg" alt="photo6">
   <img src="/assets/photos/photo7.jpg" alt="photo7">
+  <img src="/assets/photos/photo8.jpg" alt="photo8">
 </div>
