@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Work in Progress"
+title: "Research"
 permalink: /wip
 ---
 
