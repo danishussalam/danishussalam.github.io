@@ -31,13 +31,13 @@ Before joining the Central Bank, I completed a PhD in Economics at <a href="http
   </p>
 
   <p>
-    <a href="mailto:ussalamd@tcd.ie" target="_blank" rel="noopener noreferrer" style="margin:0 10px;" aria-label="Email">
+    <a href="mailto:ussalamd@tcd.ie" target="blank" rel="noopener noreferrer" style="margin:0 10px;" aria-label="Email">
       <i class="fa-solid fa-envelope fa-lg"></i>
     </a>
-    <a href="https://x.com/DanishUsSalam2" target="_blank" rel="noopener noreferrer" style="margin:0 10px;" aria-label="Twitter/X">
+    <a href="https://x.com/DanishUsSalam2" target="blank" rel="noopener noreferrer" style="margin:0 10px;" aria-label="Twitter/X">
       <i class="fa-brands fa-x-twitter fa-lg"></i>
     </a>
-    <a href="https://www.linkedin.com/in/danishussalam/" target="_blank" rel="noopener noreferrer" style="margin:0 10px;" aria-label="LinkedIn">
+    <a href="https://www.linkedin.com/in/danishussalam/" target="blank" rel="noopener noreferrer" style="margin:0 10px;" aria-label="LinkedIn">
       <i class="fa-brands fa-linkedin fa-lg"></i>
     </a>
   </p>
