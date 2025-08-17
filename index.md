@@ -26,7 +26,10 @@ Before joining the Central Bank, I completed a PhD in Economics at Trinity Colle
 </p>
 
 <div class="bottom-contact">
-  <p class="cv-center">You can find my CV <a href="{{ '/assets/Danish_CV.pdf' | relative_url }}">here</a></p>
+  <p class="cv-center">You can find my CV 
+    <a href="{{ '/assets/Danish_CV.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">here</a>
+  </p>
+</div>
 
   <p><strong>Email:</strong> <a href="mailto:ussalamd@tcd.ie">ussalamd@tcd.ie</a></p>
   <p><strong>Twitter:</strong> <a href="https://x.com/DanishUsSalam2">@DanishUsSalam2</a></p>
