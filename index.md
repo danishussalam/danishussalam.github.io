@@ -15,10 +15,10 @@ I work as an Economist in the Climate Change Unit (CCU) at the Central Bank of I
 
     </p>   
 Before joining the Central Bank, I completed a PhD in Economics at Trinity College Dublin (2023) and a research fellowship at the University of California, Berkeley. Earlier in my career, I worked in Sierra Leone, Uganda, and Malawi on anti-poverty and education programmes, including asset transfer initiatives in post-conflict regions, school monitoring schemes to improve learning outcomes, and entrepreneurship programmes for high-school students. During this time, I was employed with organisations such as the 
-<a href="https://www.worldbank.org">World Bank</a>, 
-<a href="https://www.bracinternational.nl">BRAC International</a>, 
-<a href="https://www.3ieimpact.org">3ie</a>, and 
-<a href="https://www.risingacademies.com">Rising Academies</a>.
+<a href="https://www.worldbank.org" target="_blank" rel="noopener noreferrer">World Bank</a>, 
+<a href="https://www.bracinternational.nl" target="_blank" rel="noopener noreferrer">BRAC International</a>, 
+<a href="https://www.3ieimpact.org" target="_blank" rel="noopener noreferrer">3ie</a>, and 
+<a href="https://www.risingacademies.com" target="_blank" rel="noopener noreferrer">Rising Academies</a>.
 
   
     <p class="research-fields">
