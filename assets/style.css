@@ -418,3 +418,10 @@ details.abstract > summary:hover {
   margin: 0;
 }
 
+.profile-pic img {
+  width: 280px;   /* increase from default ~220–260px */
+  height: auto;
+  border-radius: 4px; /* optional, keep image sharp */
+}
+
+
