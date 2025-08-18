@@ -34,7 +34,7 @@ Before joining the Central Bank, I completed a PhD in Economics at <a href="http
   </a>
 </p>
 
-<p>
+<p style="text-align:center;">
     <!-- Email -->
     <a href="mailto:ussalamd@tcd.ie" target="_blank" rel="noopener noreferrer" style="margin:0 10px; color:black;" aria-label="Email">
       <i class="fa-solid fa-envelope fa-lg"></i>
