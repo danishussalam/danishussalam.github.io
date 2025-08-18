@@ -351,7 +351,7 @@ details.abstract > summary:hover {
 
 @media (max-width: 900px){
   .profile-pic img{
-    width: 70% !important;   /* enforce 30% smaller on mobile too */
+    width: 90% !important;   /* enforce 30% smaller on mobile too */
     height: auto;
     margin: 0 auto;
   }
