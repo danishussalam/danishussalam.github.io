@@ -357,4 +357,34 @@ details.abstract > summary:hover {
   }
 }
 
+/* Mobile: stack, center the photo, and make the text use full width */
+@media (max-width: 900px){
+  .about-hero{
+    display: grid;
+    grid-template-columns: 1fr;   /* stack */
+    gap: 1rem;
+    align-items: start;
+  }
+
+  .profile-pic{
+    justify-self: center;         /* center the image block */
+  }
+  .profile-pic img{
+    width: min(92vw, 420px);      /* responsive but not too big */
+    height: auto;
+    display: block;
+  }
+
+  .bio{
+    width: 100%;
+    max-width: none;               /* override any 680px cap */
+    margin: 0;                     /* remove centering margins */
+    text-align: left;              /* ensure left-aligned text */
+  }
+
+  .bio p:first-of-type{
+    margin-top: 0;                 /* align top neatly under the photo */
+  }
+}
+
 
