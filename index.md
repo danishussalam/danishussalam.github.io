@@ -7,7 +7,7 @@ title: "Home"
 
 <div class="about-hero">
   <div class="profile-pic">
-    <img src="{{ '/assets/profile3.jpg' | relative_url }}" alt="Danish Us-Salam">
+    <img src="{{ '/assets/profile4.jpg' | relative_url }}" alt="Danish Us-Salam">
   </div>
   <div class="bio">
     <p>
