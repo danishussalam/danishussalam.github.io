@@ -121,9 +121,9 @@ past investment outcomes than by ex-ante warnings.
   <div class="pub-meta">
     VoxDev, May 27th, 2025
   </div>
+  
         </div>
-
-
+        
 # Work in Progress
 
 <div class="pub-list">
