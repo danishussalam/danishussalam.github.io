@@ -25,31 +25,23 @@ Before joining the Central Bank, I completed a PhD in Economics at <a href="http
   <strong>Research Fields:</strong> Consumer Protection, Supervisory Risk, Applied Microeconomics, Development Economics, Causal Inference, Machine Learning
 </p>
 
-<p class="cv-line" style="text-align:center;">
-  You can find my CV 
-  <a href="{{ '/assets/Danish_CV.pdf' | relative_url }}"
-     target="_blank" rel="noopener noreferrer"
-     style="color:#0ea5e9; text-decoration:none;">
-     here
-  </a>
-</p>
+<div class="cv-and-icons">
+  <p>You can find my CV 
+    <a href="{{ '/assets/Danish_CV.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">here</a>
+  </p>
 
-<p style="text-align:center;">
-    <!-- Email -->
-    <a href="mailto:ussalamd@tcd.ie" target="_blank" rel="noopener noreferrer" style="margin:0 10px; color:black;" title="Email">
+  <p>
+    <a href="mailto:ussalamd@tcd.ie" target="_blank" rel="noopener noreferrer" title="Email">
       <i class="fa-solid fa-envelope fa-lg"></i>
     </a>
-    <!-- Google Scholar -->
-    <a href="https://scholar.google.com/citations?user=NbSatAYAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" style="margin:0 10px; color:black;" title="Google Scholar">
+    <a href="https://scholar.google.com/citations?user=NbSatAYAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" title="Google Scholar">
       <i class="fa-solid fa-graduation-cap fa-lg"></i>
     </a>
-    <!-- LinkedIn -->
-    <a href="https://www.linkedin.com/in/danishussalam/" target="_blank" rel="noopener noreferrer" style="margin:0 10px; color:black;" title="LinkedIn">
+    <a href="https://www.linkedin.com/in/danishussalam/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
       <i class="fa-brands fa-linkedin fa-lg"></i>
     </a>
-    <!-- Twitter/X -->
-    <a href="https://x.com/DanishUsSalam2" target="_blank" rel="noopener noreferrer" style="margin:0 10px; color:black;" title="Twitter/X">
+    <a href="https://x.com/DanishUsSalam2" target="_blank" rel="noopener noreferrer" title="Twitter/X">
       <i class="fa-brands fa-x-twitter fa-lg"></i>
     </a>
-</p>
-
+  </p>
+</div>
