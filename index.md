@@ -31,38 +31,30 @@ Before joining the Central Bank, I completed a PhD in Economics at <a href="http
     <a href="{{ '/assets/Danish_CV.pdf' | relative_url }}" 
        target="_blank" 
        rel="noopener noreferrer" 
-       style="color:#5dc9e1; text-decoration:none;">
+       style="color:#1d71b8; text-decoration:none;">
        here
     </a>
   </p>
-</div>
-
 
   <p>
     <!-- Email -->
-    <a href="mailto:ussalamd@tcd.ie" target="_blank" rel="noopener noreferrer" 
-       style="margin:0 10px; color:black;" aria-label="Email">
+    <a href="mailto:ussalamd@tcd.ie" target="_blank" rel="noopener noreferrer" aria-label="Email">
       <i class="fa-solid fa-envelope fa-lg"></i>
     </a>
     <!-- Google Scholar -->
-    <a href="https://scholar.google.com/citations?user=NbSatAYAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" 
-       style="margin:0 10px; color:black;" aria-label="Google Scholar">
+    <a href="https://scholar.google.com/citations?user=NbSatAYAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
       <i class="fa-solid fa-graduation-cap fa-lg"></i>
     </a>
     <!-- LinkedIn -->
-    <a href="https://www.linkedin.com/in/danishussalam/" target="_blank" rel="noopener noreferrer" 
-       style="margin:0 10px; color:black;" aria-label="LinkedIn">
+    <a href="https://www.linkedin.com/in/danishussalam/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
       <i class="fa-brands fa-linkedin fa-lg"></i>
     </a>
     <!-- Twitter/X -->
-    <a href="https://x.com/DanishUsSalam2" target="_blank" rel="noopener noreferrer" 
-       style="margin:0 10px; color:black;" aria-label="Twitter/X">
+    <a href="https://x.com/DanishUsSalam2" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X">
       <i class="fa-brands fa-x-twitter fa-lg"></i>
     </a>
   </p>
 </div>
-
-
 
 
 
