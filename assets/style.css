@@ -357,11 +357,4 @@ details.abstract > summary:hover {
   }
 }
 
-.bio-link {
-  color: #1d71b8;   /* same as your World Bank links */
-  text-decoration: none;
-}
 
-.bio-link:hover {
-  text-decoration: underline;
-}
