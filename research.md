@@ -95,10 +95,12 @@ past investment outcomes than by ex-ante warnings.
 
 </div>
 
+
+
 # Newspaper & Blog Mentions
 
-<div class="pub-list">
 
+<div class="pub-list">
 <div class="pub-item">
   <h3 class="pub-title">
     <a href="https://www.irishtimes.com/business/2025/07/29/crypto-investors-need-more-detailed-warnings-about-risks-involved-central-bank/" rel="noopener">
@@ -119,7 +121,7 @@ past investment outcomes than by ex-ante warnings.
   <div class="pub-meta">
     VoxDev, May 27th, 2025
   </div>
-</div>
+        </div>
 
 
 # Work in Progress
