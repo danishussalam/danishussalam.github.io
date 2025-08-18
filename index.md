@@ -29,9 +29,7 @@ Before joining the Central Bank, I completed a PhD in Economics at <a href="http
   <p>You can find my CV 
     <a href="{{ '/assets/Danish_CV.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer" style="color:#5dc9e1;">here</a>
   </p>
-</div>
 
-<div class="cv-and-icons">
   <p>
     <a href="mailto:ussalamd@tcd.ie" target="_blank" rel="noopener noreferrer" title="Email">
       <i class="fa-solid fa-envelope fa-lg"></i>
@@ -47,4 +45,3 @@ Before joining the Central Bank, I completed a PhD in Economics at <a href="http
     </a>
   </p>
 </div>
-
