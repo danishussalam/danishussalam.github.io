@@ -93,10 +93,6 @@ past investment outcomes than by ex-ante warnings.
   </details>
 </div>
 
-
-
-
-
 </div>
 
 # Newspaper & Blog Mentions
@@ -122,10 +118,10 @@ past investment outcomes than by ex-ante warnings.
   <div class="pub-meta">
     VoxDev, May 27th, 2025
   </div>
+  
 </div>
 
 # Work in Progress
-
 <div class="pub-list">
 
 <div class="pub-item">
@@ -145,7 +141,6 @@ past investment outcomes than by ex-ante warnings.
     <em>Joint with Anu Jose and Jane Kelly </em><br>
   </div>
 </div>
-
 
 <div class="pub-item">
   <h3 class="pub-title">
@@ -183,5 +178,3 @@ past investment outcomes than by ex-ante warnings.
     <em>Joint with Selim Gulesci, Jared Gars, and Diego Ubfal </em><br>
   </div>
 </div>
-
-
