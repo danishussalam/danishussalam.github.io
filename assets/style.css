@@ -455,12 +455,3 @@ details.abstract > summary:hover {
   color: #555;                       /* optional subtle hover color */
 }
 
-.cv-and-icons a {
-  color: #5dc9e1;
-  text-decoration: none;
-}
-
-.cv-and-icons a:hover {
-  color: #3da9c0;  /* slightly darker hover effect (optional) */
-}
-
