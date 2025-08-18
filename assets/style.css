@@ -387,4 +387,10 @@ details.abstract > summary:hover {
   }
 }
 
+.cv-and-icons p {
+  display: flex;
+  justify-content: center; /* centers icons horizontally */
+  gap: 20px;               /* equal space between icons */
+  margin: 0;               /* remove extra paragraph margin */
+}
 
