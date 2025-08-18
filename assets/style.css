@@ -455,3 +455,19 @@ details.abstract > summary:hover {
   color: #555;                       /* optional subtle hover color */
 }
 
+.cv-and-icons {
+  text-align: center;   /* centers text + icons */
+  margin-top: 15px;
+}
+
+.cv-and-icons a {
+  color: black;          /* icons are black */
+  text-decoration: none; /* removes underline (the "dash") */
+  margin: 0 10px;
+}
+
+.cv-and-icons a:hover {
+  color: #555;           /* optional: subtle gray hover */
+  text-decoration: none;
+}
+
