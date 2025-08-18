@@ -366,3 +366,14 @@ details.abstract > summary:hover {
   text-decoration: underline;
 }
 
+.about-hero {
+  display: grid;
+  grid-template-columns: 260px 1fr; /* or whatever width you prefer */
+  align-items: start; /* makes both items align at the top */
+  gap: 1.5rem; /* optional spacing between image and text */
+}
+
+.about-hero .bio p:first-of-type {
+  margin-top: 0; /* removes the extra gap above "I work as an Economist..." */
+}
+
