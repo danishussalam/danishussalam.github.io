@@ -27,7 +27,7 @@ Before joining the Central Bank, I completed a PhD in Economics at <a href="http
 
 <div class="cv-and-icons">
   <p>You can find my CV 
-    <a href="{{ '/assets/Danish_CV.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer" style="color:#5dc9e1;">here</a>
+    <a href="{{ '/assets/Danish_CV.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer" style="color:##0ea5e9;">here</a>
   </p>
 
   <p>
