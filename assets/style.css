@@ -424,4 +424,16 @@ details.abstract > summary:hover {
   border-radius: 4px; /* optional, keep image sharp */
 }
 
+.icon-row {
+  display: flex;
+  justify-content: center;
+  gap: 25px;     /* adds equal space between icons */
+  margin-top: 10px; /* adds space between CV line and icons */
+}
+
+.icon-row a {
+  color: black;
+  text-decoration: none;
+}
+
 
