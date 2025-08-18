@@ -445,3 +445,13 @@ details.abstract > summary:hover {
   color: #555;              /* dark gray on hover */
 }
 
+.cv-and-icons a {
+  text-decoration: none !important;  /* removes underline */
+  color: black;                      /* keep icons black */
+}
+
+.cv-and-icons a:hover {
+  text-decoration: none !important;  /* no underline on hover */
+  color: #555;                       /* optional subtle hover color */
+}
+
