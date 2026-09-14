@@ -120,6 +120,93 @@
     .wise-cta { transition: transform .2s ease; }
     .wise-cta:hover { transform: scale(1.05); }
     .wise-cta:active { transform: scale(.95); }
+
+    /* Loading spinner (restored; dropped in the Wise redesign) */
+    .spinner {
+      border: 3px solid rgba(0, 71, 65, 0.1);
+      border-top: 3px solid #004741;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    /* FAQ accordion: hide default disclosure marker */
+    details summary { list-style: none; cursor: pointer; }
+    details summary::-webkit-details-marker { display: none; }
+
+    /* Framework Details Modal (restored; opened by the framework tiles) */
+    .framework-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0);
+      transition: background-color 0.3s ease;
+      pointer-events: none;
+      z-index: 60;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .framework-overlay.active {
+      background-color: rgba(0, 0, 0, 0.5);
+      pointer-events: all;
+    }
+    .framework-panel {
+      position: relative;
+      background: white;
+      border-radius: 24px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      max-width: 520px;
+      width: 90%;
+      max-height: 80vh;
+      overflow-y: auto;
+      transform: scale(0.9);
+      opacity: 0;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      z-index: 70;
+    }
+    .framework-overlay.active .framework-panel {
+      transform: scale(1);
+      opacity: 1;
+    }
+    .framework-panel-header {
+      background: #f0ede4;
+      color: #004741;
+      padding: 32px;
+      border-radius: 24px 24px 0 0;
+      position: relative;
+      z-index: 10;
+    }
+    .framework-panel-content {
+      padding: 32px;
+    }
+    .close-btn {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      background: rgba(0, 71, 65, 0.08);
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      transition: all 0.2s;
+      color: #004741;
+    }
+    .close-btn:hover {
+      background: rgba(0, 71, 65, 0.16);
+    }
   </style>
 </head>
 <body class="bg-white text-gray-900">
