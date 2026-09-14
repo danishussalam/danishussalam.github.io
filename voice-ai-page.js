@@ -303,8 +303,8 @@ function startRecording() {
       state.secondAnswer = trimmedAnswer;
     }
 
-    micButton.style.background = '#f4fdd5';
-    micButton.style.color = '#2d3e2c';
+    micButton.style.background = '#f5f3ec';
+    micButton.style.color = '#004741';
 
     // Show submit button and thank you only after recording
     if (trimmedAnswer) {
@@ -330,8 +330,8 @@ function stopRecording() {
   }
   state.isRecording = false;
   recordingState.classList.add('hidden');
-  micButton.style.background = '#f4fdd5';
-  micButton.style.color = '#2d3e2c';
+  micButton.style.background = '#f5f3ec';
+  micButton.style.color = '#004741';
 }
 
 async function submitAnswer() {
@@ -551,8 +551,8 @@ function reset() {
   startButton.disabled = true;
   submitButton.style.display = 'none';
   micButton.disabled = true;
-  micButton.style.background = '#f4fdd5';
-  micButton.style.color = '#2d3e2c';
+  micButton.style.background = '#f5f3ec';
+  micButton.style.color = '#004741';
   stopSpeechButton.disabled = true;
   repeatButton.disabled = true;
 
