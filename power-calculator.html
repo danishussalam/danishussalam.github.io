@@ -307,10 +307,11 @@
     </div>
     <div id="chatMessages" class="flex-1 overflow-y-auto px-4 py-4 space-y-3 max-w-[900px] w-full mx-auto"></div>
     <form id="chatForm" class="border-t border-gray-300 p-3 max-w-[900px] w-full mx-auto">
+      <p id="chatLimitNote" class="text-[11px] text-gray-500 mb-2 leading-relaxed">To keep this tool free, the assistant is limited to 25 messages a day. <strong class="text-cyprus">Tip:</strong> describe your design, outcome, expected effect and constraints in one message to get a complete answer in fewer messages.</p>
       <label for="chatInput" class="sr-only">Your question</label>
       <textarea id="chatInput" rows="2" maxlength="2000" placeholder="Ask about effect sizes, ICCs, designs…" class="w-full resize-none border border-gray-300 rounded-xl px-3 py-2 text-[14px] focus:outline-none focus:ring-2 focus:ring-cyprus"></textarea>
       <div class="flex items-center justify-between mt-2">
-        <span id="chatCount" class="text-[11px] text-gray-500">0 / 2000</span>
+        <span class="text-[11px] text-gray-500"><span id="chatRemaining">25 of 25 messages left today</span> · <span id="chatCount">0 / 2000</span></span>
         <button id="chatSend" type="submit" class="bg-cyprus text-sand px-5 py-2 rounded-full font-semibold text-[13px] disabled:opacity-40">Send</button>
       </div>
     </form>
