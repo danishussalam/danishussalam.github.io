@@ -483,6 +483,13 @@
       state = { design: saved.design, inputs: saved.inputs || {} };
     }
     render();
+    window.addEventListener('hashchange', () => {
+      const next = parseHash(location.hash);
+      if (!next) return;
+      state = next.state;
+      if (next.adjusted) toast('Some values in the link were adjusted to valid ranges.');
+      render();
+    });
   }
 
   init();
