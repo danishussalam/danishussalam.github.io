@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Power Calculator – Danish Us-Salam</title>
+  <meta name="description" content="Interactive power and sample-size calculator for experimental and quasi-experimental studies, with an AI assistant for power calculations.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cyprus: { DEFAULT: '#004741', mid: '#2e6b65', dark: '#00302b' },
+            sand: { DEFAULT: '#f0ede4', light: '#f7f5ef', pale: '#faf9f5', dark: '#cbbf9f' },
+            gray: {
+              50: '#faf9f6', 100: '#f5f3ee', 200: '#f0ede4', 300: '#dcd6c8', 400: '#6b7c79',
+              500: '#6b7c79', 600: '#3f5b58', 700: '#2b4f4b', 800: '#12403c', 900: '#004741'
+            }
+          },
+          borderRadius: { lg: '16px', xl: '20px', '2xl': '30px', '3xl': '40px' },
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+        }
+      }
+    };
+  </script>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; margin: 0; -webkit-font-smoothing: antialiased; font-feature-settings: "calt" 1; color: #004741; }
+    html { scroll-behavior: smooth; }
+    .wise-cta { transition: transform .2s ease; }
+    .wise-cta:hover { transform: scale(1.05); }
+    .wise-cta:active { transform: scale(.95); }
+    input[type=range] { accent-color: #004741; }
+    .seg button { transition: background-color .15s ease, color .15s ease; }
+    .seg button[aria-pressed="true"] { background: #004741; color: #f0ede4; }
+    details summary { list-style: none; cursor: pointer; }
+    details summary::-webkit-details-marker { display: none; }
+    [hidden] { display: none !important; }
+    /* Chat panel: slides in from the right; full width below 1024px or when expanded */
+    #chatPanel { width: 100%; transition: transform .25s ease; }
+    #chatPanel[data-open="false"] { transform: translateX(105%); }
+    @media (min-width: 1024px) {
+      body[data-chat="open"] #chatPanel { width: 420px; }
+      body[data-chat="open"] main { margin-right: 420px; }
+    }
+    .typing span { display: inline-block; width: 6px; height: 6px; margin-right: 3px; border-radius: 50%; background: #2e6b65; animation: blink 1.2s infinite both; }
+    .typing span:nth-child(2) { animation-delay: .2s; }
+    .typing span:nth-child(3) { animation-delay: .4s; }
+    @keyframes blink { 0%, 80%, 100% { opacity: .2; } 40% { opacity: 1; } }
+  </style>
+</head>
+<body class="bg-white text-gray-900">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur border-b border-gray-200" style="height:64px;">
+    <div class="max-w-[1600px] mx-auto px-6 lg:px-10 h-full flex items-center justify-between">
+      <div class="flex items-center gap-10">
+        <span class="font-bold text-[16px] text-gray-900 tracking-tight">Danish Us-Salam</span>
+        <div class="hidden md:flex items-center gap-7 text-[13px] text-gray-500 font-medium">
+          <a href="index.html" class="hover:text-gray-900 transition-colors">Home</a>
+          <a href="publications.html" class="hover:text-gray-900 transition-colors">Publications</a>
+          <a href="wip.html" class="hover:text-gray-900 transition-colors">Work in Progress</a>
+          <a href="consultancy.html" class="hover:text-gray-900 transition-colors">Consultancy</a>
+          <a href="research-tools.html" class="text-gray-900 font-semibold">Research Tools</a>
+        </div>
+      </div>
+      <div class="md:hidden flex items-center gap-3 text-[13px] text-gray-600 font-medium">
+        <a href="index.html" class="hover:text-gray-900 transition-colors">Home</a>
+        <a href="publications.html" class="hover:text-gray-900 transition-colors">Pub</a>
+        <a href="wip.html" class="hover:text-gray-900 transition-colors">WIP</a>
+        <a href="consultancy.html" class="hover:text-gray-900 transition-colors">Cons</a>
+        <a href="research-tools.html" class="text-gray-900 font-semibold">Tools</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero -->
+    <section class="bg-cyprus pt-24 pb-12">
+      <div class="max-w-[1600px] mx-auto px-6 lg:px-10">
+        <a href="research-tools.html" class="inline-flex items-center gap-2 text-[12px] text-sand font-medium mb-6 hover:text-white transition-colors">
+          <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"/></svg>
+          Back to Research Tools
+        </a>
+        <h1 class="text-[40px] md:text-[56px] font-bold text-white leading-[1.03] tracking-[-0.09rem] mb-4">Power Calculator</h1>
+        <p class="text-[15px] text-white/65 max-w-[680px] leading-[1.75] mb-8">
+          Plan sample sizes, minimum detectable effects and power for sixteen experimental and quasi-experimental designs. Every number comes from published formulas; an AI assistant helps you choose assumptions and explains the results.
+        </p>
+        <div class="flex flex-wrap gap-3">
+          <a href="#calculator" class="bg-sand text-cyprus px-6 py-3 rounded-full font-semibold text-[14px] wise-cta">Use the calculator</a>
+          <button id="heroChatBtn" type="button" class="border border-white/40 text-white px-6 py-3 rounded-full font-semibold text-[14px] wise-cta hover:bg-white/10">Talk it through with AI</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Calculator -->
+    <section id="calculator" class="py-12 md:py-16 bg-white scroll-mt-16">
+      <div class="max-w-[1600px] mx-auto px-6 lg:px-10 grid gap-6 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] items-start">
+
+        <!-- Inputs -->
+        <div class="bg-sand-pale border border-gray-300 rounded-2xl p-5 md:p-8 min-w-0">
+          <div class="space-y-5">
+            <div>
+              <label for="designSelect" class="block text-[13px] font-semibold text-gray-900 mb-1.5">Study design</label>
+              <select id="designSelect" class="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-[14px] bg-white focus:outline-none focus:ring-2 focus:ring-cyprus"></select>
+              <p id="designDescription" class="text-[12px] text-gray-500 mt-2 leading-relaxed"></p>
+              <span id="approxBadge" hidden class="inline-block mt-2 text-[11px] font-semibold bg-sand border border-sand-dark text-cyprus px-2.5 py-0.5 rounded-full">Approximation</span>
+            </div>
+            <div>
+              <label for="presetSelect" class="block text-[13px] font-semibold text-gray-900 mb-1.5">Start from a preset</label>
+              <select id="presetSelect" class="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-[14px] bg-white focus:outline-none focus:ring-2 focus:ring-cyprus">
+                <option value="">Choose a preset…</option>
+              </select>
+            </div>
+            <div id="solveBox">
+              <p class="text-[13px] font-semibold text-gray-900 mb-1.5">Solve for</p>
+              <div id="solveControl" class="seg grid grid-cols-3 gap-1 bg-white border border-gray-300 rounded-full p-1 text-[12px] md:text-[13px] font-semibold" role="group" aria-label="Solve for"></div>
+            </div>
+            <div id="outcomeBox" hidden>
+              <p class="text-[13px] font-semibold text-gray-900 mb-1.5">Outcome type</p>
+              <div id="outcomeControl" class="seg grid grid-cols-2 gap-1 bg-white border border-gray-300 rounded-full p-1 text-[13px] font-semibold" role="group" aria-label="Outcome type"></div>
+            </div>
+            <div id="inputs" class="space-y-5"></div>
+
+            <details id="converter" class="bg-white border border-gray-300 rounded-xl">
+              <summary class="px-4 py-3 text-[13px] font-semibold flex justify-between items-center">Effect-size converter <span aria-hidden="true">+</span></summary>
+              <div class="px-4 pb-4 space-y-3 text-[13px]">
+                <label class="block">Convert from
+                  <select id="convKind" class="mt-1 w-full border border-gray-300 rounded-lg px-3 py-2 bg-white">
+                    <option value="means">Means and standard deviation</option>
+                    <option value="props">Two proportions (Cohen's h)</option>
+                    <option value="or">Odds ratio</option>
+                  </select>
+                </label>
+                <div data-conv="means" class="grid grid-cols-3 gap-2">
+                  <label>Treatment mean<input id="convM1" type="number" step="any" class="mt-1 w-full border border-gray-300 rounded-lg px-2 py-1.5"></label>
+                  <label>Control mean<input id="convM0" type="number" step="any" class="mt-1 w-full border border-gray-300 rounded-lg px-2 py-1.5"></label>
+                  <label>SD<input id="convSD" type="number" step="any" class="mt-1 w-full border border-gray-300 rounded-lg px-2 py-1.5"></label>
+                </div>
+                <div data-conv="props" class="grid grid-cols-2 gap-2" hidden>
+                  <label>Treatment proportion<input id="convP1" type="number" step="any" min="0" max="1" class="mt-1 w-full border border-gray-300 rounded-lg px-2 py-1.5"></label>
+                  <label>Control proportion<input id="convP0" type="number" step="any" min="0" max="1" class="mt-1 w-full border border-gray-300 rounded-lg px-2 py-1.5"></label>
+                </div>
+                <div data-conv="or" hidden>
+                  <label>Odds ratio<input id="convOR" type="number" step="any" min="0" class="mt-1 w-full border border-gray-300 rounded-lg px-2 py-1.5"></label>
+                </div>
+                <div class="flex items-center justify-between gap-3">
+                  <p id="convResult" class="text-gray-600">Enter values to convert.</p>
+                  <button id="convUse" type="button" disabled class="bg-cyprus text-sand px-4 py-2 rounded-full font-semibold disabled:opacity-40">Use this value</button>
+                </div>
+              </div>
+            </details>
+
+            <button id="resetBtn" type="button" class="text-[13px] font-semibold text-cyprus underline underline-offset-4">Reset calculator</button>
+          </div>
+        </div>
+
+        <!-- Results -->
+        <div class="lg:sticky lg:top-24 space-y-5 min-w-0">
+          <div id="resultCard" aria-live="polite" class="bg-cyprus text-white rounded-2xl p-6 md:p-8">
+            <p id="resultLabel" class="text-[11px] uppercase tracking-widest text-sand/70"></p>
+            <p id="resultHeadline" class="text-[40px] md:text-[56px] font-black leading-none mt-2 break-words"></p>
+            <p id="resultSub" class="text-[14px] text-white/70 mt-3 leading-relaxed"></p>
+            <dl id="resultDetails" class="grid grid-cols-2 gap-x-4 gap-y-2 mt-5 text-[13px]"></dl>
+            <button id="explainBtn" type="button" class="mt-6 bg-sand text-cyprus px-5 py-2.5 rounded-full font-semibold text-[13px] wise-cta">Explain this result</button>
+          </div>
+          <div id="warnings" class="space-y-2"></div>
+          <div id="curveBox" class="bg-white border border-gray-300 rounded-2xl p-5">
+            <h3 class="text-[14px] font-semibold mb-3">Power curve</h3>
+            <div class="relative h-[240px] md:h-[280px]"><canvas id="curveChart" aria-label="Power by sample size"></canvas></div>
+          </div>
+          <div id="designChartBox" class="bg-white border border-gray-300 rounded-2xl p-5">
+            <h3 id="designChartTitle" class="text-[14px] font-semibold mb-3"></h3>
+            <div class="relative h-[240px] md:h-[280px]"><canvas id="designChart"></canvas></div>
+          </div>
+          <details id="sensitivityBox" class="bg-white border border-gray-300 rounded-2xl">
+            <summary class="px-5 py-4 text-[14px] font-semibold flex justify-between items-center">Sensitivity table <span aria-hidden="true">+</span></summary>
+            <div class="px-5 pb-5">
+              <p id="sensitivityCaption" class="text-[12px] text-gray-500 mb-3 leading-relaxed"></p>
+              <div class="overflow-x-auto"><table id="sensitivityTable" class="w-full text-[13px] border-collapse"></table></div>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Exports -->
+    <section class="pb-12 bg-white">
+      <div class="max-w-[1600px] mx-auto px-6 lg:px-10">
+        <div class="bg-sand rounded-2xl p-6 md:p-8">
+          <h2 class="text-[22px] font-bold mb-2">Take your design with you</h2>
+          <p class="text-[13px] text-gray-600 mb-5">Copy text for a pre-analysis plan, code to reproduce the calculation, or a link that reopens these exact settings.</p>
+          <div class="flex flex-wrap gap-3">
+            <button type="button" data-export="prereg" class="bg-cyprus text-sand px-5 py-2.5 rounded-full font-semibold text-[13px] wise-cta">Copy pre-registration paragraph</button>
+            <button type="button" data-export="stata" class="bg-white text-cyprus border border-gray-300 px-5 py-2.5 rounded-full font-semibold text-[13px] wise-cta">Copy Stata code</button>
+            <button type="button" data-export="r" class="bg-white text-cyprus border border-gray-300 px-5 py-2.5 rounded-full font-semibold text-[13px] wise-cta">Copy R code</button>
+            <button type="button" data-export="link" class="bg-white text-cyprus border border-gray-300 px-5 py-2.5 rounded-full font-semibold text-[13px] wise-cta">Copy share link</button>
+          </div>
+          <pre id="exportPreview" hidden class="mt-5 bg-white border border-gray-300 rounded-xl p-4 text-[12px] leading-relaxed whitespace-pre-wrap break-words overflow-x-auto"></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- Methods -->
+    <section class="py-12 md:py-16 bg-sand-pale border-t border-gray-300">
+      <div class="max-w-[1600px] mx-auto px-6 lg:px-10">
+        <p class="text-[11px] font-semibold uppercase tracking-widest text-gray-500 mb-2">Methods</p>
+        <h2 class="text-[32px] md:text-[40px] font-bold mb-8 leading-tight">How each design is calculated</h2>
+        <div id="methodsList" class="grid gap-4 md:grid-cols-2"></div>
+        <h3 class="text-[18px] font-bold mt-12 mb-4">References</h3>
+        <ul class="text-[13px] text-gray-600 space-y-2 leading-relaxed max-w-[900px]">
+          <li>Abadie, A., Diamond, A., &amp; Hainmueller, J. (2010). Synthetic control methods for comparative case studies. <em>Journal of the American Statistical Association</em>.</li>
+          <li>Angrist, J. D., Imbens, G. W., &amp; Rubin, D. B. (1996). Identification of causal effects using instrumental variables. <em>Journal of the American Statistical Association</em>.</li>
+          <li>Austin, P. C. (2011). An introduction to propensity score methods for reducing the effects of confounding in observational studies. <em>Multivariate Behavioral Research</em>.</li>
+          <li>Bloom, H. S. (2006). The core analytics of randomized experiments for social research. MDRC.</li>
+          <li>Burlig, F., Preonas, L., &amp; Woerman, M. (2020). Panel data and experimental design. <em>Journal of Development Economics</em>.</li>
+          <li>Chinn, S. (2000). A simple method for converting an odds ratio to effect size for use in meta-analysis. <em>Statistics in Medicine</em>.</li>
+          <li>Chow, S.-C., Shao, J., &amp; Wang, H. (2008). <em>Sample Size Calculations in Clinical Research</em>. Chapman &amp; Hall/CRC.</li>
+          <li>Cohen, J. (1988). <em>Statistical Power Analysis for the Behavioral Sciences</em>. Lawrence Erlbaum.</li>
+          <li>Dong, N., &amp; Maynard, R. (2013). PowerUp!: A tool for calculating minimum detectable effect sizes and minimum required sample sizes. <em>Journal of Research on Educational Effectiveness</em>.</li>
+          <li>Duflo, E., Glennerster, R., &amp; Kremer, M. (2007). Using randomization in development economics research: A toolkit. <em>Handbook of Development Economics</em>.</li>
+          <li>Eldridge, S. M., Ashby, D., &amp; Kerry, S. (2006). Sample size for cluster randomized trials: Effect of coefficient of variation of cluster size and analysis method. <em>International Journal of Epidemiology</em>.</li>
+          <li>Holm, S. (1979). A simple sequentially rejective multiple test procedure. <em>Scandinavian Journal of Statistics</em>.</li>
+          <li>Hussey, M. A., &amp; Hughes, J. P. (2007). Design and analysis of stepped wedge cluster randomized trials. <em>Contemporary Clinical Trials</em>.</li>
+          <li>Lee, D. S., McCrary, J., Moreira, M. J., &amp; Porter, J. (2022). Valid t-ratio inference for IV. <em>American Economic Review</em>.</li>
+          <li>McKenzie, D. (2012). Beyond baseline and follow-up: The case for more T in experiments. <em>Journal of Development Economics</em>.</li>
+          <li>Muralidharan, K., Romero, M., &amp; Wüthrich, K. (2023). Factorial designs, model selection, and (incorrect) inference in randomized experiments. <em>Review of Economics and Statistics</em>.</li>
+          <li>Schochet, P. Z. (2008). <em>Statistical Power for Regression Discontinuity Designs in Education Evaluations</em>. Institute of Education Sciences.</li>
+          <li>Schuirmann, D. J. (1987). A comparison of the two one-sided tests procedure and the power approach for assessing the equivalence of average bioavailability. <em>Journal of Pharmacokinetics and Biopharmaceutics</em>.</li>
+          <li>Senn, S. (2002). <em>Cross-over Trials in Clinical Research</em>. Wiley.</li>
+          <li>Staiger, D., &amp; Stock, J. H. (1997). Instrumental variables regression with weak instruments. <em>Econometrica</em>.</li>
+          <li>Stock, J. H., &amp; Yogo, M. (2005). Testing for weak instruments in linear IV regression. In <em>Identification and Inference for Econometric Models</em>. Cambridge University Press.</li>
+          <li>Stuart, E. A. (2010). Matching methods for causal inference: A review and a look forward. <em>Statistical Science</em>.</li>
+          <li>Wagner, A. K., Soumerai, S. B., Zhang, F., &amp; Ross-Degnan, D. (2002). Segmented regression analysis of interrupted time series studies in medication use research. <em>Journal of Clinical Pharmacy and Therapeutics</em>.</li>
+          <li>Wooldridge, J. M. (2010). <em>Econometric Analysis of Cross Section and Panel Data</em>. MIT Press.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-12 md:py-16 bg-white">
+      <div class="max-w-[900px] mx-auto px-6">
+        <p class="text-[11px] font-semibold uppercase tracking-widest text-gray-500 mb-2 text-center">FAQ</p>
+        <h2 class="text-[32px] md:text-[40px] font-bold mb-8 text-center leading-tight">Common questions</h2>
+        <div class="space-y-3">
+          <details class="border border-gray-300 rounded-xl">
+            <summary class="px-5 py-4 font-semibold text-[15px] flex justify-between">How accurate are the numbers? <span aria-hidden="true">+</span></summary>
+            <p class="px-5 pb-5 text-[14px] text-gray-600 leading-relaxed">They use the published formulas listed under Methods, with t-distribution critical values for small samples, and were checked against G*Power, Stata's power commands, independent recalculations and simulations. Designs marked "Approximation" rely on simplifying assumptions that are explained on the page; treat them as planning guides.</p>
+          </details>
+          <details class="border border-gray-300 rounded-xl">
+            <summary class="px-5 py-4 font-semibold text-[15px] flex justify-between">Does the AI calculate my sample size? <span aria-hidden="true">+</span></summary>
+            <p class="px-5 pb-5 text-[14px] text-gray-600 leading-relaxed">No. The assistant explains concepts, helps you choose assumptions and suggests calculator settings. Every number comes from the calculator, and settings only change when you press "Apply to calculator".</p>
+          </details>
+          <details class="border border-gray-300 rounded-xl">
+            <summary class="px-5 py-4 font-semibold text-[15px] flex justify-between">What happens to my data? <span aria-hidden="true">+</span></summary>
+            <p class="px-5 pb-5 text-[14px] text-gray-600 leading-relaxed">Calculations run in your browser. Your conversation and settings are saved only in your own browser so you can return to them. Chat messages are sent to the AI provider to generate replies and are not stored on this site's server. Avoid sharing confidential information in the chat.</p>
+          </details>
+          <details class="border border-gray-300 rounded-xl">
+            <summary class="px-5 py-4 font-semibold text-[15px] flex justify-between">How do I cite this tool? <span aria-hidden="true">+</span></summary>
+            <p class="px-5 pb-5 text-[14px] text-gray-600 leading-relaxed">Cite the methodological source shown for your design (it is included in the pre-registration paragraph), and optionally: Us-Salam, D. (2026). Power Calculator. https://danishussalam.github.io/power-calculator.html</p>
+          </details>
+          <details class="border border-gray-300 rounded-xl">
+            <summary class="px-5 py-4 font-semibold text-[15px] flex justify-between">What are the main limitations? <span aria-hidden="true">+</span></summary>
+            <p class="px-5 pb-5 text-[14px] text-gray-600 leading-relaxed">Power depends on assumptions you supply, especially the effect size, intra-cluster correlation and autocorrelation, so use pilot or baseline data where possible and check the sensitivity table. Complex designs (for example staggered adoption with heterogeneous effects) may need simulation-based power analysis.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-cyprus border-t border-white/10 py-8">
+    <div class="max-w-[1600px] mx-auto px-6 lg:px-10 flex flex-wrap justify-between items-center gap-4">
+      <div>
+        <p class="text-[13px] font-semibold text-white mb-0.5">Danish Us-Salam</p>
+        <p class="text-[11px] text-white/35">Economist · Central Bank of Ireland · Dublin, Ireland</p>
+      </div>
+      <div class="flex items-center gap-5 text-[12px] text-white/35">
+        <a href="mailto:ussalamd@tcd.ie" class="hover:text-white/65 transition-colors">ussalamd@tcd.ie</a>
+        <a href="https://www.linkedin.com/in/danishussalam/" target="_blank" rel="noopener" class="hover:text-white/65 transition-colors">LinkedIn</a>
+        <a href="https://twitter.com/DanishUsSalam2" target="_blank" rel="noopener" class="hover:text-white/65 transition-colors">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AI chat -->
+  <button id="chatFab" type="button" class="fixed bottom-5 right-5 z-40 bg-cyprus text-sand px-5 py-3 rounded-full font-semibold text-[14px] shadow-lg wise-cta">Ask AI</button>
+  <aside id="chatPanel" data-open="false" aria-hidden="true" aria-label="AI power calculation assistant"
+    class="fixed top-16 right-0 bottom-0 z-50 bg-white border-l border-gray-300 shadow-2xl flex flex-col">
+    <div class="flex items-center justify-between gap-2 px-4 py-3 border-b border-gray-300 bg-sand-pale">
+      <div>
+        <p class="text-[14px] font-bold">Power calculation assistant</p>
+        <p class="text-[11px] text-gray-500">Answers power questions only. Numbers come from the calculator.</p>
+      </div>
+      <div class="flex items-center gap-1">
+        <button id="chatNew" type="button" class="text-[12px] font-semibold px-2.5 py-1.5 rounded-full hover:bg-sand">New</button>
+        <button id="chatExpand" type="button" class="hidden lg:inline text-[12px] font-semibold px-2.5 py-1.5 rounded-full hover:bg-sand">Expand</button>
+        <button id="chatClose" type="button" aria-label="Close chat" class="w-8 h-8 rounded-full hover:bg-sand flex items-center justify-center">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="chatMessages" class="flex-1 overflow-y-auto px-4 py-4 space-y-3 max-w-[900px] w-full mx-auto"></div>
+    <form id="chatForm" class="border-t border-gray-300 p-3 max-w-[900px] w-full mx-auto">
+      <label for="chatInput" class="sr-only">Your question</label>
+      <textarea id="chatInput" rows="2" maxlength="2000" placeholder="Ask about effect sizes, ICCs, designs…" class="w-full resize-none border border-gray-300 rounded-xl px-3 py-2 text-[14px] focus:outline-none focus:ring-2 focus:ring-cyprus"></textarea>
+      <div class="flex items-center justify-between mt-2">
+        <span id="chatCount" class="text-[11px] text-gray-500">0 / 2000</span>
+        <button id="chatSend" type="submit" class="bg-cyprus text-sand px-5 py-2 rounded-full font-semibold text-[13px] disabled:opacity-40">Send</button>
+      </div>
+    </form>
+  </aside>
+
+  <div id="toast" role="status" hidden class="fixed bottom-20 left-1/2 -translate-x-1/2 z-50 bg-cyprus text-sand px-5 py-3 rounded-full text-[13px] shadow-lg max-w-[90vw] text-center"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.js"></script>
+  <script src="power-engine-core.js"></script>
+  <script src="power-engine-rct.js"></script>
+  <script src="power-engine-panel.js"></script>
+  <script src="power-engine-cluster.js"></script>
+  <script src="power-engine-special.js"></script>
+  <script src="power-calculator-export.js"></script>
+  <script src="power-calculator-refs.js"></script>
+  <script src="power-calculator-page.js"></script>
+  <script src="power-calculator-chat.js"></script>
+</body>
+</html>
