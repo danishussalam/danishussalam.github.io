@@ -216,7 +216,7 @@ function renderQuestionBuilder(data) {
       <p class="text-[13px] text-gray-900 mb-3">${variant.question_text}</p>
       ${anchorsHTML}
       ${refHTML}
-      <button class="mt-3 text-[12px] text-du-blue font-semibold hover:text-[#00302b]" onclick="copyText('${escapeQuotes(variant.question_text)}')">
+      <button class="mt-3 text-[12px] text-du-blue font-semibold hover:text-sand-light" onclick="copyText('${escapeQuotes(variant.question_text)}')">
         Copy Question
       </button>
     `;

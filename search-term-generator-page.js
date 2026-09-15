@@ -115,12 +115,12 @@ function copyResult(elementId) {
       const button = event.target;
       const originalText = button.textContent;
       button.textContent = "✓ Copied!";
-      button.classList.add("bg-green-500", "text-white");
+      button.classList.add("bg-green-500", "text-malt");
       button.classList.remove("bg-gray-100", "hover:bg-gray-200", "text-gray-900");
 
       setTimeout(() => {
         button.textContent = originalText;
-        button.classList.remove("bg-green-500", "text-white");
+        button.classList.remove("bg-green-500", "text-malt");
         button.classList.add("bg-gray-100", "hover:bg-gray-200", "text-gray-900");
       }, 2000);
     },
