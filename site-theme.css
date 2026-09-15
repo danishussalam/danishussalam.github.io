@@ -29,7 +29,7 @@
 html { background: var(--bg); scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
 body.site {
   margin: 0; background: var(--bg); color: var(--text);
-  font-family: var(--font-sans); font-size: 16px; line-height: 25.6px;
+  font-family: var(--font-sans); font-size: 16px; line-height: 1.6;
   -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
 }
 body.site img { max-width: 100%; height: auto; }
@@ -141,7 +141,8 @@ a.card:hover { border-color: var(--turmeric); }
 .split { display: grid; grid-template-columns: minmax(0, 1fr) 240px; gap: 32px; align-items: start; }
 .portrait { width: 240px; aspect-ratio: 240 / 296; object-fit: cover; object-position: top; border-radius: 8px; border: 1px solid var(--border); }
 .logo { width: 56px; height: 56px; object-fit: contain; background: #F3EBDD; border-radius: 8px; padding: 8px; flex-shrink: 0; }
-.entry { display: flex; gap: 20px; }
+.entry { display: flex; flex-direction: row; gap: 20px; }
+body.site img.logo { height: 56px; }
 .entry + .entry { margin-top: 16px; }
 
 /* ---- Footer ------------------------------------------------------------------- */
@@ -181,6 +182,7 @@ a.card:hover { border-color: var(--turmeric); }
   .cards, .cards--3 { grid-template-columns: minmax(0, 1fr); }
   .split { grid-template-columns: minmax(0, 1fr); }
   .card { padding: 20px; }
+  .entry { flex-direction: column; }
 }
 
 /* ---- Tool pages (Tailwind) ------------------------------------------------------ */
