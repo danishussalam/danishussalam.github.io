@@ -6,8 +6,8 @@
   const PE = window.PowerEngine, EX = window.PowerExport, REFS = window.POWER_REFS || {};
   const $ = id => document.getElementById(id);
   const STORE_KEY = 'powercalc.v1';
-  const CYPRUS = '#FFBE0B', MID = '#A39A89', SAND_DARK = '#6B5A33', GRID = 'rgba(243, 235, 221, 0.10)';
-  const SERIES = ['#FFBE0B', '#F3EBDD', '#C98E00', '#A39A89'];
+  const CYPRUS = '#163300', MID = '#454745', SAND_DARK = '#868685', GRID = 'rgba(14, 15, 12, 0.08)';
+  const SERIES = ['#163300', '#9fe870', '#868685', '#ffc091'];
   const QUANTITY = { n: 'Required sample', mde: 'Minimum detectable effect', power: 'Power', guidance: 'Synthetic control inference' };
   const CARRY = ['solve', 'alpha', 'sides', 'power'];   // inputs kept when switching design
 
@@ -137,13 +137,13 @@
     let panel = null;
     if (s.ref && REFS[s.ref] && REFS[s.ref].length) {
       panel = refPanel(s.ref);
-      const b = el('button', 'underline underline-offset-2 text-sand', 'Typical values');
+      const b = el('button', 'underline underline-offset-2 text-du-blue', 'Typical values');
       b.type = 'button';
       b.addEventListener('click', () => panel.classList.toggle('hidden'));
       tools.appendChild(b);
     }
     if (s.converter) {
-      const b = el('button', 'underline underline-offset-2 text-sand', 'Converter');
+      const b = el('button', 'underline underline-offset-2 text-du-blue', 'Converter');
       b.type = 'button';
       b.addEventListener('click', () => { $('converter').open = true; $('converter').scrollIntoView({ behavior: 'smooth', block: 'center' }); });
       tools.appendChild(b);
@@ -152,7 +152,7 @@
     wrap.appendChild(head);
 
     if (s.kind === 'select') {
-      const sel = el('select', 'w-full border border-gray-300 rounded-lg px-3 py-2.5 text-[14px] bg-white focus:outline-none focus:ring-2 focus:ring-cyprus');
+      const sel = el('select', 'w-full border border-gray-300 rounded-lg px-3 py-2.5 text-[14px] bg-white focus:outline-none focus:ring-2 focus:ring-sand');
       sel.id = id;
       s.options.forEach(o => {
         const opt = el('option', '', o.label);
@@ -167,7 +167,7 @@
       const range = el('input', 'flex-1 min-w-0');
       range.type = 'range'; range.min = 0; range.max = 1000; range.step = 1;
       range.setAttribute('aria-label', s.label + ' slider');
-      const box = el('input', 'w-28 shrink-0 border border-gray-300 rounded-lg px-3 py-2 text-[14px] text-right focus:outline-none focus:ring-2 focus:ring-cyprus');
+      const box = el('input', 'w-28 shrink-0 border border-gray-300 rounded-lg px-3 py-2 text-[14px] text-right focus:outline-none focus:ring-2 focus:ring-sand');
       box.type = 'number'; box.id = id; box.min = s.min; box.max = s.max; box.step = s.kind === 'int' ? 1 : 'any'; box.value = val;
       const log = s.scale === 'log' && s.min > 0;
       const toSlider = x => Math.round(1000 * (log ? Math.log(x / s.min) / Math.log(s.max / s.min) : (x - s.min) / (s.max - s.min)));
@@ -300,7 +300,7 @@
       borderWidth: 2.5, pointRadius: 0, tension: 0.25
     }));
     (cfg.hlines || []).forEach(h => datasets.push({ label: h.label, data: h.points, borderColor: SAND_DARK, borderDash: [6, 4], borderWidth: 1.5, pointRadius: 0 }));
-    (cfg.markers || []).forEach(m => datasets.push({ label: m.label, data: [m.point], type: 'scatter', pointRadius: 6, pointBackgroundColor: CYPRUS, pointBorderColor: '#2A2312', pointBorderWidth: 2 }));
+    (cfg.markers || []).forEach(m => datasets.push({ label: m.label, data: [m.point], type: 'scatter', pointRadius: 6, pointBackgroundColor: CYPRUS, pointBorderColor: '#ffffff', pointBorderWidth: 2 }));
     const options = {
       responsive: true, maintainAspectRatio: false, animation: false, parsing: false,
       scales: {

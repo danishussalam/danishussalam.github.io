@@ -21,8 +21,8 @@
 
     /* Loading spinner (restored; dropped in the Wise redesign) */
     .spinner {
-      border: 3px solid rgba(255, 190, 11, 0.15);
-      border-top: 3px solid #FFBE0B;
+      border: 3px solid rgba(22, 51, 0, 0.08);
+      border-top: 3px solid #163300;
       border-radius: 50%;
       width: 40px;
       height: 40px;
@@ -58,7 +58,7 @@
     }
     .framework-panel {
       position: relative;
-      background: #332A18;
+      background: #ffffff;
       border-radius: 16px;
       box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
       max-width: 520px;
@@ -75,8 +75,8 @@
       opacity: 1;
     }
     .framework-panel-header {
-      background: #3D3320;
-      color: #F3EBDD;
+      background: #163300;
+      color: #9fe870;
       padding: 32px;
       border-radius: 16px 16px 0 0;
       position: relative;
@@ -89,7 +89,7 @@
       position: absolute;
       top: 16px;
       right: 16px;
-      background: rgba(243, 235, 221, 0.08);
+      background: rgba(255, 255, 255, 0.12);
       border: none;
       cursor: pointer;
       padding: 0;
@@ -100,15 +100,15 @@
       height: 40px;
       border-radius: 50%;
       transition: all 0.2s;
-      color: #F3EBDD;
+      color: #ffffff;
     }
     .close-btn:hover {
-      background: rgba(243, 235, 221, 0.16);
+      background: rgba(255, 255, 255, 0.22);
     }
   </style>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,400&family=Fraunces:opsz,wght@9..144,300..900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="site-theme.css">
 </head>
 <body class="site" data-layout="tool">
@@ -274,7 +274,7 @@
 
 
         <!-- ROSE -->
-        <div class="bg-blue-300 rounded-2xl p-6 text-gray-900 hover:shadow-2xl transition-all transform hover:scale-105 cursor-pointer group relative" onclick="openFrameworkPanel('ROSE', '#3D3320', 'ROLE, OBJECTIVE, STYLE, EXEMPLAR', 'Creative writing, storytelling, character development.', 'Tasks needing a clear persona and style example.', 'Use ROSE when you need the AI to adopt a specific role or character, write in a particular style, and provide an exemplar (example) of the desired output. Great for creative content, character development, and style-specific writing.')">
+        <div class="bg-blue-300 rounded-2xl p-6 text-gray-900 hover:shadow-2xl transition-all transform hover:scale-105 cursor-pointer group relative" onclick="openFrameworkPanel('ROSE', '#163300', 'ROLE, OBJECTIVE, STYLE, EXEMPLAR', 'Creative writing, storytelling, character development.', 'Tasks needing a clear persona and style example.', 'Use ROSE when you need the AI to adopt a specific role or character, write in a particular style, and provide an exemplar (example) of the desired output. Great for creative content, character development, and style-specific writing.')">
           <div class="flex items-start gap-3 mb-5">
             <span aria-hidden="true" class="text-[32px] font-black opacity-30 leading-none flex-shrink-0">02</span>
             <h4 class="text-[24px] font-bold leading-tight">ROSE</h4>
@@ -289,7 +289,7 @@
         </div>
 
         <!-- APE -->
-        <div class="bg-green-300 rounded-2xl p-6 text-gray-900 hover:shadow-2xl transition-all transform hover:scale-105 cursor-pointer group relative" onclick="openFrameworkPanel('APE', '#3D3320', 'ACTION, PURPOSE, EXPECTATION', 'Goal-oriented tasks with clear deliverables.', 'Action + purpose + success criteria defined upfront.', 'APE emphasizes actionable outcomes. Specify what action you want, why it matters (purpose), and what success looks like. Ideal for project work, process optimization, and deliverable-focused tasks.')">
+        <div class="bg-green-300 rounded-2xl p-6 text-gray-900 hover:shadow-2xl transition-all transform hover:scale-105 cursor-pointer group relative" onclick="openFrameworkPanel('APE', '#163300', 'ACTION, PURPOSE, EXPECTATION', 'Goal-oriented tasks with clear deliverables.', 'Action + purpose + success criteria defined upfront.', 'APE emphasizes actionable outcomes. Specify what action you want, why it matters (purpose), and what success looks like. Ideal for project work, process optimization, and deliverable-focused tasks.')">
           <div class="flex items-start gap-3 mb-5">
             <span aria-hidden="true" class="text-[32px] font-black opacity-30 leading-none flex-shrink-0">03</span>
             <h4 class="text-[24px] font-bold leading-tight">APE</h4>
@@ -304,7 +304,7 @@
         </div>
 
         <!-- RACE -->
-        <div class="bg-purple-300 rounded-2xl p-6 text-gray-900 hover:shadow-2xl transition-all transform hover:scale-105 cursor-pointer group relative" onclick="openFrameworkPanel('RACE', '#3D3320', 'ROLE, ACTION, CONTEXT, EXPECTATION', 'Real-world scenarios and constrained problems.', 'Grounded in realistic context and constraints.', 'RACE combines role-playing with contextual constraints. Define a role, the action to take, real-world constraints (context), and expected outcomes. Perfect for problem-solving in constrained environments.')">
+        <div class="bg-purple-300 rounded-2xl p-6 text-gray-900 hover:shadow-2xl transition-all transform hover:scale-105 cursor-pointer group relative" onclick="openFrameworkPanel('RACE', '#163300', 'ROLE, ACTION, CONTEXT, EXPECTATION', 'Real-world scenarios and constrained problems.', 'Grounded in realistic context and constraints.', 'RACE combines role-playing with contextual constraints. Define a role, the action to take, real-world constraints (context), and expected outcomes. Perfect for problem-solving in constrained environments.')">
           <div class="flex items-start gap-3 mb-5">
             <span aria-hidden="true" class="text-[32px] font-black opacity-30 leading-none flex-shrink-0">04</span>
             <h4 class="text-[24px] font-bold leading-tight">RACE</h4>
@@ -319,7 +319,7 @@
         </div>
 
         <!-- RISE -->
-        <div class="bg-yellow-300 rounded-2xl p-6 text-gray-900 hover:shadow-2xl transition-all transform hover:scale-105 cursor-pointer group relative" onclick="openFrameworkPanel('RISE', '#3D3320', 'ROLE, INPUT, STEPS, EXPECTATION', 'Step-by-step procedures and tutorials.', 'Structured multi-step, process-oriented tasks.', 'RISE breaks down complex processes into steps. Assign a role, provide input, list sequential steps, and define expectations. Excellent for tutorials, workflows, and procedures that require structured guidance.')">
+        <div class="bg-yellow-300 rounded-2xl p-6 text-gray-900 hover:shadow-2xl transition-all transform hover:scale-105 cursor-pointer group relative" onclick="openFrameworkPanel('RISE', '#163300', 'ROLE, INPUT, STEPS, EXPECTATION', 'Step-by-step procedures and tutorials.', 'Structured multi-step, process-oriented tasks.', 'RISE breaks down complex processes into steps. Assign a role, provide input, list sequential steps, and define expectations. Excellent for tutorials, workflows, and procedures that require structured guidance.')">
           <div class="flex items-start gap-3 mb-5">
             <span aria-hidden="true" class="text-[32px] font-black opacity-30 leading-none flex-shrink-0">05</span>
             <h4 class="text-[24px] font-bold leading-tight">RISE</h4>
@@ -334,7 +334,7 @@
         </div>
 
         <!-- RTF -->
-        <div class="bg-pink-300 rounded-2xl p-6 text-gray-900 hover:shadow-2xl transition-all transform hover:scale-105 cursor-pointer group relative" onclick="openFrameworkPanel('RTF', '#3D3320', 'ROLE, TASK, FORMAT', 'Quick, concise requests and time-sensitive work.', 'Minimal overhead; output format is critical.', 'RTF is the minimalist framework. You need a role, clear task, and desired output format. Use when you want quick results and format matters most (e.g., JSON, CSV, bullet points).')">
+        <div class="bg-pink-300 rounded-2xl p-6 text-gray-900 hover:shadow-2xl transition-all transform hover:scale-105 cursor-pointer group relative" onclick="openFrameworkPanel('RTF', '#163300', 'ROLE, TASK, FORMAT', 'Quick, concise requests and time-sensitive work.', 'Minimal overhead; output format is critical.', 'RTF is the minimalist framework. You need a role, clear task, and desired output format. Use when you want quick results and format matters most (e.g., JSON, CSV, bullet points).')">
           <div class="flex items-start gap-3 mb-5">
             <span aria-hidden="true" class="text-[32px] font-black opacity-30 leading-none flex-shrink-0">06</span>
             <h4 class="text-[24px] font-bold leading-tight">RTF</h4>
@@ -349,7 +349,7 @@
         </div>
 
         <!-- CO-STAR -->
-        <div class="bg-rose-300 rounded-2xl p-6 text-gray-900 hover:shadow-2xl transition-all transform hover:scale-105 cursor-pointer group relative" onclick="openFrameworkPanel('CO-STAR', '#3D3320', 'CONTEXT, OBJECTIVE, STYLE, TONE, AUDIENCE, RESPONSE', 'Communication, presentations, and audience-specific content.', 'Tone, audience, and communication matter.', 'CO-STAR is comprehensive and nuanced. Provide context, state objectives, define style and tone, identify your audience, and specify response format. Perfect for communication-heavy tasks like emails, presentations, and reports.')">
+        <div class="bg-rose-300 rounded-2xl p-6 text-gray-900 hover:shadow-2xl transition-all transform hover:scale-105 cursor-pointer group relative" onclick="openFrameworkPanel('CO-STAR', '#163300', 'CONTEXT, OBJECTIVE, STYLE, TONE, AUDIENCE, RESPONSE', 'Communication, presentations, and audience-specific content.', 'Tone, audience, and communication matter.', 'CO-STAR is comprehensive and nuanced. Provide context, state objectives, define style and tone, identify your audience, and specify response format. Perfect for communication-heavy tasks like emails, presentations, and reports.')">
           <div class="flex items-start gap-3 mb-5">
             <span aria-hidden="true" class="text-[32px] font-black opacity-30 leading-none flex-shrink-0">07</span>
             <h4 class="text-[24px] font-bold leading-tight">CO-STAR</h4>
@@ -364,7 +364,7 @@
         </div>
 
         <!-- CoT -->
-        <div class="bg-indigo-300 rounded-2xl p-6 text-gray-900 hover:shadow-2xl transition-all transform hover:scale-105 cursor-pointer group relative" onclick="openFrameworkPanel('CHAIN OF THOUGHT', '#3D3320', 'CHAIN OF THOUGHT', 'Complex reasoning, analysis, math, and logic problems.', 'Transparent step-by-step thinking.', 'CoT asks the AI to show its working. Request step-by-step reasoning before final answers. Ideal for complex analysis, debugging, math problems, and decisions where you want to understand the logic, not just the result.')">
+        <div class="bg-indigo-300 rounded-2xl p-6 text-gray-900 hover:shadow-2xl transition-all transform hover:scale-105 cursor-pointer group relative" onclick="openFrameworkPanel('CHAIN OF THOUGHT', '#163300', 'CHAIN OF THOUGHT', 'Complex reasoning, analysis, math, and logic problems.', 'Transparent step-by-step thinking.', 'CoT asks the AI to show its working. Request step-by-step reasoning before final answers. Ideal for complex analysis, debugging, math problems, and decisions where you want to understand the logic, not just the result.')">
           <div class="flex items-start gap-3 mb-5">
             <span aria-hidden="true" class="text-[32px] font-black opacity-30 leading-none flex-shrink-0">08</span>
             <h4 class="text-[24px] font-bold leading-tight">COT</h4>
@@ -379,7 +379,7 @@
         </div>
 
         <!-- CRISPE -->
-        <div class="bg-cyan-300 rounded-2xl p-6 text-gray-900 hover:shadow-2xl transition-all transform hover:scale-105 cursor-pointer group relative" onclick="openFrameworkPanel('CRISPE', '#3D3320', 'CAPACITY, ROLE, INSIGHT, STATEMENT, PERSONALITY, EXPERIMENT', 'Brainstorming, ideation, and creative exploration.', 'Unlocking creative and novel ideas.', 'CRISPE is designed for creativity and ideation. Describe model capacity, assign a role, provide insights, make statements, define personality, and encourage experimentation. Use for brainstorming, creative problem-solving, and novel idea generation.')">
+        <div class="bg-cyan-300 rounded-2xl p-6 text-gray-900 hover:shadow-2xl transition-all transform hover:scale-105 cursor-pointer group relative" onclick="openFrameworkPanel('CRISPE', '#163300', 'CAPACITY, ROLE, INSIGHT, STATEMENT, PERSONALITY, EXPERIMENT', 'Brainstorming, ideation, and creative exploration.', 'Unlocking creative and novel ideas.', 'CRISPE is designed for creativity and ideation. Describe model capacity, assign a role, provide insights, make statements, define personality, and encourage experimentation. Use for brainstorming, creative problem-solving, and novel idea generation.')">
           <div class="flex items-start gap-3 mb-5">
             <span aria-hidden="true" class="text-[32px] font-black opacity-30 leading-none flex-shrink-0">09</span>
             <h4 class="text-[24px] font-bold leading-tight">CRISPE</h4>
@@ -394,7 +394,7 @@
         </div>
 
         <!-- Few-Shot -->
-        <div class="bg-orange-300 rounded-2xl p-6 text-gray-900 hover:shadow-2xl transition-all transform hover:scale-105 cursor-pointer group relative" onclick="openFrameworkPanel('FEW-SHOT', '#3D3320', 'EXAMPLES-BASED PROMPTING', 'Pattern recognition, code generation, style imitation.', 'Teaching by concrete example, not description.', 'Few-Shot uses examples to teach patterns. Provide 2-3 high-quality examples of what you want, then ask for the same pattern applied to new data. Powerful for code generation, formatting, and style matching.')">
+        <div class="bg-orange-300 rounded-2xl p-6 text-gray-900 hover:shadow-2xl transition-all transform hover:scale-105 cursor-pointer group relative" onclick="openFrameworkPanel('FEW-SHOT', '#163300', 'EXAMPLES-BASED PROMPTING', 'Pattern recognition, code generation, style imitation.', 'Teaching by concrete example, not description.', 'Few-Shot uses examples to teach patterns. Provide 2-3 high-quality examples of what you want, then ask for the same pattern applied to new data. Powerful for code generation, formatting, and style matching.')">
           <div class="flex items-start gap-3 mb-5">
             <span aria-hidden="true" class="text-[32px] font-black opacity-30 leading-none flex-shrink-0">10</span>
             <h4 class="text-[24px] font-bold leading-tight">FEW-SHOT</h4>
@@ -409,7 +409,7 @@
         </div>
 
         <!-- ReAct -->
-        <div class="bg-teal-300 rounded-2xl p-6 text-gray-900 hover:shadow-2xl transition-all transform hover:scale-105 cursor-pointer group relative" onclick="openFrameworkPanel('REACT', '#3D3320', 'REASONING + ACTING', 'Multi-step problem-solving with iterative action cycles.', 'Reasoning + action cycles; agent-style tasks.', 'ReAct combines reasoning with action in feedback loops. Reasoning → Action → Observe → Reason again. Use for complex problem-solving where you need the AI to iteratively refine its approach based on results.')">
+        <div class="bg-teal-300 rounded-2xl p-6 text-gray-900 hover:shadow-2xl transition-all transform hover:scale-105 cursor-pointer group relative" onclick="openFrameworkPanel('REACT', '#163300', 'REASONING + ACTING', 'Multi-step problem-solving with iterative action cycles.', 'Reasoning + action cycles; agent-style tasks.', 'ReAct combines reasoning with action in feedback loops. Reasoning → Action → Observe → Reason again. Use for complex problem-solving where you need the AI to iteratively refine its approach based on results.')">
           <div class="flex items-start gap-3 mb-5">
             <span aria-hidden="true" class="text-[32px] font-black opacity-30 leading-none flex-shrink-0">11</span>
             <h4 class="text-[24px] font-bold leading-tight">REACT</h4>
@@ -424,7 +424,7 @@
         </div>
 
         <!-- Hybrid -->
-        <div class="bg-blue-300 rounded-2xl p-6 text-gray-900 hover:shadow-2xl transition-all transform hover:scale-105 cursor-pointer group relative" onclick="openFrameworkPanel('HYBRID', '#3D3320', 'MULTI-FRAMEWORK COMBINATION', 'Complex tasks needing multiple approaches.', 'High-stakes work; combines 2-4 frameworks intelligently.', 'Hybrid isn\'t a single framework—it\'s a strategic combination of 2-4 frameworks to tackle complex, high-stakes problems. Blend elements of ROSE, CO-STAR, and ReAct for sophisticated outcomes. Use when a single framework feels insufficient.')">
+        <div class="bg-blue-300 rounded-2xl p-6 text-gray-900 hover:shadow-2xl transition-all transform hover:scale-105 cursor-pointer group relative" onclick="openFrameworkPanel('HYBRID', '#163300', 'MULTI-FRAMEWORK COMBINATION', 'Complex tasks needing multiple approaches.', 'High-stakes work; combines 2-4 frameworks intelligently.', 'Hybrid isn\'t a single framework—it\'s a strategic combination of 2-4 frameworks to tackle complex, high-stakes problems. Blend elements of ROSE, CO-STAR, and ReAct for sophisticated outcomes. Use when a single framework feels insufficient.')">
           <div class="flex items-start gap-3 mb-5">
             <span aria-hidden="true" class="text-[32px] font-black opacity-30 leading-none flex-shrink-0">12</span>
             <h4 class="text-[24px] font-bold leading-tight">HYBRID</h4>
@@ -743,7 +743,7 @@
   <div class="framework-overlay" id="frameworkOverlay">
     <div class="framework-panel" id="frameworkPanel">
       <div class="framework-panel-header">
-        <h2 class="text-[24px] font-bold text-gray-900" id="panelTitle">Framework</h2>
+        <h2 class="text-[24px] font-black" id="panelTitle">Framework</h2>
         <button class="close-btn" id="closePanelBtn">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
@@ -771,7 +771,7 @@
       // Set header background color based on framework
       const headerStyle = `
         background: linear-gradient(135deg, ${bgColor} 0%, ${adjustBrightness(bgColor, -20)} 100%);
-        color: #F3EBDD;
+        color: #9fe870;
       `;
 
       // Populate panel content
@@ -818,7 +818,7 @@
     function openAutoPanel() {
       openFrameworkPanel(
         'AUTO',
-        '#54482E',
+        '#0e0f0c',
         'ASSESS, DECIDE, REFINE',
         'Automatic Framework Selection – The AI reads your prompt, diagnoses the task type, and selects the best-fit framework from all 12 options. It then applies that framework and tells you which one was chosen and why.',
         'Perfect for users who do not know which framework fits their task.',

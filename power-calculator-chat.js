@@ -106,7 +106,7 @@
     if (m.role === 'card') return cardBubble(m);
     const mine = m.role === 'user';
     const wrap = el('div', mine ? 'flex justify-end' : 'flex justify-start');
-    const b = el('div', (mine ? 'bg-sand text-malt' : 'bg-cyprus text-gray-900') + ' rounded-2xl px-4 py-3 max-w-[88%] text-[14px] leading-relaxed space-y-2 break-words');
+    const b = el('div', (mine ? 'bg-sand text-malt' : 'bg-gray-100 text-gray-900') + ' rounded-2xl px-4 py-3 max-w-[88%] text-[14px] leading-relaxed space-y-2 break-words');
     b.innerHTML = formatText(m.content);
     if (!mine && m.suggestion) {
       const clean = PE.validateSuggestion(m.suggestion.design, m.suggestion.inputs);

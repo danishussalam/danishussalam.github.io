@@ -14,9 +14,9 @@
     .wise-cta { transition: transform .2s ease; }
     .wise-cta:hover { transform: scale(1.05); }
     .wise-cta:active { transform: scale(.95); }
-    input[type=range] { accent-color: #FFBE0B; }
+    input[type=range] { accent-color: #163300; }
     .seg button { transition: background-color .15s ease, color .15s ease; }
-    .seg button[aria-pressed="true"] { background: #FFBE0B; color: #2A2312; }
+    .seg button[aria-pressed="true"] { background: #9fe870; color: #163300; }
     details summary { list-style: none; cursor: pointer; }
     details summary::-webkit-details-marker { display: none; }
     [hidden] { display: none !important; }
@@ -28,14 +28,14 @@
       body.site[data-chat="open"] .site-frame { width: min(var(--frame), 100% - 452px); margin-left: max(16px, calc((100% - 420px - var(--frame)) / 2)); grid-template-columns: minmax(0, 1fr); }
       body.site[data-chat="open"] .site-nav { display: none; }   /* give the calculator the width while chatting */
     }
-    .typing span { display: inline-block; width: 6px; height: 6px; margin-right: 3px; border-radius: 50%; background: #FFBE0B; animation: blink 1.2s infinite both; }
+    .typing span { display: inline-block; width: 6px; height: 6px; margin-right: 3px; border-radius: 50%; background: #868685; animation: blink 1.2s infinite both; }
     .typing span:nth-child(2) { animation-delay: .2s; }
     .typing span:nth-child(3) { animation-delay: .4s; }
     @keyframes blink { 0%, 80%, 100% { opacity: .2; } 40% { opacity: 1; } }
   </style>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,400&family=Fraunces:opsz,wght@9..144,300..900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="site-theme.css">
 </head>
 <body class="site" data-layout="tool">
@@ -59,13 +59,13 @@
           <div class="space-y-5">
             <div>
               <label for="designSelect" class="block text-[13px] font-semibold text-gray-900 mb-1.5">Study design</label>
-              <select id="designSelect" class="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-[14px] bg-white focus:outline-none focus:ring-2 focus:ring-cyprus"></select>
+              <select id="designSelect" class="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-[14px] bg-white focus:outline-none focus:ring-2 focus:ring-sand"></select>
               <p id="designDescription" class="text-[12px] text-gray-500 mt-2 leading-relaxed"></p>
               <span id="approxBadge" hidden class="inline-block mt-2 text-[11px] font-semibold bg-sand border border-sand-dark text-malt px-2.5 py-0.5 rounded-full">Approximation</span>
             </div>
             <div>
               <label for="presetSelect" class="block text-[13px] font-semibold text-gray-900 mb-1.5">Start from a preset</label>
-              <select id="presetSelect" class="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-[14px] bg-white focus:outline-none focus:ring-2 focus:ring-cyprus">
+              <select id="presetSelect" class="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-[14px] bg-white focus:outline-none focus:ring-2 focus:ring-sand">
                 <option value="">Choose a preset…</option>
               </select>
             </div>
@@ -108,7 +108,7 @@
               </div>
             </details>
 
-            <button id="resetBtn" type="button" class="text-[13px] font-semibold text-sand underline underline-offset-4">Reset calculator</button>
+            <button id="resetBtn" type="button" class="text-[13px] font-semibold text-du-blue underline underline-offset-4">Reset calculator</button>
           </div>
         </div>
 
@@ -249,9 +249,9 @@
     </div>
     <div id="chatMessages" class="flex-1 overflow-y-auto px-4 py-4 space-y-3 max-w-[900px] w-full mx-auto"></div>
     <form id="chatForm" class="border-t border-gray-300 p-3 max-w-[900px] w-full mx-auto">
-      <p id="chatLimitNote" class="text-[11px] text-gray-500 mb-2 leading-relaxed">To keep this tool free, the assistant is limited to 25 messages a day. <strong class="text-sand">Tip:</strong> describe your design, outcome, expected effect and constraints in one message to get a complete answer in fewer messages.</p>
+      <p id="chatLimitNote" class="text-[11px] text-gray-500 mb-2 leading-relaxed">To keep this tool free, the assistant is limited to 25 messages a day. <strong class="text-du-blue">Tip:</strong> describe your design, outcome, expected effect and constraints in one message to get a complete answer in fewer messages.</p>
       <label for="chatInput" class="sr-only">Your question</label>
-      <textarea id="chatInput" rows="2" maxlength="2000" placeholder="Ask about effect sizes, ICCs, designs…" class="w-full resize-none border border-gray-300 rounded-xl px-3 py-2 text-[14px] focus:outline-none focus:ring-2 focus:ring-cyprus"></textarea>
+      <textarea id="chatInput" rows="2" maxlength="2000" placeholder="Ask about effect sizes, ICCs, designs…" class="w-full resize-none border border-gray-300 rounded-xl px-3 py-2 text-[14px] focus:outline-none focus:ring-2 focus:ring-sand"></textarea>
       <div class="flex items-center justify-between mt-2">
         <span class="text-[11px] text-gray-500"><span id="chatRemaining">25 of 25 messages left today</span> · <span id="chatCount">0 / 2000</span></span>
         <button id="chatSend" type="submit" class="bg-cyprus text-sand px-5 py-2 rounded-full font-semibold text-[13px] disabled:opacity-40">Send</button>
