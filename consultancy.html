@@ -3,478 +3,114 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Danish Us-Salam – Economist</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Consultancy – Danish Us-Salam</title>
+  <meta name="description" content="Evaluation and evidence work by Danish Us-Salam for Save the Children, 3ie, the World Bank, BRAC Uganda and Educate!.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            'du-dark': '#004741',
-            'du-blue': '#004741',
-            'sand': '#f0ede4',
-            'cyprus': '#004741',
-            'wise-green': '#f0ede4',
-            'wise-dark-green': '#004741',
-            'wise-mint': '#f5f3ec',
-            'wise-black': '#004741',
-            gray: {
-              50:  '#faf9f6', 100: '#f5f3ee', 200: '#f0ede4', 300: '#dcd6c8',
-              400: '#6b7c79', 500: '#6b7c79', 600: '#3f5b58', 700: '#2b4f4b',
-              800: '#12403c', 900: '#004741',
-            },
-            slate: { 50: '#faf9f6', 100: '#f5f3ee', 700: '#2b4f4b', 800: '#004741', 900: '#00302b' },
-            green: {
-              50:  '#faf9f5', 100: '#f5f3ec', 200: '#f7f5ef', 300: '#f0ede4',
-              400: '#cbbf9f', 500: '#2e6b65', 600: '#004741',
-              700: '#004741', 800: '#003a35', 900: '#00302b',
-            },
-            blue: {
-              50:  '#faf9f5', 100: '#f5f3ec', 200: '#f7f5ef', 300: '#f0ede4',
-              400: '#cbbf9f', 500: '#2e6b65', 600: '#004741',
-              700: '#004741', 800: '#003a35', 900: '#00302b',
-            },
-            emerald: {
-              50:  '#faf9f5', 100: '#f5f3ec', 200: '#f7f5ef', 300: '#f0ede4',
-              400: '#cbbf9f', 500: '#2e6b65', 600: '#004741',
-              700: '#004741', 800: '#003a35', 900: '#00302b',
-            },
-            purple: {
-              50:  '#faf9f5', 100: '#f5f3ec', 200: '#f7f5ef', 300: '#f0ede4',
-              400: '#cbbf9f', 500: '#2e6b65', 600: '#004741',
-              700: '#004741', 800: '#003a35', 900: '#00302b',
-            },
-            orange: {
-              50:  '#faf9f5', 100: '#f5f3ec', 200: '#f7f5ef', 300: '#f0ede4',
-              400: '#cbbf9f', 500: '#2e6b65', 600: '#004741',
-              700: '#004741', 800: '#003a35', 900: '#00302b',
-            },
-            yellow: {
-              50:  '#faf9f5', 100: '#f5f3ec', 200: '#f7f5ef', 300: '#f0ede4',
-              400: '#cbbf9f', 500: '#2e6b65', 600: '#004741',
-              700: '#004741', 800: '#003a35', 900: '#00302b',
-            },
-            amber: {
-              50:  '#faf9f5', 100: '#f5f3ec', 200: '#f7f5ef', 300: '#f0ede4',
-              400: '#cbbf9f', 500: '#2e6b65', 600: '#004741',
-              700: '#004741', 800: '#003a35', 900: '#00302b',
-            },
-            pink: {
-              50:  '#faf9f5', 100: '#f5f3ec', 200: '#f7f5ef', 300: '#f0ede4',
-              400: '#cbbf9f', 500: '#2e6b65', 600: '#004741',
-              700: '#004741', 800: '#003a35', 900: '#00302b',
-            },
-            rose: {
-              50:  '#faf9f5', 100: '#f5f3ec', 200: '#f7f5ef', 300: '#f0ede4',
-              400: '#cbbf9f', 500: '#2e6b65', 600: '#004741',
-              700: '#004741', 800: '#003a35', 900: '#00302b',
-            },
-            indigo: {
-              50:  '#faf9f5', 100: '#f5f3ec', 200: '#f7f5ef', 300: '#f0ede4',
-              400: '#cbbf9f', 500: '#2e6b65', 600: '#004741',
-              700: '#004741', 800: '#003a35', 900: '#00302b',
-            },
-            cyan: {
-              50:  '#faf9f5', 100: '#f5f3ec', 200: '#f7f5ef', 300: '#f0ede4',
-              400: '#cbbf9f', 500: '#2e6b65', 600: '#004741',
-              700: '#004741', 800: '#003a35', 900: '#00302b',
-            },
-            teal: {
-              50:  '#faf9f5', 100: '#f5f3ec', 200: '#f7f5ef', 300: '#f0ede4',
-              400: '#cbbf9f', 500: '#2e6b65', 600: '#004741',
-              700: '#004741', 800: '#003a35', 900: '#00302b',
-            },
-            lime: {
-              50:  '#faf9f5', 100: '#f5f3ec', 200: '#f7f5ef', 300: '#f0ede4',
-              400: '#cbbf9f', 500: '#2e6b65', 600: '#004741',
-              700: '#004741', 800: '#003a35', 900: '#00302b',
-            },
-          },
-          borderRadius: {
-            lg: '16px', xl: '20px', '2xl': '30px', '3xl': '40px',
-          },
-          fontFamily: {
-            sans: ['Inter', 'system-ui', 'sans-serif'],
-          }
-        }
-      }
-    }
-  </script>
-  <style>
-    * { box-sizing: border-box; }
-    body {
-      font-family: 'Inter', sans-serif;
-      margin: 0;
-      -webkit-font-smoothing: antialiased;
-      font-feature-settings: "calt" 1;
-      color: #004741;
-    }
-    html { scroll-behavior: smooth; }
-
-    /* Wise display type: weight 900 at a 0.85 line-height */
-    h1, h2 { font-feature-settings: "calt" 1; }
-
-    /* Wise buttons grow on hover rather than changing colour */
-    .wise-cta { transition: transform .2s ease; }
-    .wise-cta:hover { transform: scale(1.05); }
-    .wise-cta:active { transform: scale(.95); }
-  </style>
-
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,400&family=Fraunces:opsz,wght@9..144,300..900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="site-theme.css">
 </head>
-<body class="bg-white text-gray-900">
+<body class="site" data-layout="page">
+  <header id="site-header"></header>
+  <div class="site-frame">
+    <aside id="site-nav" class="site-nav"></aside>
+    <main id="main" class="site-content">
+      <nav id="site-breadcrumb"></nav>
+      <h1 class="page-title">Consultancy Portfolio</h1>
+      <p class="lead">Evaluation and evidence work for international organisations.</p>
 
-  <!-- Navigation -->
-  <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur border-b border-gray-200" style="height:64px;">
-    <div class="max-w-[1600px] mx-auto px-6 lg:px-10 h-full flex items-center justify-between">
-      <div class="flex items-center gap-10">
-        <span class="font-bold text-[16px] text-gray-900 tracking-tight">Danish Us-Salam</span>
-                <div class="hidden md:flex items-center gap-7 text-[13px] text-gray-500 font-medium">
-          <a href="index.html" class="hover:text-gray-900 transition-colors">Home</a>
-          <a href="publications.html" class="hover:text-gray-900 transition-colors">Publications</a>
-          <a href="wip.html" class="hover:text-gray-900 transition-colors">Work in Progress</a>
-          <a href="consultancy.html" class="hover:text-gray-900 transition-colors">Consultancy</a>
-          <a href="research-tools.html" class="hover:text-gray-900 transition-colors">Research Tools</a>
-        </div>
+      <h2 class="section-title" id="what-i-do">What I do</h2>
+      <div class="prose">
+        <p>I work on the measurement side of policy and programme design: establishing whether an intervention worked, for whom, and at what cost.</p>
+        <p>That covers the identification strategy, whether a randomised trial or a quasi-experimental design where randomisation is not possible; survey instruments and piloting; the cleaning and analysis of field data; and writing results up in a form a programme team or a regulator can act on, with the limitations stated rather than buried. It also covers evidence synthesis: screening and coding existing studies so that what is already known about a question can be found and used.</p>
+        <p>The assignments below are the record. Each one links to its published output.</p>
       </div>
-      <div class="flex items-center gap-3">
-        <div class="md:hidden flex items-center gap-3 text-[13px] text-gray-600 font-medium">
-          <a href="index.html" class="hover:text-gray-900 transition-colors">Home</a>
-          <a href="publications.html" class="hover:text-gray-900 transition-colors">Pub</a>
-          <a href="wip.html" class="hover:text-gray-900 transition-colors">WIP</a>
-          <a href="consultancy.html" class="hover:text-gray-900 transition-colors">Cons</a>
-          <a href="research-tools.html" class="hover:text-gray-900 transition-colors">Tools</a>
-        </div>
-      </div>
-    </div>
-  </nav>
 
-  <script>
-    // Highlight active nav link
-    document.addEventListener('DOMContentLoaded', function() {
-      const current = window.location.pathname.split('/').pop() || 'index.html';
-      const navLinks = document.querySelectorAll('nav a[href]');
-      navLinks.forEach(link => {
-        const href = link.getAttribute('href');
-        if (href === current || (current === '' && href === 'index.html')) {
-          link.style.color = '#004741';
-          link.style.fontWeight = '600';
-        }
-      });
-    });
-  </script>
+      <h2 class="section-title" id="assignments">Assignments</h2>
 
-  <!-- ─── Hero ─────────────────────────────────── -->
-  <section class="bg-gradient-to-br from-du-dark via-du-dark to-[#004741] pt-24 pb-12">
-    <div class="max-w-[1600px] mx-auto px-6 lg:px-10">
-      <h1 class="text-[40px] sm:text-[56px] md:text-[96px] font-black text-white leading-[0.85] tracking-[-0.03em] mb-4">
-        Consultancy Portfolio
-      </h1>
-      <p class="text-[17px] text-white/60 max-w-[640px] leading-[1.75]">
-        Evaluation and evidence work for international organisations.
-      </p>
-    </div>
-  </section>
-
-  <!-- ─── Consultancies (most recent first) ────────── -->
-  <section class="pt-24 pb-4 bg-white">
-    <div class="max-w-[1600px] mx-auto px-6 lg:px-10">
-      <div class="max-w-[780px]">
-        <h2 class="text-[32px] md:text-[40px] font-black text-gray-900 mb-6 leading-[0.85] tracking-[-0.03em]">
-          What I do
-        </h2>
-        <p class="text-[16px] text-gray-600 leading-[1.85] mb-5">
-          I work on the measurement side of policy and programme design: establishing whether an intervention
-          worked, for whom, and at what cost.
-        </p>
-        <p class="text-[16px] text-gray-600 leading-[1.85] mb-5">
-          That covers the identification strategy, whether a randomised trial or a quasi-experimental design where
-          randomisation is not possible; survey instruments and piloting; the cleaning and analysis of field data; and
-          writing results up in a form a programme team or a regulator can act on, with the limitations stated rather
-          than buried. It also covers evidence synthesis: screening and coding existing studies so that what is already
-          known about a question can be found and used.
-        </p>
-        <p class="text-[16px] text-gray-900 leading-[1.85] font-medium">
-          The assignments below are the record. Each one links to its published output.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section class="pt-10 pb-16 bg-white">
-    <div class="max-w-[1600px] mx-auto px-6 lg:px-10">
-      <div class="flex flex-col gap-6">
-
-        <!-- Save the Children (2025) -->
-        <div class="bg-[#f0ede4] rounded-xl p-8 md:p-10">
-          <div class="grid md:grid-cols-[220px_1fr] gap-8 md:gap-10 items-start">
-
-            <!-- Logo + year -->
-            <div class="flex flex-col gap-4">
-              <div class="bg-white rounded-xl border border-gray-200 h-[96px] flex items-center justify-center p-5">
-                <img src="assets/logos/save-the-children.svg" alt="Save the Children" class="max-h-[40px] max-w-full object-contain">
-              </div>
-              <span class="bg-gray-900 text-white text-[11px] font-semibold px-3 py-1 rounded-full w-fit">2025</span>
-            </div>
-
-            <!-- Detail -->
-            <div class="max-w-[900px]">
-              <h3 class="text-[20px] font-bold text-gray-900 mb-5 leading-snug">
-                Save the Children
-              </h3>
-              <p class="text-[15px] text-gray-600 leading-[1.75] mb-4">
-                Part of the evaluation team for the final evaluation of the
-                <strong class="text-gray-900">Resilient Economic Development Gains (RED) Project</strong>, a five-year
-                programme funded by Save the Children Italy in Zomba District, Malawi, running from July 2019 to June 2024.
-                The programme set out to raise household income and spending on children, improve diets through more
-                sustainable food systems, and protect both against shocks. It reached 2,596 individuals across 1,000
-                households in 25 Group Village Head areas, and its effects were measured through a randomised controlled
-                trial with baseline (2020), midline (2022) and endline (2024) rounds. The final evaluation addressed the
-                questions the trial itself could not answer.
-              </p>
-              <div class="border-t border-gray-200 pt-5 mt-5">
-                <p class="text-[11px] text-gray-400 uppercase tracking-widest mb-2">Output</p>
-                <a href="https://resourcecentre.savethechildren.net/document/resilient-economic-development-gains-red-project-final-evaluation/"
-                   target="_blank"
-                   class="text-[15px] text-[#004741] font-medium hover:underline">
-                  Resilient Economic Development Gains (RED) Project Final Evaluation, Malawi 2025 &rarr;
-                </a>
-              </div>
-            </div>
+      <article class="card card--fill entry">
+        <img class="logo" src="assets/logos/save-the-children.svg" alt="Save the Children">
+        <div class="card__body">
+          <div class="card__top"><h3 class="card__title">Save the Children</h3><span class="badge badge--muted">2025</span></div>
+          <p>Part of the evaluation team for the final evaluation of the <strong>Resilient Economic Development Gains (RED) Project</strong>, a five-year programme funded by Save the Children Italy in Zomba District, Malawi, running from July 2019 to June 2024. The programme set out to raise household income and spending on children, improve diets through more sustainable food systems, and protect both against shocks. It reached 2,596 individuals across 1,000 households in 25 Group Village Head areas, and its effects were measured through a randomised controlled trial with baseline (2020), midline (2022) and endline (2024) rounds. The final evaluation addressed the questions the trial itself could not answer.</p>
+          <div class="card__foot">
+            <p class="card__meta">Output</p>
+            <a class="link-arrow" href="https://resourcecentre.savethechildren.net/document/resilient-economic-development-gains-red-project-final-evaluation/" target="_blank" rel="noopener">Resilient Economic Development Gains (RED) Project Final Evaluation, Malawi 2025 →</a>
           </div>
         </div>
+      </article>
 
-        <!-- 3ie (2023) -->
-        <div class="bg-[#f0ede4] rounded-xl p-8 md:p-10">
-          <div class="grid md:grid-cols-[220px_1fr] gap-8 md:gap-10 items-start">
-
-            <!-- Logo + year -->
-            <div class="flex flex-col gap-4">
-              <div class="bg-white rounded-xl border border-gray-200 h-[96px] flex items-center justify-center p-5">
-                <img src="assets/logos/3ie.svg" alt="International Initiative for Impact Evaluation (3ie)" class="max-h-[52px] max-w-full object-contain">
-              </div>
-              <span class="bg-gray-900 text-white text-[11px] font-semibold px-3 py-1 rounded-full w-fit">2023</span>
-            </div>
-
-            <!-- Detail -->
-            <div class="max-w-[900px]">
-              <h3 class="text-[20px] font-bold text-gray-900 mb-5 leading-snug">
-                International Initiative for Impact Evaluation (3ie)
-              </h3>
-              <p class="text-[15px] text-gray-600 leading-[1.75] mb-6">
-                Part of the team that built 3ie’s <strong class="text-gray-900">Development Evidence Portal</strong> and its
-                <strong class="text-gray-900">evidence gap maps</strong>. The work involved systematic searching, screening and
-                coding of impact evaluations and systematic reviews, extracting data from more than 40 articles a week, so
-                that studies could be classified by intervention, outcome, country and method and mapped onto a common framework.
-              </p>
-
-              <!-- What these outputs are -->
-              <div class="grid md:grid-cols-2 gap-4">
-                <a href="https://developmentevidence.3ieimpact.org/" target="_blank"
-                   class="bg-white rounded-xl p-6 border border-gray-200 hover:shadow-md transition-shadow block group">
-                  <h4 class="text-[15px] font-bold text-gray-900 mb-2 leading-snug">Development Evidence Portal</h4>
-                  <p class="text-[13px] text-gray-500 leading-relaxed mb-4">
-                    A free, searchable repository of rigorous evidence on what works in international development in
-                    low- and middle-income countries. Every study is coded so that users can filter by sector,
-                    intervention, outcome, region and evaluation method.
-                  </p>
-                  <div class="flex items-baseline gap-2 mb-1">
-                    <span class="text-[28px] font-bold text-gray-900 leading-none">22,936</span>
-                    <span class="text-[12px] text-gray-500">impact evaluation records</span>
-                  </div>
-                  <div class="flex items-baseline gap-2 mb-4">
-                    <span class="text-[28px] font-bold text-gray-900 leading-none">1,767</span>
-                    <span class="text-[12px] text-gray-500">systematic review records</span>
-                  </div>
-                  <span class="text-[13px] text-[#004741] font-semibold group-hover:underline">
-                    Visit the portal &rarr;
-                  </span>
-                </a>
-
-                <a href="https://www.3ieimpact.org/evidence-hub/evidence-gap-maps" target="_blank"
-                   class="bg-white rounded-xl p-6 border border-gray-200 hover:shadow-md transition-shadow block group">
-                  <h4 class="text-[15px] font-bold text-gray-900 mb-2 leading-snug">Evidence Gap Maps</h4>
-                  <p class="text-[13px] text-gray-500 leading-relaxed mb-4">
-                    Thematic matrices that plot the interventions used in a sector against the outcomes they aim to
-                    affect. Each cell shows how much impact evaluation and systematic review evidence exists, so the
-                    map makes visible both where evidence is concentrated and where the gaps are.
-                  </p>
-                  <p class="text-[13px] text-gray-500 leading-relaxed mb-4">
-                    Funders and researchers use them to decide what to commission next, and policymakers use them to
-                    find the evidence that already exists before designing a programme.
-                  </p>
-                  <span class="text-[13px] text-[#004741] font-semibold group-hover:underline">
-                    Explore the maps &rarr;
-                  </span>
-                </a>
-              </div>
-            </div>
+      <article class="card card--fill entry">
+        <img class="logo" src="assets/logos/3ie.svg" alt="International Initiative for Impact Evaluation (3ie)">
+        <div class="card__body">
+          <div class="card__top"><h3 class="card__title">International Initiative for Impact Evaluation (3ie)</h3><span class="badge badge--muted">2023</span></div>
+          <p>Part of the team that built 3ie’s <strong>Development Evidence Portal</strong> and its <strong>evidence gap maps</strong>. The work involved systematic searching, screening and coding of impact evaluations and systematic reviews, extracting data from more than 40 articles a week, so that studies could be classified by intervention, outcome, country and method and mapped onto a common framework.</p>
+          <div class="cards">
+            <a class="card" href="https://developmentevidence.3ieimpact.org/" target="_blank" rel="noopener">
+              <p class="card__title">Development Evidence Portal</p>
+              <p>A free, searchable repository of rigorous evidence on what works in international development in low- and middle-income countries. Every study is coded so that users can filter by sector, intervention, outcome, region and evaluation method.</p>
+              <p><strong>22,936</strong> <span class="card__meta">impact evaluation records</span><br><strong>1,767</strong> <span class="card__meta">systematic review records</span></p>
+              <span class="link-arrow">Visit the portal →</span>
+            </a>
+            <a class="card" href="https://www.3ieimpact.org/evidence-hub/evidence-gap-maps" target="_blank" rel="noopener">
+              <p class="card__title">Evidence Gap Maps</p>
+              <p>Thematic matrices that plot the interventions used in a sector against the outcomes they aim to affect. Each cell shows how much impact evaluation and systematic review evidence exists, so the map makes visible both where evidence is concentrated and where the gaps are.</p>
+              <p>Funders and researchers use them to decide what to commission next, and policymakers use them to find the evidence that already exists before designing a programme.</p>
+              <span class="link-arrow">Explore the maps →</span>
+            </a>
           </div>
         </div>
+      </article>
 
-        <!-- World Bank (2021) -->
-        <div class="bg-[#f0ede4] rounded-xl p-8 md:p-10">
-          <div class="grid md:grid-cols-[220px_1fr] gap-8 md:gap-10 items-start">
-
-            <!-- Logo + year -->
-            <div class="flex flex-col gap-4">
-              <div class="bg-white rounded-xl border border-gray-200 h-[96px] flex items-center justify-center p-5">
-                <img src="assets/logos/world-bank.svg" alt="The World Bank" class="max-h-[44px] max-w-full object-contain">
-              </div>
-              <span class="bg-gray-900 text-white text-[11px] font-semibold px-3 py-1 rounded-full w-fit">2021</span>
-            </div>
-
-            <!-- Detail -->
-            <div class="max-w-[900px]">
-              <h3 class="text-[20px] font-bold text-gray-900 mb-5 leading-snug">
-                The World Bank Group
-              </h3>
-              <p class="text-[15px] text-gray-600 leading-[1.75] mb-4">
-                Member of the evaluation team for the <strong class="text-gray-900">Uganda Multisectoral Food Security
-                and Nutrition Project</strong>, responsible for all technical analysis on the project. This covered the
-                cleaning and analysis of field data from over 9,000 households and the production of the quantitative
-                results underpinning the reported impacts on crop adoption, dietary diversity and childhood stunting.
-              </p>
-              <div class="border-t border-gray-200 pt-5 mt-5">
-                <p class="text-[11px] text-gray-400 uppercase tracking-widest mb-2">Output</p>
-                <a href="https://policycommons.net/artifacts/4305881/multisectoral-nutrition-programming-in-action/5116052/"
-                   target="_blank"
-                   class="text-[15px] text-[#004741] font-medium hover:underline">
-                  Multisectoral Nutrition Programming in Action: Impact Evaluation Report &rarr;
-                </a>
-              </div>
-            </div>
+      <article class="card card--fill entry">
+        <img class="logo" src="assets/logos/world-bank.svg" alt="The World Bank Group">
+        <div class="card__body">
+          <div class="card__top"><h3 class="card__title">The World Bank Group</h3><span class="badge badge--muted">2021</span></div>
+          <p>Member of the evaluation team for the <strong>Uganda Multisectoral Food Security and Nutrition Project</strong>, responsible for all technical analysis on the project. This covered the cleaning and analysis of field data from over 9,000 households and the production of the quantitative results underpinning the reported impacts on crop adoption, dietary diversity and childhood stunting.</p>
+          <div class="card__foot">
+            <p class="card__meta">Output</p>
+            <a class="link-arrow" href="https://policycommons.net/artifacts/4305881/multisectoral-nutrition-programming-in-action/5116052/" target="_blank" rel="noopener">Multisectoral Nutrition Programming in Action: Impact Evaluation Report →</a>
           </div>
         </div>
+      </article>
 
-        <!-- BRAC Uganda (2019) -->
-        <div class="bg-[#f0ede4] rounded-xl p-8 md:p-10">
-          <div class="grid md:grid-cols-[220px_1fr] gap-8 md:gap-10 items-start">
-
-            <!-- Logo + year -->
-            <div class="flex flex-col gap-4">
-              <div class="bg-white rounded-xl border border-gray-200 h-[96px] flex items-center justify-center p-5">
-                <img src="assets/logos/brac.svg" alt="BRAC" class="max-h-[42px] max-w-full object-contain">
-              </div>
-              <span class="bg-gray-900 text-white text-[11px] font-semibold px-3 py-1 rounded-full w-fit">2019</span>
-            </div>
-
-            <!-- Detail -->
-            <div class="max-w-[900px]">
-              <h3 class="text-[20px] font-bold text-gray-900 mb-5 leading-snug">
-                BRAC Uganda
-              </h3>
-              <p class="text-[15px] text-gray-600 leading-[1.75] mb-4">
-                Evaluated BRAC Uganda’s <strong class="text-gray-900">Ultra Poor Graduation (TUP) programme</strong>, run
-                for the first time in Uganda among youth aged 18 to 35 in Luweero and Masindi districts. The graduation
-                model gives ultra-poor households a staggered package of support, consumption smoothing alongside assets
-                and training, so that they can build a livelihood that holds once the support ends. Of the 1,650
-                participants, 1,216 were tracked over two years in a quasi-experimental study, matched by propensity score
-                against 865 comparison households and analysed using difference-in-differences.
-              </p>
-              <p class="text-[15px] text-gray-600 leading-[1.75] mb-4">
-                Participating households produced 79 kg more maize than comparison households, were 13 and 10 percentage
-                points more likely to sell maize and beans, and were 38% and 26% more likely to own goats and pigs.
-                Household food security and water and sanitation practices improved alongside.
-              </p>
-              <div class="border-t border-gray-200 pt-5 mt-5">
-                <p class="text-[11px] text-gray-400 uppercase tracking-widest mb-2">Output</p>
-                <a href="https://idl-bnc-idrc.dspacedirect.org/bitstreams/d2367603-989d-40d6-be9c-1313f824e84b/download"
-                   target="_blank"
-                   class="text-[15px] text-[#004741] font-medium hover:underline">
-                  The Ultra Poor Graduation Programme: Endline Report &rarr;
-                </a>
-                <p class="text-[13px] text-gray-400 mt-2">with Patrick Olobo and Munshi Sulaiman</p>
-              </div>
-            </div>
+      <article class="card card--fill entry">
+        <img class="logo" src="assets/logos/brac.svg" alt="BRAC Uganda">
+        <div class="card__body">
+          <div class="card__top"><h3 class="card__title">BRAC Uganda</h3><span class="badge badge--muted">2019</span></div>
+          <p>Evaluated BRAC Uganda’s <strong>Ultra Poor Graduation (TUP) programme</strong>, run for the first time in Uganda among youth aged 18 to 35 in Luweero and Masindi districts. The graduation model gives ultra-poor households a staggered package of support, consumption smoothing alongside assets and training, so that they can build a livelihood that holds once the support ends. Of the 1,650 participants, 1,216 were tracked over two years in a quasi-experimental study, matched by propensity score against 865 comparison households and analysed using difference-in-differences.</p>
+          <p>Participating households produced 79 kg more maize than comparison households, were 13 and 10 percentage points more likely to sell maize and beans, and were 38% and 26% more likely to own goats and pigs. Household food security and water and sanitation practices improved alongside.</p>
+          <div class="card__foot">
+            <p class="card__meta">Output</p>
+            <a class="link-arrow" href="https://idl-bnc-idrc.dspacedirect.org/bitstreams/d2367603-989d-40d6-be9c-1313f824e84b/download" target="_blank" rel="noopener">The Ultra Poor Graduation Programme: Endline Report →</a>
+            <p class="card__meta">with Patrick Olobo and Munshi Sulaiman</p>
           </div>
         </div>
+      </article>
 
-        <!-- Educate! (2017) -->
-        <div class="bg-[#f0ede4] rounded-xl p-8 md:p-10">
-          <div class="grid md:grid-cols-[220px_1fr] gap-8 md:gap-10 items-start">
-
-            <!-- Logo + year -->
-            <div class="flex flex-col gap-4">
-              <div class="bg-white rounded-xl border border-gray-200 h-[96px] flex items-center justify-center p-5">
-                <img src="assets/logos/educate.png" alt="Educate!" class="max-h-[40px] max-w-full object-contain">
-              </div>
-              <span class="bg-gray-900 text-white text-[11px] font-semibold px-3 py-1 rounded-full w-fit">2017</span>
-            </div>
-
-            <!-- Detail -->
-            <div class="max-w-[900px]">
-              <h3 class="text-[20px] font-bold text-gray-900 mb-5 leading-snug">
-                Educate!
-              </h3>
-              <p class="text-[15px] text-gray-600 leading-[1.75] mb-4">
-                Lead author of the end-of-course evaluation of the <strong class="text-gray-900">Educate! Experience
-                programme</strong>, a skills-based secondary school curriculum in Uganda. Educate! commissioned the study
-                to test whether the results of its earlier trial held once the programme had scaled from around 50 schools
-                in 2012 to nearly 400 in 2016. The design combined propensity score matching with difference-in-differences
-                across 759 participants and 759 matched comparison students, supported by key informant interviews and
-                focus group discussions.
-              </p>
-              <p class="text-[15px] text-gray-600 leading-[1.75] mb-4">
-                Participants were 11 percentage points more likely to run a business and 8 points more likely to hold a job
-                by the end of the course, with significant gains in public speaking, leadership and the number of
-                job-relevant skills reported. Young women gained more than young men across most outcomes.
-              </p>
-              <div class="border-t border-gray-200 pt-5 mt-5">
-                <p class="text-[11px] text-gray-400 uppercase tracking-widest mb-2">Output</p>
-                <a href="https://static1.squarespace.com/static/520111afe4b0748af59ffc18/t/5b1065f6f950b70548c384cd/1527801341728/PSM+End+of+Course+Report+-+with+Preface.pdf"
-                   target="_blank"
-                   class="text-[15px] text-[#004741] font-medium hover:underline">
-                  Educate! Experience: End of Course Evaluation Report &rarr;
-                </a>
-                <p class="text-[13px] text-gray-400 mt-2">with Patrick Okello Olobo and Robert Mpiira</p>
-              </div>
-            </div>
+      <article class="card card--fill entry">
+        <img class="logo" src="assets/logos/educate.png" alt="Educate!">
+        <div class="card__body">
+          <div class="card__top"><h3 class="card__title">Educate!</h3><span class="badge badge--muted">2017</span></div>
+          <p>Lead author of the end-of-course evaluation of the <strong>Educate! Experience programme</strong>, a skills-based secondary school curriculum in Uganda. Educate! commissioned the study to test whether the results of its earlier trial held once the programme had scaled from around 50 schools in 2012 to nearly 400 in 2016. The design combined propensity score matching with difference-in-differences across 759 participants and 759 matched comparison students, supported by key informant interviews and focus group discussions.</p>
+          <p>Participants were 11 percentage points more likely to run a business and 8 points more likely to hold a job by the end of the course, with significant gains in public speaking, leadership and the number of job-relevant skills reported. Young women gained more than young men across most outcomes.</p>
+          <div class="card__foot">
+            <p class="card__meta">Output</p>
+            <a class="link-arrow" href="https://static1.squarespace.com/static/520111afe4b0748af59ffc18/t/5b1065f6f950b70548c384cd/1527801341728/PSM+End+of+Course+Report+-+with+Preface.pdf" target="_blank" rel="noopener">Educate! Experience: End of Course Evaluation Report →</a>
+            <p class="card__meta">with Patrick Okello Olobo and Robert Mpiira</p>
           </div>
         </div>
+      </article>
 
+      <h2 class="section-title" id="commissioning-work">Commissioning work</h2>
+      <div class="prose">
+        <p>I take on evaluation design, data analysis and evidence synthesis assignments. If you have a project in mind, write to me with a short note on the questions you need answered and the data you already hold, and I will tell you plainly whether I am the right person for it.</p>
       </div>
-    </div>
-  </section>
-
-  <!-- ─── Commissioning ──────────────────────── -->
-  <section class="pb-24 bg-white">
-    <div class="max-w-[1600px] mx-auto px-6 lg:px-10">
-      <div class="bg-gradient-to-br from-du-dark to-[#004741] rounded-2xl p-10 md:p-12">
-        <div class="max-w-[720px]">
-          <h2 class="text-[28px] md:text-[36px] font-black text-white mb-4 leading-[0.85] tracking-[-0.03em]">
-            Commissioning work
-          </h2>
-          <p class="text-[16px] text-white/60 leading-[1.85] mb-7">
-            I take on evaluation design, data analysis and evidence synthesis assignments. If you have a project in
-            mind, write to me with a short note on the questions you need answered and the data you already hold, and
-            I will tell you plainly whether I am the right person for it.
-          </p>
-          <a href="mailto:ussalamd@tcd.ie"
-             class="inline-flex items-center gap-2 bg-[#f0ede4] text-[#004741] px-5 py-3 rounded-full wise-cta text-[14px] font-semibold hover:bg-[#f7f5ef] transition-colors">
-            ussalamd@tcd.ie
-            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ─── Footer ───────────────────────────────────────────────── -->
-  <footer class="bg-[#004741] border-t border-white/8 py-8">
-    <div class="max-w-[1600px] mx-auto px-6 lg:px-10 flex flex-wrap justify-between items-center gap-4">
-      <div>
-        <p class="text-[13px] font-semibold text-white mb-0.5">Danish Us-Salam</p>
-        <p class="text-[11px] text-white/35">Economist · Central Bank of Ireland · Dublin, Ireland</p>
-      </div>
-      <div class="flex items-center gap-5 text-[12px] text-white/35">
-        <a href="mailto:ussalamd@tcd.ie" class="hover:text-white/65 transition-colors">ussalamd@tcd.ie</a>
-        <a href="https://www.linkedin.com/in/danishussalam/" target="_blank" class="hover:text-white/65 transition-colors">LinkedIn</a>
-        <a href="https://twitter.com/DanishUsSalam2" target="_blank" class="hover:text-white/65 transition-colors">Twitter</a>
-      </div>
-    </div>
-  </footer>
-
+      <div class="actions"><a class="btn" href="mailto:ussalamd@tcd.ie">ussalamd@tcd.ie</a></div>
+    </main>
+    <aside id="site-toc" class="site-toc"></aside>
+  </div>
+  <footer id="site-footer"></footer>
+  <script src="site-shell.js"></script>
 </body>
 </html>

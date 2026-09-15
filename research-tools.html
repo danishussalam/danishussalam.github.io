@@ -3,325 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Danish Us-Salam – Economist</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Research Tools – Danish Us-Salam</title>
+  <meta name="description" content="Free research tools by Danish Us-Salam: search term generator, prompt generator, survey design assistant and power calculator.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            'du-dark': '#004741',
-            'du-blue': '#004741',
-            'sand': '#f0ede4',
-            'cyprus': '#004741',
-            'wise-green': '#f0ede4',
-            'wise-dark-green': '#004741',
-            'wise-mint': '#f5f3ec',
-            'wise-black': '#004741',
-            gray: {
-              50:  '#faf9f6', 100: '#f5f3ee', 200: '#f0ede4', 300: '#dcd6c8',
-              400: '#6b7c79', 500: '#6b7c79', 600: '#3f5b58', 700: '#2b4f4b',
-              800: '#12403c', 900: '#004741',
-            },
-            slate: { 50: '#faf9f6', 100: '#f5f3ee', 700: '#2b4f4b', 800: '#004741', 900: '#00302b' },
-            green: {
-              50:  '#faf9f5', 100: '#f5f3ec', 200: '#f7f5ef', 300: '#f0ede4',
-              400: '#cbbf9f', 500: '#2e6b65', 600: '#004741',
-              700: '#004741', 800: '#003a35', 900: '#00302b',
-            },
-            blue: {
-              50:  '#faf9f5', 100: '#f5f3ec', 200: '#f7f5ef', 300: '#f0ede4',
-              400: '#cbbf9f', 500: '#2e6b65', 600: '#004741',
-              700: '#004741', 800: '#003a35', 900: '#00302b',
-            },
-            emerald: {
-              50:  '#faf9f5', 100: '#f5f3ec', 200: '#f7f5ef', 300: '#f0ede4',
-              400: '#cbbf9f', 500: '#2e6b65', 600: '#004741',
-              700: '#004741', 800: '#003a35', 900: '#00302b',
-            },
-            purple: {
-              50:  '#faf9f5', 100: '#f5f3ec', 200: '#f7f5ef', 300: '#f0ede4',
-              400: '#cbbf9f', 500: '#2e6b65', 600: '#004741',
-              700: '#004741', 800: '#003a35', 900: '#00302b',
-            },
-            orange: {
-              50:  '#faf9f5', 100: '#f5f3ec', 200: '#f7f5ef', 300: '#f0ede4',
-              400: '#cbbf9f', 500: '#2e6b65', 600: '#004741',
-              700: '#004741', 800: '#003a35', 900: '#00302b',
-            },
-            yellow: {
-              50:  '#faf9f5', 100: '#f5f3ec', 200: '#f7f5ef', 300: '#f0ede4',
-              400: '#cbbf9f', 500: '#2e6b65', 600: '#004741',
-              700: '#004741', 800: '#003a35', 900: '#00302b',
-            },
-            amber: {
-              50:  '#faf9f5', 100: '#f5f3ec', 200: '#f7f5ef', 300: '#f0ede4',
-              400: '#cbbf9f', 500: '#2e6b65', 600: '#004741',
-              700: '#004741', 800: '#003a35', 900: '#00302b',
-            },
-            pink: {
-              50:  '#faf9f5', 100: '#f5f3ec', 200: '#f7f5ef', 300: '#f0ede4',
-              400: '#cbbf9f', 500: '#2e6b65', 600: '#004741',
-              700: '#004741', 800: '#003a35', 900: '#00302b',
-            },
-            rose: {
-              50:  '#faf9f5', 100: '#f5f3ec', 200: '#f7f5ef', 300: '#f0ede4',
-              400: '#cbbf9f', 500: '#2e6b65', 600: '#004741',
-              700: '#004741', 800: '#003a35', 900: '#00302b',
-            },
-            indigo: {
-              50:  '#faf9f5', 100: '#f5f3ec', 200: '#f7f5ef', 300: '#f0ede4',
-              400: '#cbbf9f', 500: '#2e6b65', 600: '#004741',
-              700: '#004741', 800: '#003a35', 900: '#00302b',
-            },
-            cyan: {
-              50:  '#faf9f5', 100: '#f5f3ec', 200: '#f7f5ef', 300: '#f0ede4',
-              400: '#cbbf9f', 500: '#2e6b65', 600: '#004741',
-              700: '#004741', 800: '#003a35', 900: '#00302b',
-            },
-            teal: {
-              50:  '#faf9f5', 100: '#f5f3ec', 200: '#f7f5ef', 300: '#f0ede4',
-              400: '#cbbf9f', 500: '#2e6b65', 600: '#004741',
-              700: '#004741', 800: '#003a35', 900: '#00302b',
-            },
-            lime: {
-              50:  '#faf9f5', 100: '#f5f3ec', 200: '#f7f5ef', 300: '#f0ede4',
-              400: '#cbbf9f', 500: '#2e6b65', 600: '#004741',
-              700: '#004741', 800: '#003a35', 900: '#00302b',
-            },
-          },
-          borderRadius: {
-            lg: '16px', xl: '20px', '2xl': '30px', '3xl': '40px',
-          },
-          fontFamily: {
-            sans: ['Inter', 'system-ui', 'sans-serif'],
-          }
-        }
-      }
-    }
-  </script>
-  <style>
-    * { box-sizing: border-box; }
-    body {
-      font-family: 'Inter', sans-serif;
-      margin: 0;
-      -webkit-font-smoothing: antialiased;
-      font-feature-settings: "calt" 1;
-      color: #004741;
-    }
-    html { scroll-behavior: smooth; }
-
-    /* Wise display type: weight 900 at a 0.85 line-height */
-    h1, h2 { font-feature-settings: "calt" 1; }
-
-    /* Wise buttons grow on hover rather than changing colour */
-    .wise-cta { transition: transform .2s ease; }
-    .wise-cta:hover { transform: scale(1.05); }
-    .wise-cta:active { transform: scale(.95); }
-  </style>
-
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,400&family=Fraunces:opsz,wght@9..144,300..900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="site-theme.css">
 </head>
-<body class="bg-white text-gray-900">
+<body class="site" data-layout="page">
+  <header id="site-header"></header>
+  <div class="site-frame">
+    <aside id="site-nav" class="site-nav"></aside>
+    <main id="main" class="site-content">
+      <nav id="site-breadcrumb"></nav>
+      <h1 class="page-title">Research Tools</h1>
 
-  <!-- Navigation -->
-  <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur border-b border-gray-200" style="height:64px;">
-    <div class="max-w-[1600px] mx-auto px-6 lg:px-10 h-full flex items-center justify-between">
-      <div class="flex items-center gap-10">
-        <span class="font-bold text-[16px] text-gray-900 tracking-tight">Danish Us-Salam</span>
-        <div class="hidden md:flex items-center gap-7 text-[13px] text-gray-500 font-medium">
-          <a href="index.html" class="hover:text-gray-900 transition-colors">Home</a>
-          <a href="publications.html" class="hover:text-gray-900 transition-colors">Publications</a>
-          <a href="wip.html" class="hover:text-gray-900 transition-colors">Work in Progress</a>
-          <a href="consultancy.html" class="hover:text-gray-900 transition-colors">Consultancy</a>
-          <a href="research-tools.html" class="hover:text-gray-900 transition-colors">Research Tools</a>
-        </div>
-      </div>
-      <div class="flex items-center gap-3">
-        <div class="md:hidden flex items-center gap-3 text-[13px] text-gray-600 font-medium">
-          <a href="index.html" class="hover:text-gray-900 transition-colors">Home</a>
-          <a href="publications.html" class="hover:text-gray-900 transition-colors">Pub</a>
-          <a href="wip.html" class="hover:text-gray-900 transition-colors">WIP</a>
-          <a href="consultancy.html" class="hover:text-gray-900 transition-colors">Cons</a>
-          <a href="research-tools.html" class="hover:text-gray-900 transition-colors">Tools</a>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <script>
-    // Highlight active nav link
-    document.addEventListener('DOMContentLoaded', function() {
-      const current = window.location.pathname.split('/').pop() || 'index.html';
-      const navLinks = document.querySelectorAll('nav a[href]');
-      navLinks.forEach(link => {
-        const href = link.getAttribute('href');
-        if (href === current || (current === '' && href === 'index.html')) {
-          link.style.color = '#004741';
-          link.style.fontWeight = '600';
-        }
-      });
-    });
-  </script>
-
-  <!-- ─── Hero ─────────────────────────────────────────────────── -->
-  <section class="bg-gradient-to-br from-du-dark via-du-dark to-[#004741] pt-24 pb-12">
-    <div class="max-w-[1600px] mx-auto px-6 lg:px-10">
-      <h1 class="text-[40px] sm:text-[56px] md:text-[96px] font-black text-white leading-[0.85] tracking-[-0.03em] mb-4">
-        Research Tools
-      </h1>
-    </div>
-  </section>
-
-  <!-- Research Tools section -->
-  <section class="py-24 bg-[#f0ede4]">
-    <div class="max-w-[1600px] mx-auto px-6 lg:px-10">
-      <div class="mb-0">
-
-      <div class="grid md:grid-cols-2 gap-4">
-
-        <!-- Tile 1: Search Term Generator (Live) -->
-        <a href="search-term-generator.html" class="bg-white rounded-xl p-6 border border-gray-200 hover:shadow-md transition-shadow block">
-          <div class="flex items-center gap-2 mb-4">
-            <div class="w-8 h-8 bg-blue-50 rounded-lg flex items-center justify-center">
-              <svg class="w-4 h-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
-              </svg>
-            </div>
-            <span class="text-[10px] bg-green-100 text-green-700 px-2.5 py-0.5 rounded-full font-semibold">Live</span>
-          </div>
-          <h4 class="text-[15px] font-bold text-gray-900 mb-2 leading-snug">
-            Search Term Generator
-          </h4>
-          <p class="text-[12px] text-gray-500 leading-relaxed mb-4">
-            Convert any research question into optimised Boolean search strings for Google Scholar, Scopus, and Web of Science.
-          </p>
-          <div class="inline-flex items-center gap-1.5 text-du-blue hover:text-[#004741] text-[13px] font-semibold transition-colors">
-            Launch Tool
-            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-            </svg>
-          </div>
+      <h2 class="section-title" id="tools">Tools</h2>
+      <div class="cards">
+        <a class="card" href="search-term-generator.html">
+          <div class="card__top"><span class="badge">Live</span></div>
+          <p class="card__title">Search Term Generator</p>
+          <p class="card__body">Convert any research question into optimised Boolean search strings for Google Scholar, Scopus, and Web of Science.</p>
+          <span class="link-arrow">Launch Tool →</span>
         </a>
-
-        <!-- Tile 2: Survey Design Assistant (In Development) -->
-        <a href="survey-design.html" class="bg-white rounded-xl p-6 border border-gray-200 hover:shadow-md transition-shadow block">
-          <div class="flex items-center gap-2 mb-4">
-            <div class="w-8 h-8 bg-purple-50 rounded-lg flex items-center justify-center">
-              <svg class="w-4 h-4 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
-              </svg>
-            </div>
-            <span class="text-[10px] bg-amber-100 text-amber-700 px-2.5 py-0.5 rounded-full font-semibold">In Development</span>
-          </div>
-          <h4 class="text-[15px] font-bold text-gray-900 mb-2 leading-snug">
-            Survey Design Assistant
-          </h4>
-          <p class="text-[12px] text-gray-500 leading-relaxed mb-4">
-            Review survey questions, generate validated variants, estimate cognitive load, and detect order effects.
-          </p>
-          <div class="inline-flex items-center gap-1.5 text-du-blue hover:text-[#004741] text-[13px] font-semibold transition-colors">
-            Launch Tool
-            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-            </svg>
-          </div>
+        <a class="card" href="survey-design.html">
+          <div class="card__top"><span class="badge badge--muted">In Development</span></div>
+          <p class="card__title">Survey Design Assistant</p>
+          <p class="card__body">Review survey questions, generate validated variants, estimate cognitive load, and detect order effects.</p>
+          <span class="link-arrow">Launch Tool →</span>
         </a>
-
-        <!-- Tile 3: Prompt Generator (Live) -->
-        <a href="prompt-generator.html" class="bg-white rounded-xl p-6 border border-gray-200 hover:shadow-md transition-shadow block">
-          <div class="flex items-center gap-2 mb-4">
-            <div class="w-8 h-8 bg-orange-50 rounded-lg flex items-center justify-center">
-              <svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5a2 2 0 114 0v6a2 2 0 11-4 0V5zM14.854 15.813a4 4 0 01-5.708 0M9 19h6"/>
-              </svg>
-            </div>
-            <span class="text-[10px] bg-green-100 text-green-700 px-2.5 py-0.5 rounded-full font-semibold">Live</span>
-          </div>
-          <h4 class="text-[15px] font-bold text-gray-900 mb-2 leading-snug">
-            Prompt Generator
-          </h4>
-          <p class="text-[12px] text-gray-500 leading-relaxed mb-4">
-            Transform raw tasks into structured AI prompts using 11 evidence-based frameworks including ROSE, CO-STAR, Chain of Thought, and Few-Shot prompting.
-          </p>
-          <div class="inline-flex items-center gap-1.5 text-du-blue hover:text-[#004741] text-[13px] font-semibold transition-colors">
-            Launch Tool
-            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-            </svg>
-          </div>
+        <a class="card" href="prompt-generator.html">
+          <div class="card__top"><span class="badge">Live</span></div>
+          <p class="card__title">Prompt Generator</p>
+          <p class="card__body">Transform raw tasks into structured AI prompts using 11 evidence-based frameworks including ROSE, CO-STAR, Chain of Thought, and Few-Shot prompting.</p>
+          <span class="link-arrow">Launch Tool →</span>
         </a>
-
-        <!-- Tile: Power Calculator (Live) -->
-        <a href="power-calculator.html" class="bg-white rounded-xl p-6 border border-gray-200 hover:shadow-md transition-shadow block">
-          <div class="flex items-center gap-2 mb-4">
-            <div class="w-8 h-8 bg-teal-50 rounded-lg flex items-center justify-center">
-              <svg class="w-4 h-4 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
-              </svg>
-            </div>
-            <span class="text-[10px] bg-green-100 text-green-700 px-2.5 py-0.5 rounded-full font-semibold">Live</span>
-          </div>
-          <h4 class="text-[15px] font-bold text-gray-900 mb-2 leading-snug">
-            Power Calculator
-          </h4>
-          <p class="text-[12px] text-gray-500 leading-relaxed mb-4">
-            Sample size, minimum detectable effect and power for sixteen experimental and quasi-experimental designs, with live charts, pre-registration text and an AI assistant.
-          </p>
-          <div class="inline-flex items-center gap-1.5 text-du-blue hover:text-[#004741] text-[13px] font-semibold transition-colors">
-            Launch Tool
-            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-            </svg>
-          </div>
+        <a class="card" href="power-calculator.html">
+          <div class="card__top"><span class="badge">Live</span></div>
+          <p class="card__title">Power Calculator</p>
+          <p class="card__body">Sample size, minimum detectable effect and power for sixteen experimental and quasi-experimental designs, with live charts, pre-registration text and an AI assistant.</p>
+          <span class="link-arrow">Launch Tool →</span>
         </a>
-
-        <!-- Tile 4: VoiceAI (Live) — TEMPORARILY HIDDEN
-        <a href="voice-ai.html" class="bg-white rounded-xl p-6 border border-gray-200 hover:shadow-md transition-shadow block">
-          <div class="flex items-center gap-2 mb-4">
-            <div class="w-8 h-8 bg-rose-50 rounded-lg flex items-center justify-center">
-              <svg class="w-4 h-4 text-rose-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"/>
-              </svg>
-            </div>
-            <span class="text-[10px] bg-green-100 text-green-700 px-2.5 py-0.5 rounded-full font-semibold">Live</span>
-          </div>
-          <h4 class="text-[15px] font-bold text-gray-900 mb-2 leading-snug">
-            VoiceAI
-          </h4>
-          <p class="text-[12px] text-gray-500 leading-relaxed mb-4">
-            AI-powered interview simulation platform. Practice structured interviews with real-time voice interaction and instant feedback.
-          </p>
-          <div class="inline-flex items-center gap-1.5 text-du-blue hover:text-[#004741] text-[13px] font-semibold transition-colors">
-            Launch Tool
-            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-            </svg>
-          </div>
-        </a>
-        -->
-
-
       </div>
-    </div>
-  </section>
-
-  <!-- ─── Footer ───────────────────────────────────────────────── -->
-  <footer class="bg-[#004741] border-t border-white/8 py-8">
-    <div class="max-w-[1600px] mx-auto px-6 lg:px-10 flex flex-wrap justify-between items-center gap-4">
-      <div>
-        <p class="text-[13px] font-semibold text-white mb-0.5">Danish Us-Salam</p>
-        <p class="text-[11px] text-white/35">Economist · Central Bank of Ireland · Dublin, Ireland</p>
-      </div>
-      <div class="flex items-center gap-5 text-[12px] text-white/35">
-        <a href="mailto:ussalamd@tcd.ie" class="hover:text-white/65 transition-colors">ussalamd@tcd.ie</a>
-        <a href="https://www.linkedin.com/in/danishussalam/" target="_blank" class="hover:text-white/65 transition-colors">LinkedIn</a>
-        <a href="https://twitter.com/DanishUsSalam2" target="_blank" class="hover:text-white/65 transition-colors">Twitter</a>
-      </div>
-    </div>
-  </footer>
-
-
+    </main>
+    <aside id="site-toc" class="site-toc"></aside>
+  </div>
+  <footer id="site-footer"></footer>
+  <script src="site-shell.js"></script>
 </body>
 </html>
