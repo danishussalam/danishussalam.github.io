@@ -6,36 +6,17 @@
   <title>Power Calculator – Danish Us-Salam</title>
   <meta name="description" content="Interactive power and sample-size calculator for experimental and quasi-experimental studies, with an AI assistant for power calculations.">
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            cyprus: { DEFAULT: '#004741', mid: '#2e6b65', dark: '#00302b' },
-            sand: { DEFAULT: '#f0ede4', light: '#f7f5ef', pale: '#faf9f5', dark: '#cbbf9f' },
-            gray: {
-              50: '#faf9f6', 100: '#f5f3ee', 200: '#f0ede4', 300: '#dcd6c8', 400: '#6b7c79',
-              500: '#6b7c79', 600: '#3f5b58', 700: '#2b4f4b', 800: '#12403c', 900: '#004741'
-            }
-          },
-          borderRadius: { lg: '16px', xl: '20px', '2xl': '30px', '3xl': '40px' },
-          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
-        }
-      }
-    };
-  </script>
+  <script src="site-tailwind.js"></script>
   <style>
     * { box-sizing: border-box; }
-    body { font-family: 'Inter', sans-serif; margin: 0; -webkit-font-smoothing: antialiased; font-feature-settings: "calt" 1; color: #004741; }
+    body { margin: 0; }
     html { scroll-behavior: smooth; }
     .wise-cta { transition: transform .2s ease; }
     .wise-cta:hover { transform: scale(1.05); }
     .wise-cta:active { transform: scale(.95); }
-    input[type=range] { accent-color: #004741; }
+    input[type=range] { accent-color: #FFBE0B; }
     .seg button { transition: background-color .15s ease, color .15s ease; }
-    .seg button[aria-pressed="true"] { background: #004741; color: #f0ede4; }
+    .seg button[aria-pressed="true"] { background: #FFBE0B; color: #2A2312; }
     details summary { list-style: none; cursor: pointer; }
     details summary::-webkit-details-marker { display: none; }
     [hidden] { display: none !important; }
@@ -44,61 +25,34 @@
     #chatPanel[data-open="false"] { transform: translateX(105%); }
     @media (min-width: 1024px) {
       body[data-chat="open"] #chatPanel { width: 420px; }
-      body[data-chat="open"] main { margin-right: 420px; }
+      body.site[data-chat="open"] .site-frame { width: min(var(--frame), 100% - 452px); margin-left: max(16px, calc((100% - 420px - var(--frame)) / 2)); grid-template-columns: minmax(0, 1fr); }
+      body.site[data-chat="open"] .site-nav { display: none; }   /* give the calculator the width while chatting */
     }
-    .typing span { display: inline-block; width: 6px; height: 6px; margin-right: 3px; border-radius: 50%; background: #2e6b65; animation: blink 1.2s infinite both; }
+    .typing span { display: inline-block; width: 6px; height: 6px; margin-right: 3px; border-radius: 50%; background: #FFBE0B; animation: blink 1.2s infinite both; }
     .typing span:nth-child(2) { animation-delay: .2s; }
     .typing span:nth-child(3) { animation-delay: .4s; }
     @keyframes blink { 0%, 80%, 100% { opacity: .2; } 40% { opacity: 1; } }
   </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,400&family=Fraunces:opsz,wght@9..144,300..900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="site-theme.css">
 </head>
-<body class="bg-white text-gray-900">
-
-  <!-- Navigation -->
-  <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur border-b border-gray-200" style="height:64px;">
-    <div class="max-w-[1600px] mx-auto px-6 lg:px-10 h-full flex items-center justify-between">
-      <div class="flex items-center gap-10">
-        <span class="font-bold text-[16px] text-gray-900 tracking-tight">Danish Us-Salam</span>
-        <div class="hidden md:flex items-center gap-7 text-[13px] text-gray-500 font-medium">
-          <a href="index.html" class="hover:text-gray-900 transition-colors">Home</a>
-          <a href="publications.html" class="hover:text-gray-900 transition-colors">Publications</a>
-          <a href="wip.html" class="hover:text-gray-900 transition-colors">Work in Progress</a>
-          <a href="consultancy.html" class="hover:text-gray-900 transition-colors">Consultancy</a>
-          <a href="research-tools.html" class="text-gray-900 font-semibold">Research Tools</a>
-        </div>
+<body class="site" data-layout="tool">
+  <header id="site-header"></header>
+  <div class="site-frame">
+    <aside id="site-nav" class="site-nav"></aside>
+    <main id="main" class="site-content">
+      <nav id="site-breadcrumb"></nav>
+      <h1 class="page-title">Power Calculator</h1>
+      <p class="lead">Plan sample sizes, minimum detectable effects and power for sixteen experimental and quasi-experimental designs. Every number comes from published formulas; an AI assistant helps you choose assumptions and explains the results.</p>
+      <div class="actions">
+        <a href="#calculator" class="btn">Use the calculator</a>
+        <button id="heroChatBtn" type="button" class="btn btn--ghost">Talk it through with AI</button>
       </div>
-      <div class="md:hidden flex items-center gap-3 text-[13px] text-gray-600 font-medium">
-        <a href="index.html" class="hover:text-gray-900 transition-colors">Home</a>
-        <a href="publications.html" class="hover:text-gray-900 transition-colors">Pub</a>
-        <a href="wip.html" class="hover:text-gray-900 transition-colors">WIP</a>
-        <a href="consultancy.html" class="hover:text-gray-900 transition-colors">Cons</a>
-        <a href="research-tools.html" class="text-gray-900 font-semibold">Tools</a>
-      </div>
-    </div>
-  </nav>
-
-  <main>
-    <!-- Hero -->
-    <section class="bg-cyprus pt-24 pb-12">
-      <div class="max-w-[1600px] mx-auto px-6 lg:px-10">
-        <a href="research-tools.html" class="inline-flex items-center gap-2 text-[12px] text-sand font-medium mb-6 hover:text-white transition-colors">
-          <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"/></svg>
-          Back to Research Tools
-        </a>
-        <h1 class="text-[40px] md:text-[56px] font-bold text-white leading-[1.03] tracking-[-0.09rem] mb-4">Power Calculator</h1>
-        <p class="text-[15px] text-white/65 max-w-[680px] leading-[1.75] mb-8">
-          Plan sample sizes, minimum detectable effects and power for sixteen experimental and quasi-experimental designs. Every number comes from published formulas; an AI assistant helps you choose assumptions and explains the results.
-        </p>
-        <div class="flex flex-wrap gap-3">
-          <a href="#calculator" class="bg-sand text-cyprus px-6 py-3 rounded-full font-semibold text-[14px] wise-cta">Use the calculator</a>
-          <button id="heroChatBtn" type="button" class="border border-white/40 text-white px-6 py-3 rounded-full font-semibold text-[14px] wise-cta hover:bg-white/10">Talk it through with AI</button>
-        </div>
-      </div>
-    </section>
-
     <!-- Calculator -->
-    <section id="calculator" class="py-12 md:py-16 bg-white scroll-mt-16">
-      <div class="max-w-[1600px] mx-auto px-6 lg:px-10 grid gap-6 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] items-start">
+    <section id="calculator" class="py-12 md:py-16 scroll-mt-16">
+      <div class="w-full grid gap-6 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] items-start">
 
         <!-- Inputs -->
         <div class="bg-sand-pale border border-gray-300 rounded-2xl p-5 md:p-8 min-w-0">
@@ -107,7 +61,7 @@
               <label for="designSelect" class="block text-[13px] font-semibold text-gray-900 mb-1.5">Study design</label>
               <select id="designSelect" class="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-[14px] bg-white focus:outline-none focus:ring-2 focus:ring-cyprus"></select>
               <p id="designDescription" class="text-[12px] text-gray-500 mt-2 leading-relaxed"></p>
-              <span id="approxBadge" hidden class="inline-block mt-2 text-[11px] font-semibold bg-sand border border-sand-dark text-cyprus px-2.5 py-0.5 rounded-full">Approximation</span>
+              <span id="approxBadge" hidden class="inline-block mt-2 text-[11px] font-semibold bg-sand border border-sand-dark text-malt px-2.5 py-0.5 rounded-full">Approximation</span>
             </div>
             <div>
               <label for="presetSelect" class="block text-[13px] font-semibold text-gray-900 mb-1.5">Start from a preset</label>
@@ -154,7 +108,7 @@
               </div>
             </details>
 
-            <button id="resetBtn" type="button" class="text-[13px] font-semibold text-cyprus underline underline-offset-4">Reset calculator</button>
+            <button id="resetBtn" type="button" class="text-[13px] font-semibold text-sand underline underline-offset-4">Reset calculator</button>
           </div>
         </div>
 
@@ -165,7 +119,7 @@
             <p id="resultHeadline" class="text-[40px] md:text-[56px] font-black leading-none mt-2 break-words"></p>
             <p id="resultSub" class="text-[14px] text-white/70 mt-3 leading-relaxed"></p>
             <dl id="resultDetails" class="grid grid-cols-2 gap-x-4 gap-y-2 mt-5 text-[13px]"></dl>
-            <button id="explainBtn" type="button" class="mt-6 bg-sand text-cyprus px-5 py-2.5 rounded-full font-semibold text-[13px] wise-cta">Explain this result</button>
+            <button id="explainBtn" type="button" class="mt-6 bg-sand text-malt px-5 py-2.5 rounded-full font-semibold text-[13px] wise-cta">Explain this result</button>
           </div>
           <div id="warnings" class="space-y-2"></div>
           <div id="curveBox" class="bg-white border border-gray-300 rounded-2xl p-5">
@@ -188,16 +142,16 @@
     </section>
 
     <!-- Exports -->
-    <section class="pb-12 bg-white">
-      <div class="max-w-[1600px] mx-auto px-6 lg:px-10">
-        <div class="bg-sand rounded-2xl p-6 md:p-8">
+    <section class="pb-12">
+      <div class="w-full">
+        <div class="bg-gray-100 border border-gray-300 rounded-2xl p-6 md:p-8">
           <h2 class="text-[22px] font-bold mb-2">Take your design with you</h2>
           <p class="text-[13px] text-gray-600 mb-5">Copy text for a pre-analysis plan, code to reproduce the calculation, or a link that reopens these exact settings.</p>
           <div class="flex flex-wrap gap-3">
             <button type="button" data-export="prereg" class="bg-cyprus text-sand px-5 py-2.5 rounded-full font-semibold text-[13px] wise-cta">Copy pre-registration paragraph</button>
-            <button type="button" data-export="stata" class="bg-white text-cyprus border border-gray-300 px-5 py-2.5 rounded-full font-semibold text-[13px] wise-cta">Copy Stata code</button>
-            <button type="button" data-export="r" class="bg-white text-cyprus border border-gray-300 px-5 py-2.5 rounded-full font-semibold text-[13px] wise-cta">Copy R code</button>
-            <button type="button" data-export="link" class="bg-white text-cyprus border border-gray-300 px-5 py-2.5 rounded-full font-semibold text-[13px] wise-cta">Copy share link</button>
+            <button type="button" data-export="stata" class="bg-white text-gray-900 border border-gray-300 px-5 py-2.5 rounded-full font-semibold text-[13px] wise-cta">Copy Stata code</button>
+            <button type="button" data-export="r" class="bg-white text-gray-900 border border-gray-300 px-5 py-2.5 rounded-full font-semibold text-[13px] wise-cta">Copy R code</button>
+            <button type="button" data-export="link" class="bg-white text-gray-900 border border-gray-300 px-5 py-2.5 rounded-full font-semibold text-[13px] wise-cta">Copy share link</button>
           </div>
           <pre id="exportPreview" hidden class="mt-5 bg-white border border-gray-300 rounded-xl p-4 text-[12px] leading-relaxed whitespace-pre-wrap break-words overflow-x-auto"></pre>
         </div>
@@ -205,8 +159,8 @@
     </section>
 
     <!-- Methods -->
-    <section class="py-12 md:py-16 bg-sand-pale border-t border-gray-300">
-      <div class="max-w-[1600px] mx-auto px-6 lg:px-10">
+    <section class="py-12 md:py-16 border-t border-gray-300">
+      <div class="w-full">
         <p class="text-[11px] font-semibold uppercase tracking-widest text-gray-500 mb-2">Methods</p>
         <h2 class="text-[32px] md:text-[40px] font-bold mb-8 leading-tight">How each design is calculated</h2>
         <div id="methodsList" class="grid gap-4 md:grid-cols-2"></div>
@@ -243,7 +197,7 @@
     </section>
 
     <!-- FAQ -->
-    <section class="py-12 md:py-16 bg-white">
+    <section class="py-12 md:py-16">
       <div class="max-w-[900px] mx-auto px-6">
         <p class="text-[11px] font-semibold uppercase tracking-widest text-gray-500 mb-2 text-center">FAQ</p>
         <h2 class="text-[32px] md:text-[40px] font-bold mb-8 text-center leading-tight">Common questions</h2>
@@ -271,27 +225,15 @@
         </div>
       </div>
     </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="bg-cyprus border-t border-white/10 py-8">
-    <div class="max-w-[1600px] mx-auto px-6 lg:px-10 flex flex-wrap justify-between items-center gap-4">
-      <div>
-        <p class="text-[13px] font-semibold text-white mb-0.5">Danish Us-Salam</p>
-        <p class="text-[11px] text-white/35">Economist · Central Bank of Ireland · Dublin, Ireland</p>
-      </div>
-      <div class="flex items-center gap-5 text-[12px] text-white/35">
-        <a href="mailto:ussalamd@tcd.ie" class="hover:text-white/65 transition-colors">ussalamd@tcd.ie</a>
-        <a href="https://www.linkedin.com/in/danishussalam/" target="_blank" rel="noopener" class="hover:text-white/65 transition-colors">LinkedIn</a>
-        <a href="https://twitter.com/DanishUsSalam2" target="_blank" rel="noopener" class="hover:text-white/65 transition-colors">Twitter</a>
-      </div>
-    </div>
-  </footer>
+    </main>
+  </div>
+  <footer id="site-footer"></footer>
+  <script src="site-shell.js"></script>
 
   <!-- AI chat -->
   <button id="chatFab" type="button" class="fixed bottom-5 right-5 z-40 bg-cyprus text-sand px-5 py-3 rounded-full font-semibold text-[14px] shadow-lg wise-cta">Ask AI</button>
   <aside id="chatPanel" data-open="false" aria-hidden="true" aria-label="AI power calculation assistant"
-    class="fixed top-16 right-0 bottom-0 z-50 bg-white border-l border-gray-300 shadow-2xl flex flex-col">
+    class="fixed top-[var(--header-h)] right-0 bottom-0 z-50 bg-white border-l border-gray-300 shadow-2xl flex flex-col">
     <div class="flex items-center justify-between gap-2 px-4 py-3 border-b border-gray-300 bg-sand-pale">
       <div>
         <p class="text-[14px] font-bold">Power calculation assistant</p>
@@ -307,7 +249,7 @@
     </div>
     <div id="chatMessages" class="flex-1 overflow-y-auto px-4 py-4 space-y-3 max-w-[900px] w-full mx-auto"></div>
     <form id="chatForm" class="border-t border-gray-300 p-3 max-w-[900px] w-full mx-auto">
-      <p id="chatLimitNote" class="text-[11px] text-gray-500 mb-2 leading-relaxed">To keep this tool free, the assistant is limited to 25 messages a day. <strong class="text-cyprus">Tip:</strong> describe your design, outcome, expected effect and constraints in one message to get a complete answer in fewer messages.</p>
+      <p id="chatLimitNote" class="text-[11px] text-gray-500 mb-2 leading-relaxed">To keep this tool free, the assistant is limited to 25 messages a day. <strong class="text-sand">Tip:</strong> describe your design, outcome, expected effect and constraints in one message to get a complete answer in fewer messages.</p>
       <label for="chatInput" class="sr-only">Your question</label>
       <textarea id="chatInput" rows="2" maxlength="2000" placeholder="Ask about effect sizes, ICCs, designs…" class="w-full resize-none border border-gray-300 rounded-xl px-3 py-2 text-[14px] focus:outline-none focus:ring-2 focus:ring-cyprus"></textarea>
       <div class="flex items-center justify-between mt-2">

@@ -6,8 +6,8 @@
   const PE = window.PowerEngine, EX = window.PowerExport, REFS = window.POWER_REFS || {};
   const $ = id => document.getElementById(id);
   const STORE_KEY = 'powercalc.v1';
-  const CYPRUS = '#004741', MID = '#2e6b65', SAND_DARK = '#cbbf9f', GRID = '#f0ede4';
-  const SERIES = [CYPRUS, '#9c8a5e', MID, '#6b7c79'];
+  const CYPRUS = '#FFBE0B', MID = '#A39A89', SAND_DARK = '#6B5A33', GRID = 'rgba(243, 235, 221, 0.10)';
+  const SERIES = ['#FFBE0B', '#F3EBDD', '#C98E00', '#A39A89'];
   const QUANTITY = { n: 'Required sample', mde: 'Minimum detectable effect', power: 'Power', guidance: 'Synthetic control inference' };
   const CARRY = ['solve', 'alpha', 'sides', 'power'];   // inputs kept when switching design
 
@@ -137,13 +137,13 @@
     let panel = null;
     if (s.ref && REFS[s.ref] && REFS[s.ref].length) {
       panel = refPanel(s.ref);
-      const b = el('button', 'underline underline-offset-2 text-cyprus-mid', 'Typical values');
+      const b = el('button', 'underline underline-offset-2 text-sand', 'Typical values');
       b.type = 'button';
       b.addEventListener('click', () => panel.classList.toggle('hidden'));
       tools.appendChild(b);
     }
     if (s.converter) {
-      const b = el('button', 'underline underline-offset-2 text-cyprus-mid', 'Converter');
+      const b = el('button', 'underline underline-offset-2 text-sand', 'Converter');
       b.type = 'button';
       b.addEventListener('click', () => { $('converter').open = true; $('converter').scrollIntoView({ behavior: 'smooth', block: 'center' }); });
       tools.appendChild(b);
@@ -290,7 +290,7 @@
     box.innerHTML = '';
     const notes = res.warnings.slice();
     if (res.approximation) notes.unshift({ code: 'approximation', message: 'Approximation: ' + res.approximation });
-    notes.forEach(w => box.appendChild(el('p', 'bg-sand border border-sand-dark rounded-xl px-4 py-3 text-[13px] leading-relaxed text-cyprus', w.message)));
+    notes.forEach(w => box.appendChild(el('p', 'bg-gray-100 border border-sand-dark rounded-xl px-4 py-3 text-[13px] leading-relaxed text-gray-800', w.message)));
   }
 
   function lineChart(existing, canvas, cfg) {
@@ -300,7 +300,7 @@
       borderWidth: 2.5, pointRadius: 0, tension: 0.25
     }));
     (cfg.hlines || []).forEach(h => datasets.push({ label: h.label, data: h.points, borderColor: SAND_DARK, borderDash: [6, 4], borderWidth: 1.5, pointRadius: 0 }));
-    (cfg.markers || []).forEach(m => datasets.push({ label: m.label, data: [m.point], type: 'scatter', pointRadius: 6, pointBackgroundColor: CYPRUS, pointBorderColor: '#fff', pointBorderWidth: 2 }));
+    (cfg.markers || []).forEach(m => datasets.push({ label: m.label, data: [m.point], type: 'scatter', pointRadius: 6, pointBackgroundColor: CYPRUS, pointBorderColor: '#2A2312', pointBorderWidth: 2 }));
     const options = {
       responsive: true, maintainAspectRatio: false, animation: false, parsing: false,
       scales: {
@@ -355,7 +355,7 @@
       s.cells[ri].forEach((v, ci) => {
         const current = ri === s.currentRow && ci === s.currentCol;
         const text = v === null ? '—' : s.quantity === 'power' ? pct(v) : s.quantity === 'mde' ? PE.util.fmt(v) : Math.round(v).toLocaleString('en-GB');
-        tr.appendChild(el('td', 'px-3 py-2 text-right tabular-nums' + (current ? ' bg-cyprus text-sand font-bold' : ''), text));
+        tr.appendChild(el('td', 'px-3 py-2 text-right tabular-nums' + (current ? ' bg-sand text-malt font-bold' : ''), text));
       });
       tb.appendChild(tr);
     });
@@ -429,7 +429,7 @@
     PE.list().forEach(d => {
       const card = el('div', 'bg-white border border-gray-300 rounded-xl p-5');
       const h = el('h3', 'text-[15px] font-bold mb-1', d.label);
-      if (d.approximation) h.appendChild(el('span', 'ml-2 align-middle text-[10px] font-semibold bg-sand border border-sand-dark px-2 py-0.5 rounded-full', 'Approximation'));
+      if (d.approximation) h.appendChild(el('span', 'ml-2 align-middle text-[10px] font-semibold bg-sand text-malt border border-sand-dark px-2 py-0.5 rounded-full', 'Approximation'));
       card.appendChild(h);
       card.appendChild(el('p', 'text-[13px] text-gray-600 leading-relaxed mb-2', d.method));
       card.appendChild(el('p', 'text-[12px] text-gray-500', 'Source: ' + d.citation));

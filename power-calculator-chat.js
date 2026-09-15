@@ -42,7 +42,7 @@
   }
   function inline(s) {
     return s
-      .replace(/`([^`]+)`/g, '<code class="bg-white/60 px-1 rounded text-[12px]">$1</code>')
+      .replace(/`([^`]+)`/g, '<code class="bg-gray-300 px-1 rounded text-[12px]">$1</code>')
       .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
       .replace(/(^|[^*])\*([^*\n]+)\*/g, '$1<em>$2</em>');
   }
@@ -69,7 +69,7 @@
 
   // ---- Rendering ----
   function suggestionBlock(clean, rationale, index, applied) {
-    const box = el('div', 'mt-3 bg-white border border-sand-dark rounded-xl p-3 text-[13px] text-cyprus');
+    const box = el('div', 'mt-3 bg-white border border-sand-dark rounded-xl p-3 text-[13px] text-gray-800');
     box.appendChild(el('p', 'font-semibold', 'Suggested settings: ' + PE.designs[clean.design].label));
     const schema = {};
     ['n', 'mde', 'power'].forEach(solve => PE.inputsFor(clean.design, Object.assign({}, clean.inputs, { solve })).forEach(s => { schema[s.id] = s; }));
@@ -81,7 +81,7 @@
     });
     box.appendChild(ul);
     if (rationale) box.appendChild(el('p', 'mt-2 text-gray-600', rationale));
-    const btn = el('button', 'mt-3 bg-cyprus text-sand px-4 py-2 rounded-full font-semibold disabled:opacity-50', applied ? 'Applied' : 'Apply to calculator');
+    const btn = el('button', 'mt-3 bg-sand text-malt px-4 py-2 rounded-full font-semibold disabled:opacity-50', applied ? 'Applied' : 'Apply to calculator');
     btn.type = 'button';
     btn.dataset.apply = String(index);
     btn.disabled = !!applied;
@@ -106,7 +106,7 @@
     if (m.role === 'card') return cardBubble(m);
     const mine = m.role === 'user';
     const wrap = el('div', mine ? 'flex justify-end' : 'flex justify-start');
-    const b = el('div', (mine ? 'bg-cyprus text-white' : 'bg-sand text-cyprus') + ' rounded-2xl px-4 py-3 max-w-[88%] text-[14px] leading-relaxed space-y-2 break-words');
+    const b = el('div', (mine ? 'bg-sand text-malt' : 'bg-cyprus text-gray-900') + ' rounded-2xl px-4 py-3 max-w-[88%] text-[14px] leading-relaxed space-y-2 break-words');
     b.innerHTML = formatText(m.content);
     if (!mine && m.suggestion) {
       const clean = PE.validateSuggestion(m.suggestion.design, m.suggestion.inputs);
@@ -128,7 +128,7 @@
       box.appendChild(t);
     }
     if (failure) {
-      const f = el('div', 'bg-white border border-sand-dark rounded-xl px-4 py-3 text-[13px] text-cyprus');
+      const f = el('div', 'bg-white border border-sand-dark rounded-xl px-4 py-3 text-[13px] text-gray-800');
       f.appendChild(el('p', '', failure.message));
       if (failure.retry) {
         const r = el('button', 'mt-2 font-semibold underline', 'Retry');
