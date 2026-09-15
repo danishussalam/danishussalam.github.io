@@ -91,9 +91,9 @@ body[data-layout="home"] .page-title { font-size: 70px; line-height: 91px; lette
 .lead { font-size: 16px; line-height: 25.6px; color: var(--text-muted); margin: 0 0 24px; }
 body[data-layout="home"] .lead { font-size: 23px; line-height: 35.65px; margin: 0 0 32px; }
 .section-title { font: 300 25px/35px var(--font-serif); letter-spacing: -0.25px; color: var(--text-strong); margin: 48px 0 20px; scroll-margin-top: calc(var(--header-h) + 16px); }
-body.site:not([data-layout="tool"]) .site-content p { margin: 0 0 16px; }
-body.site:not([data-layout="tool"]) .site-content h3 { font: 700 16px/25.6px var(--font-sans); color: var(--text-strong); margin: 0 0 8px; }
-body.site:not([data-layout="tool"]) .site-content strong { color: var(--text-strong); font-weight: 700; }
+:where(body.site:not([data-layout="tool"]) .site-content) p { margin: 0 0 16px; }
+:where(body.site:not([data-layout="tool"]) .site-content) h3 { font: 700 16px/25.6px var(--font-sans); color: var(--text-strong); margin: 0 0 8px; }
+:where(body.site:not([data-layout="tool"]) .site-content) strong { color: var(--text-strong); font-weight: 700; }
 .site-content .prose a, .site-content .card__body a, .site-content .quote a { color: var(--turmeric); text-decoration: none; }
 .site-content .prose a:hover, .site-content .card__body a:hover, .site-content .quote a:hover { color: var(--turmeric-hover); text-decoration: underline; }
 .quote { border-left: 4px solid var(--turmeric); padding: 2px 0 2px 20px; margin: 0 0 32px; font-size: 18.4px; line-height: 29.44px; color: var(--text-muted); }
