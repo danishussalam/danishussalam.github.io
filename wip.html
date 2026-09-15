@@ -3,313 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Danish Us-Salam – Economist</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Work in Progress – Danish Us-Salam</title>
+  <meta name="description" content="Working papers by Danish Us-Salam on fraud, treatment effects, asset transfers, religion and market access.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            'du-dark': '#004741',
-            'du-blue': '#004741',
-            'sand': '#f0ede4',
-            'cyprus': '#004741',
-            'wise-green': '#f0ede4',
-            'wise-dark-green': '#004741',
-            'wise-mint': '#f5f3ec',
-            'wise-black': '#004741',
-            gray: {
-              50:  '#faf9f6', 100: '#f5f3ee', 200: '#f0ede4', 300: '#dcd6c8',
-              400: '#6b7c79', 500: '#6b7c79', 600: '#3f5b58', 700: '#2b4f4b',
-              800: '#12403c', 900: '#004741',
-            },
-            slate: { 50: '#faf9f6', 100: '#f5f3ee', 700: '#2b4f4b', 800: '#004741', 900: '#00302b' },
-            green: {
-              50:  '#faf9f5', 100: '#f5f3ec', 200: '#f7f5ef', 300: '#f0ede4',
-              400: '#cbbf9f', 500: '#2e6b65', 600: '#004741',
-              700: '#004741', 800: '#003a35', 900: '#00302b',
-            },
-            blue: {
-              50:  '#faf9f5', 100: '#f5f3ec', 200: '#f7f5ef', 300: '#f0ede4',
-              400: '#cbbf9f', 500: '#2e6b65', 600: '#004741',
-              700: '#004741', 800: '#003a35', 900: '#00302b',
-            },
-            emerald: {
-              50:  '#faf9f5', 100: '#f5f3ec', 200: '#f7f5ef', 300: '#f0ede4',
-              400: '#cbbf9f', 500: '#2e6b65', 600: '#004741',
-              700: '#004741', 800: '#003a35', 900: '#00302b',
-            },
-            purple: {
-              50:  '#faf9f5', 100: '#f5f3ec', 200: '#f7f5ef', 300: '#f0ede4',
-              400: '#cbbf9f', 500: '#2e6b65', 600: '#004741',
-              700: '#004741', 800: '#003a35', 900: '#00302b',
-            },
-            orange: {
-              50:  '#faf9f5', 100: '#f5f3ec', 200: '#f7f5ef', 300: '#f0ede4',
-              400: '#cbbf9f', 500: '#2e6b65', 600: '#004741',
-              700: '#004741', 800: '#003a35', 900: '#00302b',
-            },
-            yellow: {
-              50:  '#faf9f5', 100: '#f5f3ec', 200: '#f7f5ef', 300: '#f0ede4',
-              400: '#cbbf9f', 500: '#2e6b65', 600: '#004741',
-              700: '#004741', 800: '#003a35', 900: '#00302b',
-            },
-            amber: {
-              50:  '#faf9f5', 100: '#f5f3ec', 200: '#f7f5ef', 300: '#f0ede4',
-              400: '#cbbf9f', 500: '#2e6b65', 600: '#004741',
-              700: '#004741', 800: '#003a35', 900: '#00302b',
-            },
-            pink: {
-              50:  '#faf9f5', 100: '#f5f3ec', 200: '#f7f5ef', 300: '#f0ede4',
-              400: '#cbbf9f', 500: '#2e6b65', 600: '#004741',
-              700: '#004741', 800: '#003a35', 900: '#00302b',
-            },
-            rose: {
-              50:  '#faf9f5', 100: '#f5f3ec', 200: '#f7f5ef', 300: '#f0ede4',
-              400: '#cbbf9f', 500: '#2e6b65', 600: '#004741',
-              700: '#004741', 800: '#003a35', 900: '#00302b',
-            },
-            indigo: {
-              50:  '#faf9f5', 100: '#f5f3ec', 200: '#f7f5ef', 300: '#f0ede4',
-              400: '#cbbf9f', 500: '#2e6b65', 600: '#004741',
-              700: '#004741', 800: '#003a35', 900: '#00302b',
-            },
-            cyan: {
-              50:  '#faf9f5', 100: '#f5f3ec', 200: '#f7f5ef', 300: '#f0ede4',
-              400: '#cbbf9f', 500: '#2e6b65', 600: '#004741',
-              700: '#004741', 800: '#003a35', 900: '#00302b',
-            },
-            teal: {
-              50:  '#faf9f5', 100: '#f5f3ec', 200: '#f7f5ef', 300: '#f0ede4',
-              400: '#cbbf9f', 500: '#2e6b65', 600: '#004741',
-              700: '#004741', 800: '#003a35', 900: '#00302b',
-            },
-            lime: {
-              50:  '#faf9f5', 100: '#f5f3ec', 200: '#f7f5ef', 300: '#f0ede4',
-              400: '#cbbf9f', 500: '#2e6b65', 600: '#004741',
-              700: '#004741', 800: '#003a35', 900: '#00302b',
-            },
-          },
-          borderRadius: {
-            lg: '16px', xl: '20px', '2xl': '30px', '3xl': '40px',
-          },
-          fontFamily: {
-            sans: ['Inter', 'system-ui', 'sans-serif'],
-          }
-        }
-      }
-    }
-  </script>
-  <style>
-    * { box-sizing: border-box; }
-    body {
-      font-family: 'Inter', sans-serif;
-      margin: 0;
-      -webkit-font-smoothing: antialiased;
-      font-feature-settings: "calt" 1;
-      color: #004741;
-    }
-    html { scroll-behavior: smooth; }
-
-    /* Wise display type: weight 900 at a 0.85 line-height */
-    h1, h2 { font-feature-settings: "calt" 1; }
-
-    /* Wise buttons grow on hover rather than changing colour */
-    .wise-cta { transition: transform .2s ease; }
-    .wise-cta:hover { transform: scale(1.05); }
-    .wise-cta:active { transform: scale(.95); }
-  </style>
-
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,400&family=Fraunces:opsz,wght@9..144,300..900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="site-theme.css">
 </head>
-<body class="bg-white text-gray-900">
+<body class="site" data-layout="page">
+  <header id="site-header"></header>
+  <div class="site-frame">
+    <aside id="site-nav" class="site-nav"></aside>
+    <main id="main" class="site-content">
+      <nav id="site-breadcrumb"></nav>
+      <h1 class="page-title">Work in Progress</h1>
 
-  <!-- Navigation -->
-  <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur border-b border-gray-200" style="height:64px;">
-    <div class="max-w-[1600px] mx-auto px-6 lg:px-10 h-full flex items-center justify-between">
-      <div class="flex items-center gap-10">
-        <span class="font-bold text-[16px] text-gray-900 tracking-tight">Danish Us-Salam</span>
-        <div class="hidden md:flex items-center gap-7 text-[13px] text-gray-500 font-medium">
-          <a href="index.html" class="hover:text-gray-900 transition-colors">Home</a>
-          <a href="publications.html" class="hover:text-gray-900 transition-colors">Publications</a>
-          <a href="wip.html" class="hover:text-gray-900 transition-colors">Work in Progress</a>
-          <a href="consultancy.html" class="hover:text-gray-900 transition-colors">Consultancy</a>
-          <a href="research-tools.html" class="hover:text-gray-900 transition-colors">Research Tools</a>
-        </div>
+      <h2 class="section-title" id="current-projects">Current projects</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="card__top"><span class="badge badge--muted">Draft in progress</span></div>
+          <p class="card__title">More than Money: Unpacking the Full Cost of Fraud &amp; Scams in Ireland</p>
+          <div class="card__body"><p>Measuring the psychological, relational, and economic costs of fraud victimisation beyond financial loss alone.</p></div>
+        </article>
+        <article class="card">
+          <div class="card__top"><span class="badge badge--muted">With co-authors</span></div>
+          <p class="card__title">Fraud Factors: Decoding who's at Risk in Ireland</p>
+          <div class="card__body">
+            <p>Identifying sociodemographic and psychological predictors of fraud susceptibility across Ireland.</p>
+            <p class="card__meta">with Anu Jose and Jane Kelly</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__top"><span class="badge badge--muted">Draft in progress</span></div>
+          <p class="card__title">Beyond P-Values &amp; Confidence Intervals: An Alternative Approach to Analysing Treatment Effects</p>
+          <div class="card__body"><p>Methodological contribution proposing alternatives to conventional significance testing in applied econometrics.</p></div>
+        </article>
+        <article class="card">
+          <div class="card__top"><span class="badge badge--muted">Job Market Paper</span></div>
+          <p class="card__title">Beyond the Outbreak: Asset Transfers and Economic Resilience in Post-Ebola Sierra Leone</p>
+          <div class="card__body"><p>Evaluating the long-run effects of unconditional asset transfers on household resilience following the Ebola epidemic.</p></div>
+        </article>
+        <article class="card">
+          <div class="card__top"><span class="badge badge--muted">PhD Essay</span></div>
+          <p class="card__title">Religion at Play: The Impact of Ramadan in Bangladesh</p>
+          <div class="card__body"><p>Empirical analysis of how religious observance affects labour supply, consumption, and household welfare outcomes.</p></div>
+        </article>
+        <article class="card">
+          <div class="card__top"><span class="badge badge--muted">With co-authors</span></div>
+          <p class="card__title">Market Access and Rural Development: Experimental Evidence from Malawi</p>
+          <div class="card__body">
+            <p>Field experiment testing whether improved market access boosts agricultural productivity and household welfare.</p>
+            <p class="card__meta">with Selim Gulesci, Jared Gars, and Diego Ubfal</p>
+          </div>
+        </article>
       </div>
-      <div class="flex items-center gap-3">
-        <div class="md:hidden flex items-center gap-3 text-[13px] text-gray-600 font-medium">
-          <a href="index.html" class="hover:text-gray-900 transition-colors">Home</a>
-          <a href="publications.html" class="hover:text-gray-900 transition-colors">Pub</a>
-          <a href="wip.html" class="hover:text-gray-900 transition-colors">WIP</a>
-          <a href="consultancy.html" class="hover:text-gray-900 transition-colors">Cons</a>
-          <a href="research-tools.html" class="hover:text-gray-900 transition-colors">Tools</a>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <script>
-    // Highlight active nav link
-    document.addEventListener('DOMContentLoaded', function() {
-      const current = window.location.pathname.split('/').pop() || 'index.html';
-      const navLinks = document.querySelectorAll('nav a[href]');
-      navLinks.forEach(link => {
-        const href = link.getAttribute('href');
-        if (href === current || (current === '' && href === 'index.html')) {
-          link.style.color = '#004741';
-          link.style.fontWeight = '600';
-        }
-      });
-    });
-  </script>
-
-  <!-- ─── Hero ─────────────────────────────────────────────────── -->
-  <section class="bg-gradient-to-br from-du-dark via-du-dark to-[#004741] pt-24 pb-12">
-    <div class="max-w-[1600px] mx-auto px-6 lg:px-10">
-      <h1 class="text-[40px] sm:text-[56px] md:text-[96px] font-black text-white leading-[0.85] tracking-[-0.03em] mb-4">
-        Work in Progress
-      </h1>
-    </div>
-  </section>
-
-  <!-- ─── Work in Progress ─────────────────────────────────────── -->
-  <section class="py-24 bg-[#f0ede4]" id="wip">
-    <div class="max-w-[1600px] mx-auto px-6 lg:px-10">
-      <div class="mb-0">
-
-      <div class="grid md:grid-cols-3 gap-4">
-        <!-- WIP 1 -->
-        <div class="bg-white rounded-xl p-6 border border-gray-200 hover:shadow-md transition-shadow">
-          <div class="flex items-center gap-2 mb-4">
-            <div class="w-8 h-8 bg-blue-50 rounded-lg flex items-center justify-center">
-              <svg class="w-4 h-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-              </svg>
-            </div>
-            <span class="text-[10px] bg-orange-100 text-orange-700 px-2.5 py-0.5 rounded-full font-semibold">Draft in progress</span>
-          </div>
-          <h4 class="text-[15px] font-bold text-gray-900 mb-2 leading-snug">
-            More than Money: Unpacking the Full Cost of Fraud &amp; Scams in Ireland
-          </h4>
-          <p class="text-[12px] text-gray-500 leading-relaxed">
-            Measuring the psychological, relational, and economic costs of fraud victimisation beyond financial loss alone.
-          </p>
-        </div>
-
-        <!-- WIP 2 -->
-        <div class="bg-white rounded-xl p-6 border border-gray-200 hover:shadow-md transition-shadow">
-          <div class="flex items-center gap-2 mb-4">
-            <div class="w-8 h-8 bg-purple-50 rounded-lg flex items-center justify-center">
-              <svg class="w-4 h-4 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
-              </svg>
-            </div>
-            <span class="text-[10px] bg-blue-100 text-blue-700 px-2.5 py-0.5 rounded-full font-semibold">With co-authors</span>
-          </div>
-          <h4 class="text-[15px] font-bold text-gray-900 mb-2 leading-snug">
-            Fraud Factors: Decoding who's at Risk in Ireland
-          </h4>
-          <p class="text-[12px] text-gray-500 leading-relaxed mb-3">
-            Identifying sociodemographic and psychological predictors of fraud susceptibility across Ireland.
-          </p>
-          <p class="text-[11px] text-gray-400">with Anu Jose and Jane Kelly</p>
-        </div>
-
-        <!-- WIP 3 -->
-        <div class="bg-white rounded-xl p-6 border border-gray-200 hover:shadow-md transition-shadow">
-          <div class="flex items-center gap-2 mb-4">
-            <div class="w-8 h-8 bg-green-50 rounded-lg flex items-center justify-center">
-              <svg class="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
-              </svg>
-            </div>
-            <span class="text-[10px] bg-orange-100 text-orange-700 px-2.5 py-0.5 rounded-full font-semibold">Draft in progress</span>
-          </div>
-          <h4 class="text-[15px] font-bold text-gray-900 mb-2 leading-snug">
-            Beyond P-Values &amp; Confidence Intervals: An Alternative Approach to Analysing Treatment Effects
-          </h4>
-          <p class="text-[12px] text-gray-500 leading-relaxed">
-            Methodological contribution proposing alternatives to conventional significance testing in applied econometrics.
-          </p>
-        </div>
-
-        <!-- WIP 4 -->
-        <div class="bg-white rounded-xl p-6 border border-gray-200 hover:shadow-md transition-shadow">
-          <div class="flex items-center gap-2 mb-4">
-            <div class="w-8 h-8 bg-orange-50 rounded-lg flex items-center justify-center">
-              <svg class="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9"/>
-              </svg>
-            </div>
-            <span class="text-[10px] bg-yellow-100 text-yellow-700 px-2.5 py-0.5 rounded-full font-semibold">Job Market Paper</span>
-          </div>
-          <h4 class="text-[15px] font-bold text-gray-900 mb-2 leading-snug">
-            Beyond the Outbreak: Asset Transfers and Economic Resilience in Post-Ebola Sierra Leone
-          </h4>
-          <p class="text-[12px] text-gray-500 leading-relaxed">
-            Evaluating the long-run effects of unconditional asset transfers on household resilience following the Ebola epidemic.
-          </p>
-        </div>
-
-        <!-- WIP 5 -->
-        <div class="bg-white rounded-xl p-6 border border-gray-200 hover:shadow-md transition-shadow">
-          <div class="flex items-center gap-2 mb-4">
-            <div class="w-8 h-8 bg-red-50 rounded-lg flex items-center justify-center">
-              <svg class="w-4 h-4 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
-              </svg>
-            </div>
-            <span class="text-[10px] bg-yellow-100 text-yellow-700 px-2.5 py-0.5 rounded-full font-semibold">PhD Essay</span>
-          </div>
-          <h4 class="text-[15px] font-bold text-gray-900 mb-2 leading-snug">
-            Religion at Play: The Impact of Ramadan in Bangladesh
-          </h4>
-          <p class="text-[12px] text-gray-500 leading-relaxed">
-            Empirical analysis of how religious observance affects labour supply, consumption, and household welfare outcomes.
-          </p>
-        </div>
-
-        <!-- WIP 6 -->
-        <div class="bg-white rounded-xl p-6 border border-gray-200 hover:shadow-md transition-shadow">
-          <div class="flex items-center gap-2 mb-4">
-            <div class="w-8 h-8 bg-teal-50 rounded-lg flex items-center justify-center">
-              <svg class="w-4 h-4 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
-              </svg>
-            </div>
-            <span class="text-[10px] bg-blue-100 text-blue-700 px-2.5 py-0.5 rounded-full font-semibold">With co-authors</span>
-          </div>
-          <h4 class="text-[15px] font-bold text-gray-900 mb-2 leading-snug">
-            Market Access and Rural Development: Experimental Evidence from Malawi
-          </h4>
-          <p class="text-[12px] text-gray-500 leading-relaxed mb-3">
-            Field experiment testing whether improved market access boosts agricultural productivity and household welfare.
-          </p>
-          <p class="text-[11px] text-gray-400">with Selim Gulesci, Jared Gars, and Diego Ubfal</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ─── Background ───────────────────────────────────────────── -->
-  <!-- ─── Footer ───────────────────────────────────────────────── -->
-  <footer class="bg-[#004741] border-t border-white/8 py-8">
-    <div class="max-w-[1600px] mx-auto px-6 lg:px-10 flex flex-wrap justify-between items-center gap-4">
-      <div>
-        <p class="text-[13px] font-semibold text-white mb-0.5">Danish Us-Salam</p>
-        <p class="text-[11px] text-white/35">Economist · Central Bank of Ireland · Dublin, Ireland</p>
-      </div>
-      <div class="flex items-center gap-5 text-[12px] text-white/35">
-        <a href="mailto:ussalamd@tcd.ie" class="hover:text-white/65 transition-colors">ussalamd@tcd.ie</a>
-        <a href="https://www.linkedin.com/in/danishussalam/" target="_blank" class="hover:text-white/65 transition-colors">LinkedIn</a>
-        <a href="https://twitter.com/DanishUsSalam2" target="_blank" class="hover:text-white/65 transition-colors">Twitter</a>
-      </div>
-    </div>
-  </footer>
-
-
+    </main>
+    <aside id="site-toc" class="site-toc"></aside>
+  </div>
+  <footer id="site-footer"></footer>
+  <script src="site-shell.js"></script>
 </body>
 </html>
